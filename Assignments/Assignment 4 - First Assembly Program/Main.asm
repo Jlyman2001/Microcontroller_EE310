@@ -5,12 +5,13 @@
 ; 
 ; Inputs: Reference Temperature, Measured Temperature
 ; Outputs: PORTD
-; Date: Feb 29, 2024
+; Date: Mar 3, 2024
 ; File Dependencies / Libraries: None
 ; Compiler: xc8, 2.46
 ; Author: Josh Lyman
 ; Versions:
-; v1.0: Program completed, seems to work with no bugs
+; v1.1: 3/4/24 Changes to line comments, variable names. Test cases ran successfully
+; v1.0: 3/3/24 Program completed, seems to work with no bugs
 ; Useful links:
 ; Datasheet: https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F26-27-45-46-47-55-56-57K42-Data-Sheet-40001919G.pdf
 ; PIC18F Instruction Sets: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119448457.app4
@@ -23,8 +24,8 @@
 ;---------------------
 ; Program Inputs
 ;---------------------
-refTempInput	    EQU	35
-measuredTempInput   EQU	-24
+refTempInput	    EQU	15
+measuredTempInput   EQU	0
 ;---------------------
 ; Program Constants
 ;---------------------
@@ -46,9 +47,9 @@ measuredTempInput   EQU	-24
     measuredTempDecHigh		EQU  0x71
     measuredTempDecUpper	EQU  0x72	
 	
-	
-#define LED1 PORTD,1
-#define LED2 PORTD,2
+;Individual bit level assignments for use with bit set operations	
+#define HEATER PORTD,1
+#define COOLER PORTD,2
 ;---------------------
 ; Main Program
 ;---------------------
@@ -68,13 +69,13 @@ _initialize:
     MOVLW   0b11111100	    ;Ensures output bits are set without impacting 
     ANDWF   TRISD	    ;other assignments on port D
     
-    GOTO    _storeDecimals
+    GOTO    _storeDecimals  ;Unnecessary but helps readability
 
     
 ;Stores decimal values of refTemp and measuredTemp in their respective registers
 ;Assumes all registers are initalized to zero beforehand
 _storeDecimals:    
-    MOVF    refTemp,0
+    MOVF    refTemp,0	    ;refTemp -> WREG
  
     _refTensLoop:	    
     ADDLW   0b11110110	    ;Adds 2's complement of 10, effectively subtracting 
@@ -112,27 +113,29 @@ _storeDecimals:
     
     
     
-    GOTO    _compare
+    GOTO    _compare	    ;Unnecessary but helps readability
     
     
     
-;Compares     
+;Compares reference temperature to measured one and handles logic relating
+;to outputs based on the temperature difference
 _compare:
     MOVF    measuredTemp,0	;load the measured temp
-    SUBWF   refTemp		;ref-measured -> W
-				;if W > 0, too cold. W < 0, too hot
+    SUBWF   refTemp,0		;ref-measured -> W
+				;if W > 0, ref > measured; too cold
+				;if W < 0, ref < measured; too hot
     BN	    _tooHot
     BZ	    _justRight
     ;if not too hot or just right, it is too cold
     MOVLW   0x01
     MOVWF   contReg
-    BSF	    LED1
+    BSF	    HEATER
     GOTO _end
     
 _tooHot:
     MOVLW   0x02
     MOVWF   contReg
-    BSF	    LED2
+    BSF	    COOLER
     GOTO _end
     
     
@@ -140,7 +143,9 @@ _justRight:
     MOVLW   0x0
     MOVWF   contReg
      
-
+;end label is used because in a real application there may be other code that 
+;has to run after execution of this program, which would make using sleep commands
+;instead of goto end not usable
 _end:
     SLEEP
 END
