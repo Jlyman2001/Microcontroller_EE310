@@ -29,7 +29,8 @@
 ;---------------------
 ; Program Constants
 ;---------------------
-DataOffset  EQU	0xE0
+DataOffsetL  EQU	0x00
+DataOffsetH  EQU	0x0F
 
 ;---------------------
 ; Definitions
@@ -38,7 +39,9 @@ Digit	EQU	0x10
 Loop1	EQU	0x11
 Loop2	EQU	0x12
 Loop3	EQU	0x13
-
+	
+InputRegA   EQU	0x14	    ;Registers for storing keypad input
+InputRegB   EQU	0x15  
 ;---------------------
 ; Main Program
 ;---------------------
@@ -59,6 +62,8 @@ _start:
     BANKSEL	TRISD
     CLRF	TRISD
     
+    ;Initialize port B for reading keypad
+    ;Pins 0-3 are out, 4-7 in
     BANKSEL	PORTB
     CLRF	PORTB
     BANKSEL	LATB
@@ -68,6 +73,7 @@ _start:
     BANKSEL	TRISB
     MOVLW	0b00001111
     MOVWF	TRISB
+    BANKSEL	0
     
 _reset:    
     MOVLW   0
@@ -80,6 +86,9 @@ _loop:
     CALL    _DisplayDigit
     CALL    _Delay
     CALL    _Delay
+    ;CALL    _PollInputs
+    ;CALL    _IncDecRst
+    
     MOVLW   0
     BTFSC   Button1	;buttons are active high with pulldown resistor
 	ADDLW	1
@@ -92,11 +101,14 @@ _loop:
     BZ	_countDown	;if only button 2 is pushed, count down
     ADDLW   1		;none = -1, b1 = 0
     BZ	_countUp	; 
+    
     GOTO    _loop	;no branches taken = no buttons pressed, don't count
 
     
-_DisplayDigit:    
-   MOVLW    DataOffset	    ;loads index of data block
+_DisplayDigit:
+   MOVLW    DataOffsetH
+   MOVWF    TBLPTRH
+   MOVLW    DataOffsetL	    ;loads index of data block
    ADDWF    Digit,W	    ;adds offset based on digit select
    MOVWF    TBLPTRL	    
    TBLRD*		    ;reads from program memory
@@ -136,6 +148,47 @@ _countDown:
     MOVWF   Digit
     GOTO    _loop    
     
+_pollInputs:
+    CLRF    InputRegA
+    CLRF    InputRegB
+    
+    ;poll row 1
+    MOVLW   0x01
+    MOVWF   PORTB
+    MOVLW   0xF0    
+    ANDWF   PORTB,W	;mask port B inputs to only read input bits
+    SWAPF   WREG	;swap nibbles 
+    ADDWF   InputRegA,F ;store results in low 4 bits of IRA
+    
+    ;poll row 2
+    MOVLW   0x02
+    MOVWF   PORTB
+    MOVLW   0xF0    
+    ANDWF   PORTB,W	;mask port B inputs to only read input bits
+    ADDWF   InputRegA,F ;store results in high 4 bits of IRA
+    
+    ;poll row 3
+    MOVLW   0x03
+    MOVWF   PORTB
+    MOVLW   0xF0    
+    ANDWF   PORTB,W	;mask port B inputs to only read input bits
+    SWAPF   WREG	;swap nibbles 
+    ADDWF   InputRegB,F ;store results in low 4 bits of IRB
+    
+    ;poll row 4
+    MOVLW   0x04
+    MOVWF   PORTB
+    MOVLW   0xF0    
+    ANDWF   PORTB,W	;mask port B inputs to only read input bits
+    ADDWF   InputRegB,F ;store results in high 4 bits of IRB
+    RETURN 0
+    
+_IncDecRst:    
+    RETURN 0
+    
+    
+    
+    
     ;Pin #	    7 Segment
     ;	RD0		B
     ;	RD1		A
@@ -146,24 +199,21 @@ _countDown:
     ;	RD6		D
     ;	RD7		E
     
-    
-    
-    
-ORG 0xE0  ;EDCXGFAB
-    DB   0b11100111	;encodes 0    
-    DB   0b00100001	;encodes 1    
-    DB   0b11001011	;encodes 2    
-    DB   0b01101011	;encodes 3    
-    DB   0b00101101	;encodes 4    
-    DB   0b01101110	;encodes 5    
-    DB   0b11101110	;encodes 6    
-    DB   0b00100111	;encodes 7    
-    DB   0b11101111	;encodes 8    
-    DB   0b01101111	;encodes 9    
-    DB   0b10101111	;encodes A    
-    DB   0b11101100	;encodes B    
-    DB   0b11001000	;encodes C     
-    DB   0b11101001	;encodes D    	
-    DB   0b11001110	;encodes E      
-    DB   0b10001110	;encodes F    	
+    ORG 0x0F00   ;EDCXGFAB
+    DB		0b11100111	;encodes 0    
+    DB		0b00100001	;encodes 1    
+    DB		0b11001011	;encodes 2    
+    DB		0b01101011	;encodes 3    
+    DB		0b00101101	;encodes 4    
+    DB		0b01101110	;encodes 5    
+    DB		0b11101110	;encodes 6    
+    DB		0b00100111	;encodes 7    
+    DB		0b11101111	;encodes 8    
+    DB		0b01101111	;encodes 9    
+    DB		0b10101111	;encodes A    
+    DB		0b11101100	;encodes B    
+    DB		0b11001000	;encodes C     
+    DB		0b11101001	;encodes D    	
+    DB		0b11001110	;encodes E      
+    DB		0b10001110	;encodes F    	
 
