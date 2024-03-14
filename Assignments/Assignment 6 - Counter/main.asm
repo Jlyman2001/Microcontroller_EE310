@@ -23,8 +23,8 @@
 ;---------------------
 ; Program Inputs
 ;---------------------
-#define	Button1	PORTC,0	    ;button 1 = count up
-#define	Button2	PORTC,1	    ;button 2 = count down
+#define	Button1	PORTB,0	    ;button 1 = count up
+#define	Button2	PORTB,1	    ;button 2 = count down
 
 ;---------------------
 ; Program Constants
@@ -37,6 +37,7 @@ DataOffset  EQU	0xE0
 Digit	EQU	0x10
 Loop1	EQU	0x11
 Loop2	EQU	0x12
+Loop3	EQU	0x13
 
 ;---------------------
 ; Main Program
@@ -58,15 +59,15 @@ _start:
     BANKSEL	TRISD
     CLRF	TRISD
     
-    BANKSEL	PORTC
-    CLRF	PORTC
-    BANKSEL	LATC
-    CLRF	LATC
-    BANKSEL	ANSELC
-    CLRF	ANSELC
-    BANKSEL	TRISC
+    BANKSEL	PORTB
+    CLRF	PORTB
+    BANKSEL	LATB
+    CLRF	LATB
+    BANKSEL	ANSELB
+    CLRF	ANSELB
+    BANKSEL	TRISB
     MOVLW	0b00000011
-    MOVWF	TRISC
+    MOVWF	TRISB
     
 _reset:    
     MOVLW   0
@@ -106,17 +107,19 @@ _DisplayDigit:
     
     
 _Delay:
-    RETURN 0
     MOVLW   0	    ;Counter is decremented before any comparison so this = 256
     MOVWF   Loop1
-    MOVLW   0
-    MOVWF   Loop2   ;197.39 ms delay, will call twice rather than add 3rd loop
+    MOVWF   Loop2   
+    MOVWF   Loop3
+		    ;197.39 ms delay, will call twice rather than add 3rd loop
 		    ;as it is more memory efficient
     _DelayLoop:
 	DECFSZ	Loop1
 	GOTO	_DelayLoop
 	DECFSZ	Loop2
 	GOTO	_DelayLoop
+	;DECFSZ	Loop3
+	;GOTO	_DelayLoop
     RETURN 0	;Don't care about any changes to WREG or STATUS
 	
 _countUp:
@@ -133,22 +136,34 @@ _countDown:
     MOVWF   Digit
     GOTO    _loop    
     
-
-ORG 0xE0
-    DB   0b00111111	;encodes 0    
-    DB   0b00000110	;encodes 1    
-    DB   0b01011011	;encodes 2    
-    DB   0b01001111	;encodes 3    
-    DB   0b01100111	;encodes 4    
-    DB   0b01101101	;encodes 5    
-    DB   0b01111101	;encodes 6    
+    ;Pin #	    7 Segment
+    ;	RD0		B
+    ;	RD1		A
+    ;	RD2		F
+    ;	RD3		G
+    ;	RD4		NC
+    ;	RD5		C
+    ;	RD6		D
+    ;	RD7		E
+    
+    
+    
+    
+ORG 0xE0  ;EDCXGFAB
+    DB   0b11100111	;encodes 0    
+    DB   0b00100001	;encodes 1    
+    DB   0b11001011	;encodes 2    
+    DB   0b01101011	;encodes 3    
+    DB   0b00101101	;encodes 4    
+    DB   0b01101110	;encodes 5    
+    DB   0b11101110	;encodes 6    
     DB   0b00100111	;encodes 7    
-    DB   0b01111111	;encodes 8    
+    DB   0b11101111	;encodes 8    
     DB   0b01101111	;encodes 9    
-    DB   0b01110111	;encodes A    
-    DB   0b01111100	;encodes B    
-    DB   0b00111001	;encodes C     
-    DB   0b01011110	;encodes D    	
-    DB   0b01111001	;encodes E      
-    DB   0b01110001	;encodes F    	
+    DB   0b10101111	;encodes A    
+    DB   0b11101100	;encodes B    
+    DB   0b11001000	;encodes C     
+    DB   0b11101001	;encodes D    	
+    DB   0b11001110	;encodes E      
+    DB   0b10001110	;encodes F    	
 
