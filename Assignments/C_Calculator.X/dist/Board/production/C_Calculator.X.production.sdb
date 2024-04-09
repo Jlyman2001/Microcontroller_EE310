@@ -1,0 +1,127 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47K42 ]
+[d frameptr 16353 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"33 E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+[v _getKeypress getKeypress `(uc  1 e 1 0 ]
+"115
+[v _getInputX getInputX `(v  1 e 1 0 ]
+"135
+[v _getInputY getInputY `(v  1 e 1 0 ]
+"154
+[v _getInputOperation getInputOperation `(v  1 e 1 0 ]
+"167
+[v _evaluate evaluate `(uc  1 e 1 0 ]
+"190
+[v _display display `(v  1 e 1 0 ]
+"195
+[v _main main `(v  1 e 1 0 ]
+"8513 D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"9937
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+"46088
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"46312
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+"46538
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"46662
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+"46818
+[v _PORTB PORTB `VEuc  1 e 1 @16331 ]
+"46942
+[v _PORTD PORTD `VEuc  1 e 1 @16333 ]
+"31 E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+[v _input_X input_X `uc  1 e 1 0 ]
+[v _input_Y input_Y `uc  1 e 1 0 ]
+[v _Operation Operation `uc  1 e 1 0 ]
+[v _Result Result `uc  1 e 1 0 ]
+[v _key key `uc  1 e 1 0 ]
+"195
+[v _main main `(v  1 e 1 0 ]
+{
+"233
+} 0
+"135
+[v _getInputY getInputY `(v  1 e 1 0 ]
+{
+"152
+} 0
+"115
+[v _getInputX getInputX `(v  1 e 1 0 ]
+{
+"133
+} 0
+"154
+[v _getInputOperation getInputOperation `(v  1 e 1 0 ]
+{
+"165
+} 0
+"33
+[v _getKeypress getKeypress `(uc  1 e 1 0 ]
+{
+"109
+[v getKeypress@secondRead secondRead `uc  1 a 1 1 ]
+"113
+} 0
+"167
+[v _evaluate evaluate `(uc  1 e 1 0 ]
+{
+"169
+[v evaluate@result result `uc  1 a 1 16 ]
+"167
+[v evaluate@input_X input_X `i  1 p 2 8 ]
+[v evaluate@input_Y input_Y `i  1 p 2 10 ]
+[v evaluate@Operation Operation `i  1 p 2 12 ]
+"188
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"190 E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+[v _display display `(v  1 e 1 0 ]
+{
+[v display@Result Result `uc  1 a 1 wreg ]
+[v display@Result Result `uc  1 a 1 wreg ]
+"192
+[v display@Result Result `uc  1 a 1 0 ]
+"193
+} 0

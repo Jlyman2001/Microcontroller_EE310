@@ -29,24 +29,6 @@
 
 #define _XTAL_FREQ 4000000  //4 MHz clock, for __delay() function
 unsigned char input_X,input_Y,Operation,Result,key;
-const unsigned char lookupTable[16] = {
-0b11100111,      //encodes 0
-0b00100001,      //encodes 1
-0b11001011,      //encodes 2
-0b01101011,      //encodes 3
-0b00101101,      //encodes 4
-0b01101110,      //encodes 5
-0b11101110,      //encodes 6
-0b00100111,      //encodes 7
-0b11101111,      //encodes 8
-0b01101111,      //encodes 9
-0b10101111,      //encodes A
-0b11101100,      //encodes B
-0b11001000,      //encodes C
-0b11101001,      //encodes D
-0b11001110,      //encodes E
-0b10001110      //encodes F
-};
 
 unsigned char getKeypress()
 {
@@ -54,71 +36,80 @@ unsigned char getKeypress()
 //Asterisk is 0x0E, pound sign is 0x0F
     key = 0xFF;
     PORTB = 0x01;
+    __delay_ms(10);
+    unsigned char firstRead = PORTB;
     switch (PORTB)
     {
             case 0x11:
-                key = 1;
-                return key;
+                key = 0x0D;
+                break;
             case 0x21:
-                key = 2;
-                return key;
+                key = 0x0C;
+                break;
             case 0x41:  
-                key = 3;
-                return key;
+                key = 0x0B;
+                break;
             case 0x81:  
                 key = 0x0A;
-                return key;
+                break;
     }
     
     PORTB = 0x02;
+    __delay_ms(10);
     switch (PORTB)
     {
             case 0x12:
-                key = 4;
-                return key;
+                key = 0x0F;
+                break;
             case 0x22:
-                key = 5;
-                return key;
+                key = 9;
+                break;
             case 0x42:  
                 key = 6;
-                return key;
+                break;
             case 0x82:  
-                key = 0x0B;
-                return key;
+                key = 3;
+                break;
     }
     PORTB = 0x04;
+    __delay_ms(10);
     switch (PORTB)
     {
             case 0x14:
-                key = 7;
-                return key;
+                key = 0;
+                break;
             case 0x24:
                 key = 8;
-                return key;
+                break;
             case 0x44:  
-                key = 9;
-                return key;
+                key = 5;
+                break;
             case 0x84:  
-                key = 0x0C;
-                return key;
+                key = 2;
+                break;
     }
     PORTB = 0x08;
+    __delay_ms(10);
     switch (PORTB)
     {
             case 0x18:
                 key = 0x0E;
-                return key;
+                break;
             case 0x28:
-                key = 0;
-                return key;
+                key = 7;
+                break;
             case 0x48:  
-                key = 0x0F;
-                return key;
+                key = 4;
+                break;
             case 0x88:  
-                key = 0x0D;
-                return key;
+                key = 1;
+                break;
     }
-    return key;
+    __delay_ms(50);
+    unsigned char secondRead = PORTB;
+    if (secondRead != 0xFF && secondRead == PORTB)
+        return key;
+    return 0xFF;
 }
 
 void getInputX()
@@ -127,12 +118,14 @@ void getInputX()
     key = 0xFF;
     while (key >= 0x0A)         //0x0A is the first value too large fir it to  be a digit 
         key = getKeypress();    //Loop checking input until the value is a digit
+        __delay_ms(10);
     input_X = (input_X << 4) + key;     //shifts X left 4 and puts new value in lower nibble
     //Value is now 0x0n for n being a digit on the keypad
     
     key = 0xFF;
     while (key >= 0x0A)
         key = getKeypress();
+        __delay_ms(10);
     input_X = (input_X << 4) + key;     //shifts X left 4 and puts new value in lower nibble
     //Value is now 0xnm for n being the first digit and m the second
     //This is in packed BCD
@@ -145,12 +138,14 @@ void getInputY()
     key = 0xFF;
     while (key >= 0x0A)
         key = getKeypress();
+        __delay_ms(10);
     input_Y = (input_Y << 4) + key;     //shifts Y left 4 and puts new value in lower nibble
     //Value is now 0x0n for n being a digit on the keypad
     
     key = 0xFF;
     while (key >= 0x0A)
         key = getKeypress();
+        __delay_ms(10);
     input_Y = (input_Y << 4) + key;     //shifts Y left 4 and puts new value in lower nibble
     //Value is now 0xnm for n being the first digit and m the second
     
@@ -163,6 +158,7 @@ void getInputOperation()
     while ((key > 0x0D) || (key < 0x0A))    //don't accept values for key lower than 0x0A (digit) or 
                                             //higher than 0x0D (asterisk, pound sign, or no input)
         key = getKeypress();
+        __delay_ms(10);
     Operation = key;
 
     
@@ -193,14 +189,7 @@ unsigned char evaluate(input_X,input_Y,Operation)
 
 void display(unsigned char Result)
 {
-    
-    PORTC = 0b00000100;
-    PORTD = lookupTable[Result & 0x0F];    
-    //masks lower nibble and pulls encoded value from lookup table, sends to portD
-    __delay_ms(10); //wait 10ms
-    PORTC = 0b00001000;
-    PORTD = lookupTable[(Result & 0xF0) >> 4];
-    //masks upper nibble, shifts by 4, and pulls encoded value from lookup table, sends to portD
+    PORTD = Result;    
 }
 
 void main(void) {
@@ -217,25 +206,27 @@ void main(void) {
     PORTD = 0;
     ANSELD = 0;
     
-    //using port C2 + C3 as output to 7 seg digit switch
-    TRISD = 0;   
-    LATD = 0;
-    PORTD = 0;
-    ANSELD = 0;
-    
-    
     //loop
     while (1)
     {
+       
+        
         getInputX();
+        PORTD = 0x01;
+        
         getInputOperation();
+        
         getInputY();
+        PORTD = 0x02;
+        
+        while(getKeypress != 0x0F)
+        {__delay_ms(100);}//wait for pound sign
+        
         Result = evaluate(input_X,input_Y,Operation);
-        do 
-        {
-            display(Result);
-        } while (getKeypress() != 0x0E || getKeypress() != 0x0F);    
-            //wait for input asterisk or pound sign to go to next input
+        display(Result);
+        while(getKeypress != 0x0F)
+        {__delay_ms(100);}//wait for pound sign
+        
     }
     return;
     
