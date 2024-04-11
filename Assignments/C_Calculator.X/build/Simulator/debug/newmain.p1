@@ -2591,243 +2591,246 @@ Version 4.0 HI-TECH Software Intermediate Code
  2265 ]
 [e :U 2265 ]
 "141
-[; ;newmain.c: 141:     return 0xFF;
-[e ) -> -> 255 `i `uc ]
+[; ;newmain.c: 141:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"142
+[; ;newmain.c: 142:     return key;
+[e ) _key ]
 [e $UE 2246  ]
-"143
-[; ;newmain.c: 143: }
+"144
+[; ;newmain.c: 144: }
 [e :UE 2246 ]
 }
-"145
-[; ;newmain.c: 145: void getInputX()
-[v _getInputX `(v ~T0 @X0 1 ef ]
 "146
-[; ;newmain.c: 146: {
+[; ;newmain.c: 146: void getInputX()
+[v _getInputX `(v ~T0 @X0 1 ef ]
+"147
+[; ;newmain.c: 147: {
 {
 [e :U _getInputX ]
 [f ]
-"147
-[; ;newmain.c: 147:     input_X = 0;
-[e = _input_X -> -> 0 `i `uc ]
 "148
-[; ;newmain.c: 148:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
+[; ;newmain.c: 148:     input_X = 0;
+[e = _input_X -> -> 0 `i `uc ]
 "149
-[; ;newmain.c: 149:     while (key >= 0x0A){
+[; ;newmain.c: 149:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"150
+[; ;newmain.c: 150:     while (key >= 0x0A){
 [e $U 2272  ]
 [e :U 2273 ]
 {
-"150
-[; ;newmain.c: 150:         key = getKeypress();
+"151
+[; ;newmain.c: 151:         key = getKeypress();
 [e = _key ( _getKeypress ..  ]
-"152
-[; ;newmain.c: 152:     }
+"153
+[; ;newmain.c: 153:     }
 }
 [e :U 2272 ]
-"149
-[; ;newmain.c: 149:     while (key >= 0x0A){
+"150
+[; ;newmain.c: 150:     while (key >= 0x0A){
 [e $ >= -> _key `i -> 10 `i 2273  ]
 [e :U 2274 ]
-"154
-[; ;newmain.c: 154:     input_X += 10*key;
-[e =+ _input_X -> * -> 10 `i -> _key `i `uc ]
 "155
-[; ;newmain.c: 155:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
+[; ;newmain.c: 155:     input_X += 10*key;
+[e =+ _input_X -> * -> 10 `i -> _key `i `uc ]
 "156
-[; ;newmain.c: 156:     while (key >= 0x0A){
+[; ;newmain.c: 156:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"157
+[; ;newmain.c: 157:     while (key >= 0x0A){
 [e $U 2275  ]
 [e :U 2276 ]
 {
-"157
-[; ;newmain.c: 157:         key = getKeypress();
+"158
+[; ;newmain.c: 158:         key = getKeypress();
 [e = _key ( _getKeypress ..  ]
-"159
-[; ;newmain.c: 159:     }
+"160
+[; ;newmain.c: 160:     }
 }
 [e :U 2275 ]
-"156
-[; ;newmain.c: 156:     while (key >= 0x0A){
+"157
+[; ;newmain.c: 157:     while (key >= 0x0A){
 [e $ >= -> _key `i -> 10 `i 2276  ]
 [e :U 2277 ]
-"160
-[; ;newmain.c: 160:     input_X += key;
+"161
+[; ;newmain.c: 161:     input_X += key;
 [e =+ _input_X -> _key `uc ]
-"162
-[; ;newmain.c: 162: }
+"163
+[; ;newmain.c: 163: }
 [e :UE 2271 ]
 }
-"164
-[; ;newmain.c: 164: void getInputY()
-[v _getInputY `(v ~T0 @X0 1 ef ]
 "165
-[; ;newmain.c: 165: {
+[; ;newmain.c: 165: void getInputY()
+[v _getInputY `(v ~T0 @X0 1 ef ]
+"166
+[; ;newmain.c: 166: {
 {
 [e :U _getInputY ]
 [f ]
-"166
-[; ;newmain.c: 166:     input_Y = 0;
-[e = _input_Y -> -> 0 `i `uc ]
 "167
-[; ;newmain.c: 167:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
+[; ;newmain.c: 167:     input_Y = 0;
+[e = _input_Y -> -> 0 `i `uc ]
 "168
-[; ;newmain.c: 168:     while (key >= 0x0A){
+[; ;newmain.c: 168:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"169
+[; ;newmain.c: 169:     while (key >= 0x0A){
 [e $U 2279  ]
 [e :U 2280 ]
 {
-"169
-[; ;newmain.c: 169:         key = getKeypress();
+"170
+[; ;newmain.c: 170:         key = getKeypress();
 [e = _key ( _getKeypress ..  ]
-"171
-[; ;newmain.c: 171:     }
+"172
+[; ;newmain.c: 172:     }
 }
 [e :U 2279 ]
-"168
-[; ;newmain.c: 168:     while (key >= 0x0A){
+"169
+[; ;newmain.c: 169:     while (key >= 0x0A){
 [e $ >= -> _key `i -> 10 `i 2280  ]
 [e :U 2281 ]
-"173
-[; ;newmain.c: 173:     input_Y += 10*key;
-[e =+ _input_Y -> * -> 10 `i -> _key `i `uc ]
 "174
-[; ;newmain.c: 174:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
+[; ;newmain.c: 174:     input_Y += 10*key;
+[e =+ _input_Y -> * -> 10 `i -> _key `i `uc ]
 "175
-[; ;newmain.c: 175:     while (key >= 0x0A){
+[; ;newmain.c: 175:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"176
+[; ;newmain.c: 176:     while (key >= 0x0A){
 [e $U 2282  ]
 [e :U 2283 ]
 {
-"176
-[; ;newmain.c: 176:         key = getKeypress();
+"177
+[; ;newmain.c: 177:         key = getKeypress();
 [e = _key ( _getKeypress ..  ]
-"178
-[; ;newmain.c: 178:     }
+"179
+[; ;newmain.c: 179:     }
 }
 [e :U 2282 ]
-"175
-[; ;newmain.c: 175:     while (key >= 0x0A){
+"176
+[; ;newmain.c: 176:     while (key >= 0x0A){
 [e $ >= -> _key `i -> 10 `i 2283  ]
 [e :U 2284 ]
-"179
-[; ;newmain.c: 179:     input_Y += key;
+"180
+[; ;newmain.c: 180:     input_Y += key;
 [e =+ _input_Y -> _key `uc ]
-"181
-[; ;newmain.c: 181: }
+"182
+[; ;newmain.c: 182: }
 [e :UE 2278 ]
 }
-"182
-[; ;newmain.c: 182: void getInputOperation()
-[v _getInputOperation `(v ~T0 @X0 1 ef ]
 "183
-[; ;newmain.c: 183: {
+[; ;newmain.c: 183: void getInputOperation()
+[v _getInputOperation `(v ~T0 @X0 1 ef ]
+"184
+[; ;newmain.c: 184: {
 {
 [e :U _getInputOperation ]
 [f ]
-"184
-[; ;newmain.c: 184:     Operation = 0;
-[e = _Operation -> -> 0 `i `uc ]
 "185
-[; ;newmain.c: 185:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
+[; ;newmain.c: 185:     Operation = 0;
+[e = _Operation -> -> 0 `i `uc ]
 "186
-[; ;newmain.c: 186:     while (key > 0x0F || key < 0x0A)
+[; ;newmain.c: 186:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"187
+[; ;newmain.c: 187:     while (key > 0x0F || key < 0x0A)
 [e $U 2286  ]
 [e :U 2287 ]
-"187
-[; ;newmain.c: 187:     {
-{
 "188
-[; ;newmain.c: 188:         key = getKeypress();
+[; ;newmain.c: 188:     {
+{
+"189
+[; ;newmain.c: 189:         key = getKeypress();
 [e = _key ( _getKeypress ..  ]
-"190
-[; ;newmain.c: 190:     }
+"191
+[; ;newmain.c: 191:     }
 }
 [e :U 2286 ]
-"186
-[; ;newmain.c: 186:     while (key > 0x0F || key < 0x0A)
+"187
+[; ;newmain.c: 187:     while (key > 0x0F || key < 0x0A)
 [e $ || > -> _key `i -> 15 `i < -> _key `i -> 10 `i 2287  ]
 [e :U 2288 ]
-"191
-[; ;newmain.c: 191:         Operation = key;
+"192
+[; ;newmain.c: 192:         Operation = key;
 [e = _Operation _key ]
-"194
-[; ;newmain.c: 194: }
+"195
+[; ;newmain.c: 195: }
 [e :UE 2285 ]
 }
-"196
-[; ;newmain.c: 196: unsigned char evaluate(input_X,input_Y,Operation)
-[v _evaluate `(uc ~T0 @X0 1 ef3`i`i`i ]
 "197
-[; ;newmain.c: 197: {
+[; ;newmain.c: 197: unsigned char evaluate(input_X,input_Y,Operation)
+[v _evaluate `(uc ~T0 @X0 1 ef3`i`i`i ]
+"198
+[; ;newmain.c: 198: {
 {
 [e :U _evaluate ]
-"196
-[; ;newmain.c: 196: unsigned char evaluate(input_X,input_Y,Operation)
+"197
+[; ;newmain.c: 197: unsigned char evaluate(input_X,input_Y,Operation)
 [v _input_X `i ~T0 @X0 1 r3 ]
 [v _input_Y `i ~T0 @X0 1 r2 ]
 [v _Operation `i ~T0 @X0 1 r1 ]
-"197
-[; ;newmain.c: 197: {
-[f ]
 "198
-[; ;newmain.c: 198:     unsigned char result = 0;
+[; ;newmain.c: 198: {
+[f ]
+"199
+[; ;newmain.c: 199:     unsigned char result = 0;
 [v _result `uc ~T0 @X0 1 a ]
 [e = _result -> -> 0 `i `uc ]
-"199
-[; ;newmain.c: 199:     switch (Operation)
-[e $U 2291  ]
 "200
-[; ;newmain.c: 200:     {
-{
+[; ;newmain.c: 200:     switch (Operation)
+[e $U 2291  ]
 "201
-[; ;newmain.c: 201:             case 0x0A:
-[e :U 2292 ]
+[; ;newmain.c: 201:     {
+{
 "202
-[; ;newmain.c: 202:                 result = input_X + input_Y;
-[e = _result -> + _input_X _input_Y `uc ]
+[; ;newmain.c: 202:             case 0x0A:
+[e :U 2292 ]
 "203
-[; ;newmain.c: 203:                 return result;
-[e ) _result ]
-[e $UE 2289  ]
+[; ;newmain.c: 203:                 result = input_X + input_Y;
+[e = _result -> + _input_X _input_Y `uc ]
 "204
-[; ;newmain.c: 204:             case 0x0B:
-[e :U 2293 ]
+[; ;newmain.c: 204:                 return result;
+[e ) _result ]
+[e $UE 2289  ]
 "205
-[; ;newmain.c: 205:                 result = input_X - input_Y;
-[e = _result -> - _input_X _input_Y `uc ]
+[; ;newmain.c: 205:             case 0x0B:
+[e :U 2293 ]
 "206
-[; ;newmain.c: 206:                 return result;
-[e ) _result ]
-[e $UE 2289  ]
+[; ;newmain.c: 206:                 result = input_X - input_Y;
+[e = _result -> - _input_X _input_Y `uc ]
 "207
-[; ;newmain.c: 207:             case 0x0C:
-[e :U 2294 ]
+[; ;newmain.c: 207:                 return result;
+[e ) _result ]
+[e $UE 2289  ]
 "208
-[; ;newmain.c: 208:                 result = input_X * input_Y;
-[e = _result -> * _input_X _input_Y `uc ]
+[; ;newmain.c: 208:             case 0x0C:
+[e :U 2294 ]
 "209
-[; ;newmain.c: 209:                 return result;
-[e ) _result ]
-[e $UE 2289  ]
+[; ;newmain.c: 209:                 result = input_X * input_Y;
+[e = _result -> * _input_X _input_Y `uc ]
 "210
-[; ;newmain.c: 210:             case 0x0D:
-[e :U 2295 ]
-"211
-[; ;newmain.c: 211:                 result = input_X / input_Y;
-[e = _result -> / _input_X _input_Y `uc ]
-"212
-[; ;newmain.c: 212:                 return result;
+[; ;newmain.c: 210:                 return result;
 [e ) _result ]
 [e $UE 2289  ]
+"211
+[; ;newmain.c: 211:             case 0x0D:
+[e :U 2295 ]
+"212
+[; ;newmain.c: 212:                 result = input_X / input_Y;
+[e = _result -> / _input_X _input_Y `uc ]
 "213
-[; ;newmain.c: 213:             default:
-[e :U 2296 ]
+[; ;newmain.c: 213:                 return result;
+[e ) _result ]
+[e $UE 2289  ]
 "214
-[; ;newmain.c: 214:                 result = 0;
-[e = _result -> -> 0 `i `uc ]
+[; ;newmain.c: 214:             default:
+[e :U 2296 ]
 "215
-[; ;newmain.c: 215:     }
+[; ;newmain.c: 215:                 result = 0;
+[e = _result -> -> 0 `i `uc ]
+"216
+[; ;newmain.c: 216:     }
 }
 [e $U 2290  ]
 [e :U 2291 ]
@@ -2837,150 +2840,112 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 13 `i 2295
  2296 ]
 [e :U 2290 ]
-"216
-[; ;newmain.c: 216:     return result;
+"217
+[; ;newmain.c: 217:     return result;
 [e ) _result ]
 [e $UE 2289  ]
-"217
-[; ;newmain.c: 217: }
+"218
+[; ;newmain.c: 218: }
 [e :UE 2289 ]
 }
-"219
-[; ;newmain.c: 219: void display(unsigned char Result)
-[v _display `(v ~T0 @X0 1 ef1`uc ]
 "220
-[; ;newmain.c: 220: {
+[; ;newmain.c: 220: void display(unsigned char Result)
+[v _display `(v ~T0 @X0 1 ef1`uc ]
+"221
+[; ;newmain.c: 221: {
 {
 [e :U _display ]
-"219
-[; ;newmain.c: 219: void display(unsigned char Result)
-[v _Result `uc ~T0 @X0 1 r1 ]
 "220
-[; ;newmain.c: 220: {
-[f ]
+[; ;newmain.c: 220: void display(unsigned char Result)
+[v _Result `uc ~T0 @X0 1 r1 ]
 "221
-[; ;newmain.c: 221:     PORTD = Result;
-[e = _PORTD _Result ]
+[; ;newmain.c: 221: {
+[f ]
 "222
-[; ;newmain.c: 222: }
+[; ;newmain.c: 222:     PORTD = Result;
+[e = _PORTD _Result ]
+"223
+[; ;newmain.c: 223: }
 [e :UE 2297 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"224
-[; ;newmain.c: 224: void main(void) {
+"225
+[; ;newmain.c: 225: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"227
-[; ;newmain.c: 227:     TRISB = 0xF0;
-[e = _TRISB -> -> 240 `i `uc ]
 "228
-[; ;newmain.c: 228:     LATB = 0;
-[e = _LATB -> -> 0 `i `uc ]
+[; ;newmain.c: 228:     TRISB = 0xF0;
+[e = _TRISB -> -> 240 `i `uc ]
 "229
-[; ;newmain.c: 229:     PORTB = 0;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;newmain.c: 229:     LATB = 0;
+[e = _LATB -> -> 0 `i `uc ]
 "230
-[; ;newmain.c: 230:     ANSELB = 0;
+[; ;newmain.c: 230:     PORTB = 0;
+[e = _PORTB -> -> 0 `i `uc ]
+"231
+[; ;newmain.c: 231:     ANSELB = 0;
 [e = _ANSELB -> -> 0 `i `uc ]
-"232
-[; ;newmain.c: 232:     TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
 "233
-[; ;newmain.c: 233:     LATD = 0;
-[e = _LATD -> -> 0 `i `uc ]
+[; ;newmain.c: 233:     TRISD = 0;
+[e = _TRISD -> -> 0 `i `uc ]
 "234
-[; ;newmain.c: 234:     PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
+[; ;newmain.c: 234:     LATD = 0;
+[e = _LATD -> -> 0 `i `uc ]
 "235
-[; ;newmain.c: 235:     ANSELD = 0;
+[; ;newmain.c: 235:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
+"236
+[; ;newmain.c: 236:     ANSELD = 0;
 [e = _ANSELD -> -> 0 `i `uc ]
-"238
-[; ;newmain.c: 238:     while (1)
-[e :U 2300 ]
 "239
-[; ;newmain.c: 239:     {
-{
+[; ;newmain.c: 239:     while (1)
+[e :U 2300 ]
 "240
-[; ;newmain.c: 240:         getInputX();
-[e ( _getInputX ..  ]
+[; ;newmain.c: 240:     {
+{
 "241
-[; ;newmain.c: 241:         PORTD = 0x01;
+[; ;newmain.c: 241:         getInputX();
+[e ( _getInputX ..  ]
+"242
+[; ;newmain.c: 242:         PORTD = 0x01;
 [e = _PORTD -> -> 1 `i `uc ]
-"243
-[; ;newmain.c: 243:         getInputOperation();
-[e ( _getInputOperation ..  ]
 "244
-[; ;newmain.c: 244:         PORTD = 0x03;
+[; ;newmain.c: 244:         getInputOperation();
+[e ( _getInputOperation ..  ]
+"245
+[; ;newmain.c: 245:         PORTD = 0x03;
 [e = _PORTD -> -> 3 `i `uc ]
-"246
-[; ;newmain.c: 246:         getInputY();
-[e ( _getInputY ..  ]
 "247
-[; ;newmain.c: 247:         PORTD = 0x02;
+[; ;newmain.c: 247:         getInputY();
+[e ( _getInputY ..  ]
+"248
+[; ;newmain.c: 248:         PORTD = 0x02;
 [e = _PORTD -> -> 2 `i `uc ]
-"250
-[; ;newmain.c: 250:         key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
-"251
-[; ;newmain.c: 251:         while(key != 0x0F)
-[e $U 2302  ]
-[e :U 2303 ]
-"252
-[; ;newmain.c: 252:         {
-{
-"254
-[; ;newmain.c: 254:             key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"255
-[; ;newmain.c: 255:         }
-}
-[e :U 2302 ]
-"251
-[; ;newmain.c: 251:         while(key != 0x0F)
-[e $ != -> _key `i -> 15 `i 2303  ]
-[e :U 2304 ]
-"257
-[; ;newmain.c: 257:         Result = evaluate(input_X,input_Y,Operation);
-[e = _Result ( _evaluate (3 , , -> _input_X `i -> _input_Y `i -> _Operation `i ]
-"258
-[; ;newmain.c: 258:         display(Result);
-[e ( _display (1 _Result ]
 "260
-[; ;newmain.c: 260:         key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
+[; ;newmain.c: 260:         Result = evaluate(input_X,input_Y,Operation);
+[e = _Result ( _evaluate (3 , , -> _input_X `i -> _input_Y `i -> _Operation `i ]
 "261
-[; ;newmain.c: 261:         while(getKeypress() != 0x0E)
-[e $U 2305  ]
-[e :U 2306 ]
-"262
-[; ;newmain.c: 262:         {
-{
-"264
-[; ;newmain.c: 264:             key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"265
-[; ;newmain.c: 265:         }
-}
-[e :U 2305 ]
-"261
-[; ;newmain.c: 261:         while(getKeypress() != 0x0E)
-[e $ != -> ( _getKeypress ..  `i -> 14 `i 2306  ]
-[e :U 2307 ]
-"266
-[; ;newmain.c: 266:         PORTD = 0x80;
-[e = _PORTD -> -> 128 `i `uc ]
-"267
-[; ;newmain.c: 267:     }
+[; ;newmain.c: 261:         display(Result);
+[e ( _display (1 _Result ]
+"272
+[; ;newmain.c: 272:         if (0)
+[e $ ! != -> 0 `i -> 0 `i 2302  ]
+"273
+[; ;newmain.c: 273:             break;
+[e $U 2301  ]
+[e :U 2302 ]
+"274
+[; ;newmain.c: 274:     }
 }
 [e :U 2299 ]
 [e $U 2300  ]
 [e :U 2301 ]
-"268
-[; ;newmain.c: 268:     return;
+"275
+[; ;newmain.c: 275:     return;
 [e $UE 2298  ]
-"269
-[; ;newmain.c: 269: }
+"276
+[; ;newmain.c: 276: }
 [e :UE 2298 ]
 }

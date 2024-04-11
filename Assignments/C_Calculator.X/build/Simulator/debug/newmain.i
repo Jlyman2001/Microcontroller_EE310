@@ -27187,7 +27187,8 @@ unsigned char getKeypress(void)
             }
 
     }
-    return 0xFF;
+    key = 0xFF;
+    return key;
 
 }
 
@@ -27294,25 +27295,12 @@ void main(void) {
 
         getInputY();
         PORTD = 0x02;
-
-
-        key = 0xFF;
-        while(key != 0x0F)
-        {
-
-            key = getKeypress();
-        }
-
+# 260 "newmain.c"
         Result = evaluate(input_X,input_Y,Operation);
         display(Result);
-
-        key = 0xFF;
-        while(getKeypress() != 0x0E)
-        {
-
-            key = getKeypress();
-        }
-        PORTD = 0x80;
+# 272 "newmain.c"
+        if (0)
+            break;
     }
     return;
 }

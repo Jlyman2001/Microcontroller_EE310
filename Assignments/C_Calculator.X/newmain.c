@@ -138,7 +138,8 @@ unsigned char getKeypress(void)
             }
                 
     }
-    return 0xFF;
+    key = 0xFF;
+    return key;
     //__delay_ms(50);
 }
 
@@ -208,7 +209,8 @@ unsigned char evaluate(input_X,input_Y,Operation)
                 result = input_X * input_Y;
                 return result;
             case 0x0D:
-                result = input_X / input_Y;
+                if (input_Y != 0)       //divide by zero prevention
+                    result = input_X / input_Y;
                 return result;
             default:
                 result = 0;
@@ -247,16 +249,19 @@ void main(void) {
         PORTD = 0x02;
         //__delay_ms(500);
         
+        /*
         key = 0xFF;
         while(key != 0x0F)
         {
             //__delay_ms(10);
             key = getKeypress();
         }//wait for pound sign
+        */
         
         Result = evaluate(input_X,input_Y,Operation);
         display(Result);
         //__delay_ms(10);
+        /*
         key = 0xFF;
         while(getKeypress() != 0x0E)
         {
@@ -264,6 +269,9 @@ void main(void) {
             key = getKeypress();
         }//wait for asterisk
         PORTD = 0x80;
+         */ 
+        if (0)
+            break;
     }
     return;
 }
