@@ -1,2 +1,3 @@
 build/Simulator/debug/newmain.p1:  \
-newmain.c 
+newmain.c  \
+xc8header.h 

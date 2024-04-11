@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\Josh\AppData\Local\Temp\xcAs90o.\driver_tmp_3.o
+ C:\Users\Josh\AppData\Local\Temp\xcAsct4.\driver_tmp_3.o
  -Odist/Board/production\C_Calculator.X.production.hex
  -logfile=dist/Board/production\C_Calculator.X.production.hxl
  -addressing=1
@@ -9,17 +9,19 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\Josh\AppData\Local\Temp\xcAs90o.\driver_tmp_3.o)
-  2000h - 2501h		(C:\Users\Josh\AppData\Local\Temp\xcAs90o.\driver_tmp_3.o)
-  1FFFCh - 1FFFFh		(C:\Users\Josh\AppData\Local\Temp\xcAs90o.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\Josh\AppData\Local\Temp\xcAsct4.\driver_tmp_3.o)
+  2000h - 2633h		(C:\Users\Josh\AppData\Local\Temp\xcAsct4.\driver_tmp_3.o)
+  1FFFCh - 1FFFFh		(C:\Users\Josh\AppData\Local\Temp\xcAsct4.\driver_tmp_3.o)
+  300000h - 300009h		(C:\Users\Josh\AppData\Local\Temp\xcAsct4.\driver_tmp_3.o)
  Unused ranges:
   4h - 1FFFh
-  2502h - 1FFFBh
+  2634h - 1FFFBh
+  20000h - 2FFFFFh
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\Josh\AppData\Local\Temp\xcAs90o.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\Josh\AppData\Local\Temp\xcAsct4.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -105,6 +107,28 @@
 000024D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000024E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000024F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00002500 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
+00002500 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002510 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002520 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002530 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002540 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002550 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002560 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002570 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002580 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002590 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000025A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000025B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000025C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000025D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000025E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000025F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002600 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002610 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002620 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002630 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 0001FFF0 | -- -- -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1
+----------------------------------------------------------
+00300000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
+00300010 | --

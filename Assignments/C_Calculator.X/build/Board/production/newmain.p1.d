@@ -1,2 +1,3 @@
 build/Board/production/newmain.p1:  \
-newmain.c 
+newmain.c  \
+xc8header.h 

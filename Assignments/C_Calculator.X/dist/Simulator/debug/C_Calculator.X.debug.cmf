@@ -12,22 +12,26 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $dist/Simulator/debug\C_Calculator.X.debug.o
-cinit CODE 0 24EA 24EA E 1 2
-text0 CODE 0 21B8 21B8 C4 1 2
-text1 CODE 0 23CA 23CA 6E 1 2
-text2 CODE 0 2438 2438 6E 1 2
-text3 CODE 0 24A6 24A6 44 1 2
-text4 CODE 0 2002 2002 1B6 1 2
-text5 CODE 0 2340 2340 8A 1 2
-text6 CODE 0 227C 227C C4 1 2
-text7 CODE 0 24F8 24F8 A 1 2
-nvCOMRAM COMRAM 1 19 19 1 1 1
-cstackCOMRAM COMRAM 1 1 1 14 1 1
+cinit CODE 0 23D8 23D8 E 1 2
+idloc IDLOC 5 200000 200000 10 1 1
+text0 CODE 0 21E4 21E4 A2 1 2
+text1 CODE 0 230E 230E 4A 1 2
+text2 CODE 0 2358 2358 4A 1 2
+text3 CODE 0 23A2 23A2 36 1 2
+text4 CODE 0 2002 2002 11E 1 2
+text5 CODE 0 2286 2286 88 1 2
+text6 CODE 0 2120 2120 C4 1 2
+text7 CODE 0 23E6 23E6 A 1 2
+nvCOMRAM COMRAM 1 16 16 1 1 1
+cstackCOMRAM COMRAM 1 1 1 11 1 1
 smallconst SMALLCONST 0 2000 2000 2 1 2
-bssCOMRAM COMRAM 1 15 15 4 1 1
-$C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+bssCOMRAM COMRAM 1 12 12 4 1 1
+config CONFIG 4 300000 300000 A 1 1
+$C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 10 1 1
 init CODE 0 1FFFC 1FFFC 4 1 2
 reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 A 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -47,11 +51,10 @@ BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-1FFF 1
-CONST 2502-1FFFB 1
-IDLOC 200000-20000F 1
-SMALLCONST 2502-1FFFB 1
+CONST 23F0-1FFFB 1
+SMALLCONST 23F0-1FFFB 1
 CODE 4-1FFF 1
-CODE 2502-1FFFB 1
+CODE 23F0-1FFFB 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
@@ -74,12 +77,11 @@ BANK28 1C00-1CFF 1
 BANK29 1D00-1DFF 1
 BANK30 1E00-1EFF 1
 BANK31 1F00-1FFF 1
-BIGRAM 1A-1FFF 1
+BIGRAM 17-1FFF 1
 BIGSFR 3800-3FFF 1
-COMRAM 1A-5F 1
-CONFIG 300000-300009 1
+COMRAM 17-5F 1
 EEDATA 310000-3103FF 1
-MEDIUMCONST 2502-FFFF 1
+MEDIUMCONST 23F0-FFFF 1
 MEDIUMCONST 12000-1FFFB 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -95,198 +97,170 @@ MEDIUMCONST 12000-1FFFB 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/Simulator/debug\C_Calculator.X.debug.o
-24F8 text7 CODE >190:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24FA text7 CODE >192:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2500 text7 CODE >193:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-227C text6 CODE >7:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-227C text6 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-2280 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-228E text6 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-2296 text6 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-229A text6 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22A8 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22B0 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22B4 text6 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22BC text6 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22CE text6 CODE >24:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22D2 text6 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22D6 text6 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22DC text6 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22DE text6 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22EC text6 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-22F2 text6 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-2308 text6 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-2310 text6 CODE >33:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-2312 text6 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-2318 text6 CODE >36:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-231E text6 CODE >38:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-232E text6 CODE >39:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-2336 text6 CODE >40:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-233E text6 CODE >41:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-2340 text5 CODE >167:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2340 text5 CODE >169:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2340 text5 CODE >170:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2344 text5 CODE >173:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-234A text5 CODE >174:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-234E text5 CODE >176:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2354 text5 CODE >177:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2358 text5 CODE >179:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2362 text5 CODE >180:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2366 text5 CODE >182:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-237E text5 CODE >183:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2382 text5 CODE >185:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2386 text5 CODE >186:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2396 text5 CODE >186:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23A4 text5 CODE >186:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23AC text5 CODE >186:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23B4 text5 CODE >186:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23BC text5 CODE >186:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23C6 text5 CODE >187:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23C8 text5 CODE >188:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2002 text4 CODE >33:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2002 text4 CODE >37:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2004 text4 CODE >38:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2008 text4 CODE >39:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2016 text4 CODE >40:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2018 text4 CODE >41:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-201C text4 CODE >44:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2020 text4 CODE >45:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2024 text4 CODE >47:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2028 text4 CODE >48:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-202C text4 CODE >50:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2030 text4 CODE >51:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2034 text4 CODE >53:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2038 text4 CODE >54:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-203C text4 CODE >55:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2040 text4 CODE >55:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2048 text4 CODE >55:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2050 text4 CODE >55:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2058 text4 CODE >55:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2062 text4 CODE >57:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2066 text4 CODE >58:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2074 text4 CODE >59:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2078 text4 CODE >62:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-207C text4 CODE >63:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2080 text4 CODE >65:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2084 text4 CODE >66:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2088 text4 CODE >68:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-208C text4 CODE >69:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2090 text4 CODE >71:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2094 text4 CODE >72:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2098 text4 CODE >73:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-209C text4 CODE >73:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20A4 text4 CODE >73:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20AC text4 CODE >73:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20B4 text4 CODE >73:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20BE text4 CODE >74:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20C2 text4 CODE >75:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20D0 text4 CODE >76:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20D4 text4 CODE >79:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20D8 text4 CODE >80:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20DC text4 CODE >82:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20E0 text4 CODE >83:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20E4 text4 CODE >85:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20E8 text4 CODE >86:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20EC text4 CODE >88:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20F0 text4 CODE >89:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20F4 text4 CODE >90:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-20F8 text4 CODE >90:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2100 text4 CODE >90:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2108 text4 CODE >90:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2110 text4 CODE >90:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-211A text4 CODE >91:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-211E text4 CODE >92:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-212C text4 CODE >93:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2130 text4 CODE >96:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2134 text4 CODE >97:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2138 text4 CODE >99:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-213C text4 CODE >100:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2140 text4 CODE >102:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2144 text4 CODE >103:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2148 text4 CODE >105:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-214C text4 CODE >106:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2150 text4 CODE >107:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2154 text4 CODE >107:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-215C text4 CODE >107:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2164 text4 CODE >107:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-216C text4 CODE >107:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2176 text4 CODE >108:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2186 text4 CODE >109:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-218C text4 CODE >110:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21AE text4 CODE >111:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21B4 text4 CODE >112:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21B6 text4 CODE >113:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24A6 text3 CODE >154:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24A6 text3 CODE >156:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24AA text3 CODE >157:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24AC text3 CODE >158:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24B0 text3 CODE >160:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24B6 text3 CODE >158:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24D6 text3 CODE >161:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24E4 text3 CODE >162:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24E8 text3 CODE >165:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2438 text2 CODE >115:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2438 text2 CODE >117:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-243C text2 CODE >118:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-243E text2 CODE >119:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2442 text2 CODE >120:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2448 text2 CODE >119:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2458 text2 CODE >121:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2466 text2 CODE >122:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2470 text2 CODE >125:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2472 text2 CODE >126:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2476 text2 CODE >127:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-247C text2 CODE >126:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-248C text2 CODE >128:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-249A text2 CODE >129:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24A4 text2 CODE >133:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23CA text1 CODE >135:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23CA text1 CODE >137:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23CE text1 CODE >138:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23D0 text1 CODE >139:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23D4 text1 CODE >140:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23DA text1 CODE >139:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23EA text1 CODE >141:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-23F8 text1 CODE >142:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2402 text1 CODE >145:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2404 text1 CODE >146:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2408 text1 CODE >147:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-240E text1 CODE >146:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-241E text1 CODE >148:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-242C text1 CODE >149:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2436 text1 CODE >152:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21B8 text0 CODE >195:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21B8 text0 CODE >198:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21BC text0 CODE >199:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21C0 text0 CODE >200:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21C4 text0 CODE >201:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21CA text0 CODE >204:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21CE text0 CODE >205:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21D2 text0 CODE >206:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21D6 text0 CODE >207:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21DA text0 CODE >214:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21DE text0 CODE >215:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21E2 text0 CODE >217:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21E6 text0 CODE >219:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21EA text0 CODE >220:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21EE text0 CODE >222:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-21F2 text0 CODE >223:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2200 text0 CODE >222:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2222 text0 CODE >225:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-223A text0 CODE >226:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2240 text0 CODE >227:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2244 text0 CODE >228:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-2252 text0 CODE >227:E:\github\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
-24EA cinit CODE >1640:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24EA cinit CODE >1642:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24EA cinit CODE >1645:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24EA cinit CODE >1666:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24EC cinit CODE >1667:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24EE cinit CODE >1668:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24F0 cinit CODE >1669:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24F2 cinit CODE >1675:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24F2 cinit CODE >1677:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
-24F4 cinit CODE >1678:C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_1.s
+23E6 text7 CODE >219:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23E8 text7 CODE >221:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23EE text7 CODE >222:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2120 text6 CODE >7:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2120 text6 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2124 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2132 text6 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+213A text6 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+213E text6 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+214C text6 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2154 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2158 text6 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2160 text6 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2172 text6 CODE >24:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2176 text6 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+217A text6 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2180 text6 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2182 text6 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2190 text6 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2196 text6 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+21AC text6 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+21B4 text6 CODE >33:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+21B6 text6 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+21BC text6 CODE >36:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+21C2 text6 CODE >38:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+21D2 text6 CODE >39:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+21DA text6 CODE >40:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+21E2 text6 CODE >41:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+2286 text5 CODE >196:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2286 text5 CODE >198:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2286 text5 CODE >199:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+228A text5 CODE >202:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2290 text5 CODE >203:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2296 text5 CODE >205:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+22A0 text5 CODE >208:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+22AE text5 CODE >211:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+22CA text5 CODE >214:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+22CA text5 CODE >215:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+22DA text5 CODE >215:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+22E8 text5 CODE >215:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+22F0 text5 CODE >215:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+22F8 text5 CODE >215:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2300 text5 CODE >215:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+230A text5 CODE >216:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+230C text5 CODE >217:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2002 text4 CODE >34:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2002 text4 CODE >38:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2004 text4 CODE >39:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2008 text4 CODE >41:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+200C text4 CODE >45:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2012 text4 CODE >50:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2018 text4 CODE >55:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+201E text4 CODE >60:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2024 text4 CODE >64:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2028 text4 CODE >64:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2030 text4 CODE >64:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2038 text4 CODE >64:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2040 text4 CODE >64:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+204A text4 CODE >66:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+204E text4 CODE >68:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2052 text4 CODE >71:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2058 text4 CODE >76:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+205E text4 CODE >81:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2064 text4 CODE >86:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+206A text4 CODE >90:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+206E text4 CODE >90:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2076 text4 CODE >90:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+207E text4 CODE >90:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2086 text4 CODE >90:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2090 text4 CODE >91:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2094 text4 CODE >93:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2098 text4 CODE >96:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+209E text4 CODE >101:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20A4 text4 CODE >106:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20AA text4 CODE >111:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20B0 text4 CODE >115:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20B4 text4 CODE >115:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20BC text4 CODE >115:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20C4 text4 CODE >115:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20CC text4 CODE >115:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20D6 text4 CODE >116:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20DA text4 CODE >118:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20DE text4 CODE >121:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20E4 text4 CODE >126:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20EA text4 CODE >131:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20F0 text4 CODE >136:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20F6 text4 CODE >140:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+20FA text4 CODE >140:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2102 text4 CODE >140:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+210A text4 CODE >140:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2112 text4 CODE >140:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+211C text4 CODE >141:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+211E text4 CODE >143:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23A2 text3 CODE >182:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23A2 text3 CODE >184:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23A6 text3 CODE >185:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23A8 text3 CODE >186:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23AC text3 CODE >188:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23B2 text3 CODE >186:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23D2 text3 CODE >191:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23D6 text3 CODE >194:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2358 text2 CODE >145:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2358 text2 CODE >147:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+235C text2 CODE >148:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+235E text2 CODE >149:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2362 text2 CODE >150:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2368 text2 CODE >149:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2378 text2 CODE >154:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2380 text2 CODE >155:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2382 text2 CODE >156:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2386 text2 CODE >157:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+238C text2 CODE >156:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+239C text2 CODE >160:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23A0 text2 CODE >162:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+230E text1 CODE >164:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+230E text1 CODE >166:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2312 text1 CODE >167:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2314 text1 CODE >168:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2318 text1 CODE >169:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+231E text1 CODE >168:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+232E text1 CODE >173:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2336 text1 CODE >174:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2338 text1 CODE >175:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+233C text1 CODE >176:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2342 text1 CODE >175:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2352 text1 CODE >179:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2356 text1 CODE >181:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+21E4 text0 CODE >224:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+21E4 text0 CODE >227:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+21E8 text0 CODE >228:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+21EC text0 CODE >229:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+21F0 text0 CODE >230:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+21F6 text0 CODE >232:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+21FA text0 CODE >233:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+21FE text0 CODE >234:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2202 text0 CODE >235:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2206 text0 CODE >240:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+220A text0 CODE >241:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+220E text0 CODE >243:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2212 text0 CODE >244:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2216 text0 CODE >246:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+221A text0 CODE >247:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+221E text0 CODE >250:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2220 text0 CODE >251:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2224 text0 CODE >254:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+222A text0 CODE >251:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+223C text0 CODE >257:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2254 text0 CODE >258:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+225A text0 CODE >260:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+225C text0 CODE >261:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2260 text0 CODE >264:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2266 text0 CODE >261:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+2266 text0 CODE >265:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+227A text0 CODE >266:C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\C_Calculator.X\newmain.c
+23D8 cinit CODE >1673:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23D8 cinit CODE >1675:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23D8 cinit CODE >1678:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23D8 cinit CODE >1699:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23DA cinit CODE >1700:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23DC cinit CODE >1701:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23DE cinit CODE >1702:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23E0 cinit CODE >1708:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23E0 cinit CODE >1710:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
+23E2 cinit CODE >1711:C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -302,32 +276,31 @@ $dist/Simulator/debug\C_Calculator.X.debug.o
 ___awdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/Simulator/debug\C_Calculator.X.debug.o
 __Hspace_0 20000 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
-__Hspace_1 1A 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
+__Hspace_1 17 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __Hspace_2 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
-__Hspace_4 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
+__Hspace_4 60000A 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/Simulator/debug\C_Calculator.X.debug.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/Simulator/debug\C_Calculator.X.debug.o
-getKeypress@secondRead 2 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __L__absolute__ 0 0 ABS 0 __absolute__ dist/Simulator/debug\C_Calculator.X.debug.o
 __Lsmallconst 2000 0 SMALLCONST 0 smallconst dist/Simulator/debug\C_Calculator.X.debug.o
 _LATB 3FBB 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 _LATD 3FBD 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
-___sp 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-_main 21B8 0 CODE 0 text0 dist/Simulator/debug\C_Calculator.X.debug.o
-___stack_hi 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-___stack_lo 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-start 1FFFC 0 CODE 0 init C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+___sp 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+_main 21E4 0 CODE 0 text0 dist/Simulator/debug\C_Calculator.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+start 1FFFC 0 CODE 0 init C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Hpowerup 0 0 CODE 0 powerup dist/Simulator/debug\C_Calculator.X.debug.o
 evaluate@input_X 9 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 evaluate@input_Y B 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-__accesstop 60 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-intlevel0 0 0 CODE 0 text C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-intlevel1 0 0 CODE 0 text C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-intlevel2 0 0 CODE 0 text C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-intlevel3 0 0 CODE 0 text C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+__accesstop 60 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Hifardata 0 0 CODE 0 ifardata dist/Simulator/debug\C_Calculator.X.debug.o
@@ -336,27 +309,26 @@ __Hclrtext 0 0 ABS 0 clrtext dist/Simulator/debug\C_Calculator.X.debug.o
 _ANSELB 3A50 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 _ANSELD 3A70 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 ___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 evaluate@Operation D 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-_display 24F8 0 CODE 0 text7 dist/Simulator/debug\C_Calculator.X.debug.o
+_display 23E6 0 CODE 0 text7 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/Simulator/debug\C_Calculator.X.debug.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/Simulator/debug\C_Calculator.X.debug.o
 ___awdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-__end_of___awdiv 2340 0 CODE 0 text6 dist/Simulator/debug\C_Calculator.X.debug.o
+__end_of___awdiv 21E4 0 CODE 0 text6 dist/Simulator/debug\C_Calculator.X.debug.o
 _getKeypress 2002 0 CODE 0 text4 dist/Simulator/debug\C_Calculator.X.debug.o
 __HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-__end_of_getInputX 24A6 0 CODE 0 text2 dist/Simulator/debug\C_Calculator.X.debug.o
-__end_of_getInputY 2438 0 CODE 0 text1 dist/Simulator/debug\C_Calculator.X.debug.o
-start_initialization 24EA 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
-___AbsoluteFunctionAt0xF F 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
+__end_of_getInputX 23A2 0 CODE 0 text2 dist/Simulator/debug\C_Calculator.X.debug.o
+__end_of_getInputY 2358 0 CODE 0 text1 dist/Simulator/debug\C_Calculator.X.debug.o
+start_initialization 23D8 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/Simulator/debug\C_Calculator.X.debug.o
 ___rparam_used 1 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
-_Result 15 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-_getInputX 2438 0 CODE 0 text2 dist/Simulator/debug\C_Calculator.X.debug.o
-_getInputY 23CA 0 CODE 0 text1 dist/Simulator/debug\C_Calculator.X.debug.o
-__end_of_getInputOperation 24EA 0 CODE 0 text3 dist/Simulator/debug\C_Calculator.X.debug.o
-isa$xinst 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+_Result 12 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
+_getInputX 2358 0 CODE 0 text2 dist/Simulator/debug\C_Calculator.X.debug.o
+_getInputY 230E 0 CODE 0 text1 dist/Simulator/debug\C_Calculator.X.debug.o
+__end_of_getInputOperation 23D8 0 CODE 0 text3 dist/Simulator/debug\C_Calculator.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __Hbank0 0 0 ABS 0 bank0 dist/Simulator/debug\C_Calculator.X.debug.o
 __Hbank1 0 0 ABS 0 bank1 dist/Simulator/debug\C_Calculator.X.debug.o
 __Hbank2 0 0 ABS 0 bank2 dist/Simulator/debug\C_Calculator.X.debug.o
@@ -370,7 +342,7 @@ __Hbank9 0 0 ABS 0 bank9 dist/Simulator/debug\C_Calculator.X.debug.o
 __Hcinit 0 0 ABS 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
 __Hconst 0 0 CONST 0 const dist/Simulator/debug\C_Calculator.X.debug.o
 __Hidata 0 0 CODE 0 idata dist/Simulator/debug\C_Calculator.X.debug.o
-__Hidloc 0 0 ABS 0 idloc dist/Simulator/debug\C_Calculator.X.debug.o
+__Hidloc 200010 0 IDLOC 5 idloc dist/Simulator/debug\C_Calculator.X.debug.o
 __Hnvbit 0 0 COMRAM 1 nvbit dist/Simulator/debug\C_Calculator.X.debug.o
 __Hparam 0 0 COMRAM 1 rparam dist/Simulator/debug\C_Calculator.X.debug.o
 __Hrdata 0 0 COMRAM 1 rdata dist/Simulator/debug\C_Calculator.X.debug.o
@@ -408,9 +380,9 @@ __Hbank31 0 0 ABS 0 bank31 dist/Simulator/debug\C_Calculator.X.debug.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/Simulator/debug\C_Calculator.X.debug.o
 __Hbigram 0 0 ABS 0 bigram dist/Simulator/debug\C_Calculator.X.debug.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/Simulator/debug\C_Calculator.X.debug.o
-__smallconst 2000 0 SMALLCONST 0 smallconst C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+__smallconst 2000 0 SMALLCONST 0 smallconst C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __Hcomram 0 0 ABS 0 comram dist/Simulator/debug\C_Calculator.X.debug.o
-__Hconfig 0 0 ABS 0 config dist/Simulator/debug\C_Calculator.X.debug.o
+__Hconfig 30000A 0 CONFIG 4 config dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbank0 0 0 ABS 0 bank0 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbank1 0 0 ABS 0 bank1 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbank2 0 0 ABS 0 bank2 dist/Simulator/debug\C_Calculator.X.debug.o
@@ -424,7 +396,7 @@ __Lbank9 0 0 ABS 0 bank9 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lcinit 0 0 ABS 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
 __Lconst 0 0 CONST 0 const dist/Simulator/debug\C_Calculator.X.debug.o
 __Lidata 0 0 CODE 0 idata dist/Simulator/debug\C_Calculator.X.debug.o
-__Lidloc 0 0 ABS 0 idloc dist/Simulator/debug\C_Calculator.X.debug.o
+__Lidloc 0 0 IDLOC 5 idloc dist/Simulator/debug\C_Calculator.X.debug.o
 __Lnvbit 0 0 COMRAM 1 nvbit dist/Simulator/debug\C_Calculator.X.debug.o
 __Lparam 0 0 COMRAM 1 rparam dist/Simulator/debug\C_Calculator.X.debug.o
 __Lrdata 0 0 COMRAM 1 rdata dist/Simulator/debug\C_Calculator.X.debug.o
@@ -438,7 +410,7 @@ __Ltext5 0 0 ABS 0 text5 dist/Simulator/debug\C_Calculator.X.debug.o
 __Ltext6 0 0 ABS 0 text6 dist/Simulator/debug\C_Calculator.X.debug.o
 __Ltext7 0 0 ABS 0 text7 dist/Simulator/debug\C_Calculator.X.debug.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/Simulator/debug\C_Calculator.X.debug.o
-_Operation 16 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
+_Operation 13 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Habs1 0 0 ABS 0 abs1 dist/Simulator/debug\C_Calculator.X.debug.o
 __Hdata 0 0 ABS 0 data dist/Simulator/debug\C_Calculator.X.debug.o
 __Hheap 0 0 HEAP 7 heap dist/Simulator/debug\C_Calculator.X.debug.o
@@ -458,20 +430,20 @@ __Ltext 0 0 ABS 0 text dist/Simulator/debug\C_Calculator.X.debug.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Hirdata 0 0 CODE 0 irdata dist/Simulator/debug\C_Calculator.X.debug.o
 __S0 20000 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
-__S1 1A 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
+__S1 17 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __S4 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __S5 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
-_key 19 0 COMRAM 1 nvCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-__pnvCOMRAM 19 0 COMRAM 1 nvCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
+_key 16 0 COMRAM 1 nvCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
+__pnvCOMRAM 16 0 COMRAM 1 nvCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/Simulator/debug\C_Calculator.X.debug.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/Simulator/debug\C_Calculator.X.debug.o
-_getInputOperation 24A6 0 CODE 0 text3 dist/Simulator/debug\C_Calculator.X.debug.o
+_getInputOperation 23A2 0 CODE 0 text3 dist/Simulator/debug\C_Calculator.X.debug.o
 __Hramtop 2000 0 RAM 0 ramtop dist/Simulator/debug\C_Calculator.X.debug.o
 __Hrparam 0 0 COMRAM 1 rparam dist/Simulator/debug\C_Calculator.X.debug.o
 __activetblptr 3 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __Hstruct 0 0 COMRAM 1 struct dist/Simulator/debug\C_Calculator.X.debug.o
 display@Result 1 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-___awdiv 227C 0 CODE 0 text6 dist/Simulator/debug\C_Calculator.X.debug.o
+___awdiv 2120 0 CODE 0 text6 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbank10 0 0 ABS 0 bank10 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbank11 0 0 ABS 0 bank11 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbank12 0 0 ABS 0 bank12 dist/Simulator/debug\C_Calculator.X.debug.o
@@ -498,62 +470,62 @@ __Lbigbss 0 0 BIGRAM 1 bigbss dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbigram 0 0 ABS 0 bigram dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbigsfr 0 0 ABS 0 bigsfr dist/Simulator/debug\C_Calculator.X.debug.o
 __Lcomram 0 0 ABS 0 comram dist/Simulator/debug\C_Calculator.X.debug.o
-__Lconfig 0 0 ABS 0 config dist/Simulator/debug\C_Calculator.X.debug.o
+__Lconfig 0 0 CONFIG 4 config dist/Simulator/debug\C_Calculator.X.debug.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/Simulator/debug\C_Calculator.X.debug.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __Lfardata 0 0 FARRAM 0 fardata dist/Simulator/debug\C_Calculator.X.debug.o
-isa$std 1 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-__end_of_getKeypress 21B8 0 CODE 0 text4 dist/Simulator/debug\C_Calculator.X.debug.o
-stackhi 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-stacklo 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+isa$std 1 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+__end_of_getKeypress 2120 0 CODE 0 text4 dist/Simulator/debug\C_Calculator.X.debug.o
+stackhi 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __Lirdata 0 0 CODE 0 irdata dist/Simulator/debug\C_Calculator.X.debug.o
 __Lspace_0 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __Lspace_1 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __Lspace_2 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __Lspace_4 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
-__pbssCOMRAM 15 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
+__pbssCOMRAM 12 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-end_of_initialization 24F2 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
+end_of_initialization 23E0 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/Simulator/debug\C_Calculator.X.debug.o
 ___awdiv@quotient 7 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 ?___awdiv 1 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/Simulator/debug\C_Calculator.X.debug.o
-_input_X 18 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-_input_Y 17 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
+_input_X 15 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
+_input_Y 14 0 COMRAM 1 bssCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Lramtop 2000 0 RAM 0 ramtop dist/Simulator/debug\C_Calculator.X.debug.o
 __Lrparam 0 0 COMRAM 1 rparam dist/Simulator/debug\C_Calculator.X.debug.o
-__pcinit 24EA 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
-__ptext0 21B8 0 CODE 0 text0 dist/Simulator/debug\C_Calculator.X.debug.o
-__ptext1 23CA 0 CODE 0 text1 dist/Simulator/debug\C_Calculator.X.debug.o
-__ptext2 2438 0 CODE 0 text2 dist/Simulator/debug\C_Calculator.X.debug.o
-__ptext3 24A6 0 CODE 0 text3 dist/Simulator/debug\C_Calculator.X.debug.o
+__pcinit 23D8 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
+__ptext0 21E4 0 CODE 0 text0 dist/Simulator/debug\C_Calculator.X.debug.o
+__ptext1 230E 0 CODE 0 text1 dist/Simulator/debug\C_Calculator.X.debug.o
+__ptext2 2358 0 CODE 0 text2 dist/Simulator/debug\C_Calculator.X.debug.o
+__ptext3 23A2 0 CODE 0 text3 dist/Simulator/debug\C_Calculator.X.debug.o
 __ptext4 2002 0 CODE 0 text4 dist/Simulator/debug\C_Calculator.X.debug.o
-__ptext5 2340 0 CODE 0 text5 dist/Simulator/debug\C_Calculator.X.debug.o
-__ptext6 227C 0 CODE 0 text6 dist/Simulator/debug\C_Calculator.X.debug.o
-__ptext7 24F8 0 CODE 0 text7 dist/Simulator/debug\C_Calculator.X.debug.o
+__ptext5 2286 0 CODE 0 text5 dist/Simulator/debug\C_Calculator.X.debug.o
+__ptext6 2120 0 CODE 0 text6 dist/Simulator/debug\C_Calculator.X.debug.o
+__ptext7 23E6 0 CODE 0 text7 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lstruct 0 0 COMRAM 1 struct dist/Simulator/debug\C_Calculator.X.debug.o
-_evaluate 2340 0 CODE 0 text5 dist/Simulator/debug\C_Calculator.X.debug.o
-__ramtop 2000 0 RAM 0 ramtop C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+_evaluate 2286 0 CODE 0 text5 dist/Simulator/debug\C_Calculator.X.debug.o
+__ramtop 2000 0 RAM 0 ramtop C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __Lpowerup 0 0 CODE 0 powerup dist/Simulator/debug\C_Calculator.X.debug.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/Simulator/debug\C_Calculator.X.debug.o
 __H__absolute__ 0 0 ABS 0 __absolute__ dist/Simulator/debug\C_Calculator.X.debug.o
-__end_of_evaluate 23CA 0 CODE 0 text5 dist/Simulator/debug\C_Calculator.X.debug.o
+__end_of_evaluate 230E 0 CODE 0 text5 dist/Simulator/debug\C_Calculator.X.debug.o
 __psmallconst 2000 0 SMALLCONST 0 smallconst dist/Simulator/debug\C_Calculator.X.debug.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/Simulator/debug\C_Calculator.X.debug.o
-___heap_hi 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+___heap_hi 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 ___param_bank 0 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAsf6o.\driver_tmp_9.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\Josh\AppData\Local\Temp\xcAs87o.\driver_tmp_9.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/Simulator/debug\C_Calculator.X.debug.o
-__end_of__initialization 24F2 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
+__end_of__initialization 23E0 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
 evaluate@result 11 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
 __Libigdata 0 0 CODE 0 ibigdata dist/Simulator/debug\C_Calculator.X.debug.o
-__end_of_display 2502 0 CODE 0 text7 dist/Simulator/debug\C_Calculator.X.debug.o
+__end_of_display 23F0 0 CODE 0 text7 dist/Simulator/debug\C_Calculator.X.debug.o
 __Lclrtext 0 0 ABS 0 clrtext dist/Simulator/debug\C_Calculator.X.debug.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/Simulator/debug\C_Calculator.X.debug.o
-__end_of_main 227C 0 CODE 0 text0 dist/Simulator/debug\C_Calculator.X.debug.o
+__end_of_main 2286 0 CODE 0 text0 dist/Simulator/debug\C_Calculator.X.debug.o
 _PORTB 3FCB 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 _PORTD 3FCD 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 _TRISB 3FC3 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
@@ -566,7 +538,7 @@ __LRAM 1 0 ABS 0 - dist/Simulator/debug\C_Calculator.X.debug.o
 __Lbss 0 0 RAM 1 bss dist/Simulator/debug\C_Calculator.X.debug.o
 __Lram 0 0 ABS 0 ram dist/Simulator/debug\C_Calculator.X.debug.o
 __Lsfr 0 0 ABS 0 sfr dist/Simulator/debug\C_Calculator.X.debug.o
-__initialization 24EA 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
+__initialization 23D8 0 CODE 0 cinit dist/Simulator/debug\C_Calculator.X.debug.o
 __Hfardata 0 0 FARRAM 0 fardata dist/Simulator/debug\C_Calculator.X.debug.o
 __Hsmallconst 2002 0 SMALLCONST 0 smallconst dist/Simulator/debug\C_Calculator.X.debug.o
 __Lifardata 0 0 CODE 0 ifardata dist/Simulator/debug\C_Calculator.X.debug.o
@@ -595,8 +567,8 @@ __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/Simulator/debug\C_Calculator.X.de
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text4 0 2002 2002 500 1
-cstackCOMRAM 1 1 1 19 1
+text4 0 2002 2002 3EE 1
+cstackCOMRAM 1 1 1 16 1
 init 0 1FFFC 1FFFC 4 1
 reset_vec 0 0 0 4 1
 smallconst 0 2000 2000 2 1
