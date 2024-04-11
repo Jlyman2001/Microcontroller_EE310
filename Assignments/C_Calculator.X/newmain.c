@@ -7,14 +7,13 @@
 ; 
 ; Inputs: port B is used as the input keypad, though 4 of the pins are set as 
   outputs to enable the multiplexing
-; Outputs: Port D is used as the output signals for the 7 segment display
-  Port C pins 2 and 3 are used to select which digit on the seven segment is lit
+; Outputs: Port D is used as the output signals, attached to 8 LEDs with current limiting resistors
 ; Date: 04/06/2024
 ; File Dependencies / Libraries: None
 ; Compiler: xc8, 2.46
 ; Author: Josh Lyman
 ; Versions: 
-; 
+; 2.0   File Finished
 ; 1.0	File Created
 ; 
 ; Useful links:
@@ -24,111 +23,141 @@
 */
 
 #include <xc.h>
+#include "./xc8header.h"
 #include <stdlib.h>     //unneeded?
 #include <stdio.h>      //unneeded?
 
-#define _XTAL_FREQ 4000000  //4 MHz clock, for __delay() function
+#define _XTAL_FREQ 4000000  //4 MHz clock, for //__delay() function
+#define FCY _XTAL_FREQ/4
 unsigned char input_X,input_Y,Operation,Result,key;
 
-unsigned char getKeypress()
+unsigned char getKeypress(void)
 {
 //polls keypad input and returns value of key pressed.
 //Asterisk is 0x0E, pound sign is 0x0F
     key = 0xFF;
     PORTB = 0x01;
-    __delay_ms(10);
-    unsigned char firstRead = PORTB;
+    
     switch (PORTB)
     {
-            case 0x11:
-                key = 0x0D;
-                break;
-            case 0x21:
-                key = 0x0C;
-                break;
-            case 0x41:  
-                key = 0x0B;
-                break;
-            case 0x81:  
-                key = 0x0A;
-                break;
+        case 0x11:
+            {
+                return 0x0D;
+                //__delay_ms(10);
+            }
+                
+            case 0x21:{
+                return 0x0C;
+                //__delay_ms(10);
+            }
+                
+            case 0x41:{  
+                return 0x0B;
+                //__delay_ms(10);
+            }
+                
+            case 0x81:{  
+                return 0x0A;
+                //__delay_ms(10);
+            }
+                
     }
     
     PORTB = 0x02;
-    __delay_ms(10);
+    //__delay_ms(10);
     switch (PORTB)
     {
-            case 0x12:
-                key = 0x0F;
-                break;
-            case 0x22:
-                key = 9;
-                break;
-            case 0x42:  
-                key = 6;
-                break;
-            case 0x82:  
-                key = 3;
-                break;
+            case 0x12:{
+                return 0x0F;
+                //__delay_ms(10);
+            }
+                
+            case 0x22:{
+                return 9;
+                //__delay_ms(10);
+            }
+                
+            case 0x42:{  
+                return 6;
+                //__delay_ms(10);
+            }
+                
+            case 0x82:{  
+                return 3;
+                //__delay_ms(10);
+            }
+                
     }
     PORTB = 0x04;
-    __delay_ms(10);
+    //__delay_ms(10);
     switch (PORTB)
     {
-            case 0x14:
-                key = 0;
-                break;
-            case 0x24:
-                key = 8;
-                break;
-            case 0x44:  
-                key = 5;
-                break;
-            case 0x84:  
-                key = 2;
-                break;
+            case 0x14:{
+                return 0;
+                //__delay_ms(10);
+            }
+                
+            case 0x24:{
+                return 8;
+                //__delay_ms(10);
+            }
+                
+            case 0x44:{  
+                return 5;
+                //__delay_ms(10);
+            }
+                
+            case 0x84:{  
+                return 2;
+                //__delay_ms(10);
+            }
+                
     }
     PORTB = 0x08;
-    __delay_ms(10);
+    //__delay_ms(10);
     switch (PORTB)
     {
-            case 0x18:
-                key = 0x0E;
-                break;
-            case 0x28:
-                key = 7;
-                break;
-            case 0x48:  
-                key = 4;
-                break;
-            case 0x88:  
-                key = 1;
-                break;
+            case 0x18:{
+                return 0x0E;
+                //__delay_ms(10);
+            }
+                
+            case 0x28:{
+                return 7;
+                //__delay_ms(10);
+            }
+                
+            case 0x48:{  
+                return 4;
+                //__delay_ms(10);
+            }
+                
+            case 0x88:{  
+                return 1;
+                //__delay_ms(10);
+            }
+                
     }
-    __delay_ms(50);
-    unsigned char secondRead = PORTB;
-    if (secondRead != 0xFF && secondRead == PORTB)
-        return key;
     return 0xFF;
+    //__delay_ms(50);
 }
 
 void getInputX()
 {
     input_X = 0;
     key = 0xFF;
-    while (key >= 0x0A)         //0x0A is the first value too large fir it to  be a digit 
-        key = getKeypress();    //Loop checking input until the value is a digit
-        __delay_ms(10);
-    input_X = (input_X << 4) + key;     //shifts X left 4 and puts new value in lower nibble
-    //Value is now 0x0n for n being a digit on the keypad
-    
-    key = 0xFF;
-    while (key >= 0x0A)
+    while (key >= 0x0A){
         key = getKeypress();
-        __delay_ms(10);
-    input_X = (input_X << 4) + key;     //shifts X left 4 and puts new value in lower nibble
-    //Value is now 0xnm for n being the first digit and m the second
-    //This is in packed BCD
+        //__delay_ms(10);
+    }
+    //__delay_ms(300);
+    input_X += 10*key;
+    key = 0xFF;
+    while (key >= 0x0A){
+        key = getKeypress();
+        //__delay_ms(10);
+    }
+    input_X += key;
     
 }
 
@@ -136,30 +165,30 @@ void getInputY()
 {
     input_Y = 0;
     key = 0xFF;
-    while (key >= 0x0A)
+    while (key >= 0x0A){
         key = getKeypress();
-        __delay_ms(10);
-    input_Y = (input_Y << 4) + key;     //shifts Y left 4 and puts new value in lower nibble
-    //Value is now 0x0n for n being a digit on the keypad
-    
+        //__delay_ms(10);
+    }
+    //__delay_ms(300);
+    input_Y += 10*key;
     key = 0xFF;
-    while (key >= 0x0A)
+    while (key >= 0x0A){
         key = getKeypress();
-        __delay_ms(10);
-    input_Y = (input_Y << 4) + key;     //shifts Y left 4 and puts new value in lower nibble
-    //Value is now 0xnm for n being the first digit and m the second
+        //__delay_ms(10);
+    }
+    input_Y += key;
     
 }
-
 void getInputOperation()
 {
     Operation = 0;
     key = 0xFF;
-    while ((key > 0x0D) || (key < 0x0A))    //don't accept values for key lower than 0x0A (digit) or 
-                                            //higher than 0x0D (asterisk, pound sign, or no input)
-        key = getKeypress();
-        __delay_ms(10);
-    Operation = key;
+    while (key > 0x0F || key < 0x0A)         //0x0A is the first value too large fir it to  be a digit 
+    {
+        key = getKeypress();    //Loop checking input until the value is a digit
+        //__delay_ms(10);
+    }
+        Operation = key;
 
     
 }
@@ -171,16 +200,16 @@ unsigned char evaluate(input_X,input_Y,Operation)
     {
             case 0x0A:
                 result = input_X + input_Y;
-                break;
+                return result;
             case 0x0B:
                 result = input_X - input_Y;
-                break;
+                return result;
             case 0x0C:
                 result = input_X * input_Y;
-                break;
+                return result;
             case 0x0D:
                 result = input_X / input_Y;
-                break;
+                return result;
             default:
                 result = 0;
     }
@@ -199,7 +228,6 @@ void main(void) {
     LATB = 0;
     PORTB = 0;
     ANSELB = 0;
-    
     //using port D as output to 7 seg
     TRISD = 0;   //all 8 pins outputs
     LATD = 0;
@@ -209,25 +237,33 @@ void main(void) {
     //loop
     while (1)
     {
-       
-        
         getInputX();
         PORTD = 0x01;
-        
+        //__delay_ms(500);
         getInputOperation();
-        
+        PORTD = 0x03;
+        //__delay_ms(500);
         getInputY();
         PORTD = 0x02;
+        //__delay_ms(500);
         
-        while(getKeypress != 0x0F)
-        {__delay_ms(100);}//wait for pound sign
+        key = 0xFF;
+        while(key != 0x0F)
+        {
+            //__delay_ms(10);
+            key = getKeypress();
+        }//wait for pound sign
         
         Result = evaluate(input_X,input_Y,Operation);
         display(Result);
-        while(getKeypress != 0x0F)
-        {__delay_ms(100);}//wait for pound sign
-        
+        //__delay_ms(10);
+        key = 0xFF;
+        while(getKeypress() != 0x0E)
+        {
+            //__delay_ms(10);
+            key = getKeypress();
+        }//wait for asterisk
+        PORTD = 0x80;
     }
     return;
-    
 }
