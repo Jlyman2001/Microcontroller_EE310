@@ -1,33 +1,169 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"46818 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46818: extern volatile unsigned char PORTB __attribute__((address(0x3FCB)));
-[v _PORTB `Vuc ~T0 @X0 0 e@16331 ]
-[v F205 `(v ~T0 @X0 1 tf1`ul ]
-"20 C:\Program Files\Microchip\xc8\v2.46\pic\include\builtins.h
-[v __delay `JF205 ~T0 @X0 0 e ]
-[p i __delay ]
-"46942 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46942: extern volatile unsigned char PORTD __attribute__((address(0x3FCD)));
-[v _PORTD `Vuc ~T0 @X0 0 e@16333 ]
 [p mainexit ]
-"46538
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46538: extern volatile unsigned char TRISB __attribute__((address(0x3FC3)));
-[v _TRISB `Vuc ~T0 @X0 0 e@16323 ]
-"46088
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46088: extern volatile unsigned char LATB __attribute__((address(0x3FBB)));
-[v _LATB `Vuc ~T0 @X0 0 e@16315 ]
-"8513
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8513: extern volatile unsigned char ANSELB __attribute__((address(0x3A50)));
-[v _ANSELB `Vuc ~T0 @X0 0 e@14928 ]
-"46662
+"46662 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46662: extern volatile unsigned char TRISD __attribute__((address(0x3FC5)));
 [v _TRISD `Vuc ~T0 @X0 0 e@16325 ]
-"46312
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46312: extern volatile unsigned char LATD __attribute__((address(0x3FBD)));
-[v _LATD `Vuc ~T0 @X0 0 e@16317 ]
 "9937
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 9937: extern volatile unsigned char ANSELD __attribute__((address(0x3A70)));
 [v _ANSELD `Vuc ~T0 @X0 0 e@14960 ]
+"46312
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46312: extern volatile unsigned char LATD __attribute__((address(0x3FBD)));
+[v _LATD `Vuc ~T0 @X0 0 e@16317 ]
+"46942
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46942: extern volatile unsigned char PORTD __attribute__((address(0x3FCD)));
+[v _PORTD `Vuc ~T0 @X0 0 e@16333 ]
+"46476
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46476: extern volatile unsigned char TRISA __attribute__((address(0x3FC2)));
+[v _TRISA `Vuc ~T0 @X0 0 e@16322 ]
+"8017
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8017: extern volatile unsigned char ANSELA __attribute__((address(0x3A40)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@14912 ]
+"45976
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 45976: extern volatile unsigned char LATA __attribute__((address(0x3FBA)));
+[v _LATA `Vuc ~T0 @X0 0 e@16314 ]
+"46756
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46756: extern volatile unsigned char PORTA __attribute__((address(0x3FCA)));
+[v _PORTA `Vuc ~T0 @X0 0 e@16330 ]
+"80 main.c
+[; ;main.c: 80: void ADC_Init();
+[v _ADC_Init `(v ~T0 @X0 0 e? ]
+"31146 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31146:     struct {
+[s S1384 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1384 . GO . FM CS . CONT ON ]
+"31155
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31155:     struct {
+[s S1385 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1385 . ADGO . ADFM ADCS . ADCONT ADON ]
+"31164
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31164:     struct {
+[s S1386 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1386 . DONE . FM0 ]
+"31169
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31169:     struct {
+[s S1387 :1 `uc 1 ]
+[n S1387 . GO_NOT_DONE ]
+"31172
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31172:     struct {
+[s S1388 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1388 . GO_nDONE . ADFM0 ]
+"31145
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31145: typedef union {
+[u S1383 `S1384 1 `S1385 1 `S1386 1 `S1387 1 `S1388 1 ]
+[n S1383 . . . . . . ]
+"31178
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31178: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x3EF8)));
+[v _ADCON0bits `VS1383 ~T0 @X0 0 e@16120 ]
+"30370
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 30370: extern volatile unsigned char ADRESH __attribute__((address(0x3EF0)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@16112 ]
+"30242
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 30242: extern volatile unsigned char ADRESL __attribute__((address(0x3EEF)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@16111 ]
+"46482
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46482:     struct {
+[s S2118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2118 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
+"46481
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46481: typedef union {
+[u S2117 `S2118 1 ]
+[n S2117 . . ]
+"46493
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46493: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x3FC2)));
+[v _TRISAbits `VS2117 ~T0 @X0 0 e@16322 ]
+"8023
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8023:     struct {
+[s S360 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S360 . ANSELA0 ANSELA1 ANSELA2 ANSELA3 ANSELA4 ANSELA5 ANSELA6 ANSELA7 ]
+"8022
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8022: typedef union {
+[u S359 `S360 1 ]
+[n S359 . . ]
+"8034
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8034: extern volatile ANSELAbits_t ANSELAbits __attribute__((address(0x3A40)));
+[v _ANSELAbits `VS359 ~T0 @X0 0 e@14912 ]
+"30490
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 30490: extern volatile unsigned char ADPCH __attribute__((address(0x3EF1)));
+[v _ADPCH `Vuc ~T0 @X0 0 e@16113 ]
+"31931
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31931: extern volatile unsigned char ADCLK __attribute__((address(0x3EFF)));
+[v _ADCLK `Vuc ~T0 @X0 0 e@16127 ]
+"30920
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 30920: extern volatile unsigned char ADPREL __attribute__((address(0x3EF6)));
+[v _ADPREL `Vuc ~T0 @X0 0 e@16118 ]
+"31048
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 31048: extern volatile unsigned char ADPREH __attribute__((address(0x3EF7)));
+[v _ADPREH `Vuc ~T0 @X0 0 e@16119 ]
+"30601
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 30601: extern volatile unsigned char ADACQL __attribute__((address(0x3EF3)));
+[v _ADACQL `Vuc ~T0 @X0 0 e@16115 ]
+"30729
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 30729: extern volatile unsigned char ADACQH __attribute__((address(0x3EF4)));
+[v _ADACQH `Vuc ~T0 @X0 0 e@16116 ]
+"15 main.c
+[p x FEXTOSC  =  LP      ]
+"16
+[p x RSTOSC  =  EXTOSC   ]
+"19
+[p x CLKOUTEN  =  OFF    ]
+"20
+[p x PR1WAY  =  ON       ]
+"21
+[p x CSWEN  =  ON        ]
+"22
+[p x FCMEN  =  ON        ]
+"25
+[p x MCLRE  =  EXTMCLR   ]
+"26
+[p x PWRTS  =  PWRT_OFF  ]
+"27
+[p x MVECEN  =  ON       ]
+"28
+[p x IVT1WAY  =  ON      ]
+"29
+[p x LPBOREN  =  OFF     ]
+"30
+[p x BOREN  =  SBORDIS   ]
+"33
+[p x BORV  =  VBOR_2P45  ]
+"34
+[p x ZCD  =  OFF         ]
+"35
+[p x PPS1WAY  =  ON      ]
+"36
+[p x STVREN  =  ON       ]
+"37
+[p x DEBUG  =  OFF       ]
+"38
+[p x XINST  =  OFF       ]
+"41
+[p x WDTCPS  =  WDTCPS_31 ]
+"42
+[p x WDTE  =  OFF        ]
+"45
+[p x WDTCWS  =  WDTCWS_7 ]
+"46
+[p x WDTCCS  =  SC       ]
+"49
+[p x BBSIZE  =  BBSIZE_512 ]
+"50
+[p x BBEN  =  OFF        ]
+"51
+[p x SAFEN  =  OFF       ]
+"52
+[p x WRTAPP  =  OFF      ]
+"55
+[p x WRTB  =  OFF        ]
+"56
+[p x WRTC  =  OFF        ]
+"57
+[p x WRTD  =  OFF        ]
+"58
+[p x WRTSAF  =  OFF      ]
+"59
+[p x LVP  =  ON          ]
+"62
+[p x CP  =  OFF          ]
 "250 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 250: __asm("STATUS_CSHAD equ 03880h");
 [; <" STATUS_CSHAD equ 03880h ;# ">
@@ -2254,777 +2390,133 @@ Version 4.0 HI-TECH Software Intermediate Code
 "48482
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 48482: __asm("TOSU equ 03FFFh");
 [; <" TOSU equ 03FFFh ;# ">
-"14 ././xc8header.h
-[p x FEXTOSC  =  LP      ]
-"15
-[p x RSTOSC  =  EXTOSC   ]
-"18
-[p x CLKOUTEN  =  OFF    ]
-"19
-[p x PR1WAY  =  ON       ]
-"20
-[p x CSWEN  =  ON        ]
-"21
-[p x FCMEN  =  ON        ]
-"24
-[p x MCLRE  =  EXTMCLR   ]
-"25
-[p x PWRTS  =  PWRT_OFF  ]
-"26
-[p x MVECEN  =  ON       ]
-"27
-[p x IVT1WAY  =  ON      ]
-"28
-[p x LPBOREN  =  OFF     ]
-"29
-[p x BOREN  =  SBORDIS   ]
-"32
-[p x BORV  =  VBOR_2P45  ]
-"33
-[p x ZCD  =  OFF         ]
-"34
-[p x PPS1WAY  =  ON      ]
-"35
-[p x STVREN  =  ON       ]
-"36
-[p x DEBUG  =  OFF       ]
-"37
-[p x XINST  =  OFF       ]
-"40
-[p x WDTCPS  =  WDTCPS_31 ]
-"41
-[p x WDTE  =  OFF        ]
-"44
-[p x WDTCWS  =  WDTCWS_7 ]
-"45
-[p x WDTCCS  =  SC       ]
-"48
-[p x BBSIZE  =  BBSIZE_512 ]
-"49
-[p x BBEN  =  OFF        ]
-"50
-[p x SAFEN  =  OFF       ]
-"51
-[p x WRTAPP  =  OFF      ]
-"54
-[p x WRTB  =  OFF        ]
-"55
-[p x WRTC  =  OFF        ]
-"56
-[p x WRTD  =  OFF        ]
-"57
-[p x WRTSAF  =  OFF      ]
-"58
-[p x LVP  =  ON          ]
-"61
-[p x CP  =  OFF          ]
-"32 newmain.c
-[; ;newmain.c: 32: signed char input_X,input_Y,Operation,Result,key;
-[v _input_X `c ~T0 @X0 1 e ]
-[v _input_Y `c ~T0 @X0 1 e ]
-[v _Operation `c ~T0 @X0 1 e ]
-[v _Result `c ~T0 @X0 1 e ]
-[v _key `c ~T0 @X0 1 e ]
-"34
-[; ;newmain.c: 34: signed char getKeypress(void)
-[v _getKeypress `(c ~T0 @X0 1 ef ]
-"35
-[; ;newmain.c: 35: {
-{
-[e :U _getKeypress ]
-[f ]
-"38
-[; ;newmain.c: 38:     key = 0xFF;
-[e = _key -> -> 255 `i `c ]
-"39
-[; ;newmain.c: 39:     PORTB = 0x01;
-[e = _PORTB -> -> 1 `i `uc ]
-"43
-[; ;newmain.c: 43:             if (PORTB == 0x11)
-[e $ ! == -> _PORTB `i -> 17 `i 2247  ]
-"44
-[; ;newmain.c: 44:             {
-{
-"45
-[; ;newmain.c: 45:                 key = 0x0D;
-[e = _key -> -> 13 `i `c ]
-"46
-[; ;newmain.c: 46:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"47
-[; ;newmain.c: 47:             }
-}
-[e :U 2247 ]
-"49
-[; ;newmain.c: 49:             if (PORTB == 0x21){
-[e $ ! == -> _PORTB `i -> 33 `i 2248  ]
-{
-"50
-[; ;newmain.c: 50:                 key = 0x0C;
-[e = _key -> -> 12 `i `c ]
-"51
-[; ;newmain.c: 51:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"52
-[; ;newmain.c: 52:             }
-}
-[e :U 2248 ]
-"54
-[; ;newmain.c: 54:             if (PORTB == 0x41){
-[e $ ! == -> _PORTB `i -> 65 `i 2249  ]
-{
-"55
-[; ;newmain.c: 55:                 key = 0x0B;
-[e = _key -> -> 11 `i `c ]
-"56
-[; ;newmain.c: 56:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"57
-[; ;newmain.c: 57:             }
-}
-[e :U 2249 ]
-"59
-[; ;newmain.c: 59:             if (PORTB == 0x81){
-[e $ ! == -> _PORTB `i -> 129 `i 2250  ]
-{
-"60
-[; ;newmain.c: 60:                 key = 0x0A;
-[e = _key -> -> 10 `i `c ]
-"61
-[; ;newmain.c: 61:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"62
-[; ;newmain.c: 62:             }
-}
-[e :U 2250 ]
-"66
-[; ;newmain.c: 66:     PORTB = 0x02;
-[e = _PORTB -> -> 2 `i `uc ]
-"67
-[; ;newmain.c: 67:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"70
-[; ;newmain.c: 70:             if (PORTB == 0x12){
-[e $ ! == -> _PORTB `i -> 18 `i 2251  ]
-{
-"71
-[; ;newmain.c: 71:                 key = 0x0F;
-[e = _key -> -> 15 `i `c ]
-"72
-[; ;newmain.c: 72:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"73
-[; ;newmain.c: 73:             }
-}
-[e :U 2251 ]
-"75
-[; ;newmain.c: 75:             if (PORTB == 0x22){
-[e $ ! == -> _PORTB `i -> 34 `i 2252  ]
-{
-"76
-[; ;newmain.c: 76:                 key = 9;
-[e = _key -> -> 9 `i `c ]
+"76 main.c
+[; ;main.c: 76: int digital;
+[v _digital `i ~T0 @X0 1 e ]
 "77
-[; ;newmain.c: 77:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 77: float voltage;
+[v _voltage `f ~T0 @X0 1 e ]
 "78
-[; ;newmain.c: 78:             }
-}
-[e :U 2252 ]
-"80
-[; ;newmain.c: 80:             if (PORTB == 0x42){
-[e $ ! == -> _PORTB `i -> 66 `i 2253  ]
-{
-"81
-[; ;newmain.c: 81:                 key = 6;
-[e = _key -> -> 6 `i `c ]
-"82
-[; ;newmain.c: 82:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"83
-[; ;newmain.c: 83:             }
-}
-[e :U 2253 ]
-"85
-[; ;newmain.c: 85:             if (PORTB == 0x82){
-[e $ ! == -> _PORTB `i -> 130 `i 2254  ]
-{
-"86
-[; ;newmain.c: 86:                 key = 3;
-[e = _key -> -> 3 `i `c ]
-"87
-[; ;newmain.c: 87:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"88
-[; ;newmain.c: 88:             }
-}
-[e :U 2254 ]
-"91
-[; ;newmain.c: 91:     PORTB = 0x04;
-[e = _PORTB -> -> 4 `i `uc ]
-"92
-[; ;newmain.c: 92:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"95
-[; ;newmain.c: 95:             if (PORTB == 0x14){
-[e $ ! == -> _PORTB `i -> 20 `i 2255  ]
-{
-"96
-[; ;newmain.c: 96:                 key = 0;
-[e = _key -> -> 0 `i `c ]
-"97
-[; ;newmain.c: 97:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"98
-[; ;newmain.c: 98:             }
-}
-[e :U 2255 ]
-"100
-[; ;newmain.c: 100:             if (PORTB == 0x24){
-[e $ ! == -> _PORTB `i -> 36 `i 2256  ]
-{
-"101
-[; ;newmain.c: 101:                 key = 8;
-[e = _key -> -> 8 `i `c ]
-"102
-[; ;newmain.c: 102:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"103
-[; ;newmain.c: 103:             }
-}
-[e :U 2256 ]
-"105
-[; ;newmain.c: 105:             if (PORTB == 0x44){
-[e $ ! == -> _PORTB `i -> 68 `i 2257  ]
-{
-"106
-[; ;newmain.c: 106:                 key = 5;
-[e = _key -> -> 5 `i `c ]
-"107
-[; ;newmain.c: 107:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"108
-[; ;newmain.c: 108:             }
-}
-[e :U 2257 ]
-"110
-[; ;newmain.c: 110:             if (PORTB == 0x84){
-[e $ ! == -> _PORTB `i -> 132 `i 2258  ]
-{
-"111
-[; ;newmain.c: 111:                 key = 2;
-[e = _key -> -> 2 `i `c ]
-"112
-[; ;newmain.c: 112:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"113
-[; ;newmain.c: 113:             }
-}
-[e :U 2258 ]
-"116
-[; ;newmain.c: 116:     PORTB = 0x08;
-[e = _PORTB -> -> 8 `i `uc ]
-"117
-[; ;newmain.c: 117:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"120
-[; ;newmain.c: 120:             if (PORTB == 0x18){
-[e $ ! == -> _PORTB `i -> 24 `i 2259  ]
-{
-"121
-[; ;newmain.c: 121:                 key = 0x0E;
-[e = _key -> -> 14 `i `c ]
-"122
-[; ;newmain.c: 122:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"123
-[; ;newmain.c: 123:             }
-}
-[e :U 2259 ]
-"125
-[; ;newmain.c: 125:             if (PORTB == 0x28){
-[e $ ! == -> _PORTB `i -> 40 `i 2260  ]
-{
-"126
-[; ;newmain.c: 126:                 key = 7;
-[e = _key -> -> 7 `i `c ]
-"127
-[; ;newmain.c: 127:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"128
-[; ;newmain.c: 128:             }
-}
-[e :U 2260 ]
-"130
-[; ;newmain.c: 130:             if (PORTB == 0x48){
-[e $ ! == -> _PORTB `i -> 72 `i 2261  ]
-{
-"131
-[; ;newmain.c: 131:                 key = 4;
-[e = _key -> -> 4 `i `c ]
-"132
-[; ;newmain.c: 132:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"133
-[; ;newmain.c: 133:             }
-}
-[e :U 2261 ]
-"135
-[; ;newmain.c: 135:             if (PORTB == 0x88){
-[e $ ! == -> _PORTB `i -> 136 `i 2262  ]
-{
-"136
-[; ;newmain.c: 136:                 key = 1;
-[e = _key -> -> 1 `i `c ]
-"137
-[; ;newmain.c: 137:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"138
-[; ;newmain.c: 138:             }
-}
-[e :U 2262 ]
-"141
-[; ;newmain.c: 141:     return key;
-[e ) _key ]
-[e $UE 2246  ]
-"142
-[; ;newmain.c: 142:     _delay((unsigned long)((50)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"143
-[; ;newmain.c: 143: }
-[e :UE 2246 ]
-}
-"145
-[; ;newmain.c: 145: void getInputX()
-[v _getInputX `(v ~T0 @X0 1 ef ]
-"146
-[; ;newmain.c: 146: {
-{
-[e :U _getInputX ]
-[f ]
-"147
-[; ;newmain.c: 147:     input_X = 0;
-[e = _input_X -> -> 0 `i `c ]
-"148
-[; ;newmain.c: 148:     key = 0xFF;
-[e = _key -> -> 255 `i `c ]
-"149
-[; ;newmain.c: 149:     while (key >= 0x0A)
-[e $U 2264  ]
-[e :U 2265 ]
-"150
-[; ;newmain.c: 150:     {
-{
-"151
-[; ;newmain.c: 151:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"152
-[; ;newmain.c: 152:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"153
-[; ;newmain.c: 153:     }
-}
-[e :U 2264 ]
-"149
-[; ;newmain.c: 149:     while (key >= 0x0A)
-[e $ >= -> _key `i -> 10 `i 2265  ]
-[e :U 2266 ]
-"154
-[; ;newmain.c: 154:     _delay((unsigned long)((300)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"155
-[; ;newmain.c: 155:     input_X += 10*key;
-[e =+ _input_X -> * -> 10 `i -> _key `i `c ]
-"156
-[; ;newmain.c: 156:     key = 0xFF;
-[e = _key -> -> 255 `i `c ]
-"157
-[; ;newmain.c: 157:     while (key >= 0x0A)
-[e $U 2267  ]
-[e :U 2268 ]
-"158
-[; ;newmain.c: 158:     {
-{
-"159
-[; ;newmain.c: 159:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"160
-[; ;newmain.c: 160:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"161
-[; ;newmain.c: 161:     }
-}
-[e :U 2267 ]
-"157
-[; ;newmain.c: 157:     while (key >= 0x0A)
-[e $ >= -> _key `i -> 10 `i 2268  ]
-[e :U 2269 ]
-"162
-[; ;newmain.c: 162:     input_X += key;
-[e =+ _input_X -> _key `c ]
-"164
-[; ;newmain.c: 164: }
-[e :UE 2263 ]
-}
-"166
-[; ;newmain.c: 166: void getInputY()
-[v _getInputY `(v ~T0 @X0 1 ef ]
-"167
-[; ;newmain.c: 167: {
-{
-[e :U _getInputY ]
-[f ]
-"168
-[; ;newmain.c: 168:     input_Y = 0;
-[e = _input_Y -> -> 0 `i `c ]
-"169
-[; ;newmain.c: 169:     key = 0xFF;
-[e = _key -> -> 255 `i `c ]
-"170
-[; ;newmain.c: 170:     while (key >= 0x0A)
-[e $U 2271  ]
-[e :U 2272 ]
-"171
-[; ;newmain.c: 171:     {
-{
-"172
-[; ;newmain.c: 172:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"173
-[; ;newmain.c: 173:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"174
-[; ;newmain.c: 174:     }
-}
-[e :U 2271 ]
-"170
-[; ;newmain.c: 170:     while (key >= 0x0A)
-[e $ >= -> _key `i -> 10 `i 2272  ]
-[e :U 2273 ]
-"175
-[; ;newmain.c: 175:     _delay((unsigned long)((300)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"176
-[; ;newmain.c: 176:     input_Y += 10*key;
-[e =+ _input_Y -> * -> 10 `i -> _key `i `c ]
-"177
-[; ;newmain.c: 177:     key = 0xFF;
-[e = _key -> -> 255 `i `c ]
-"178
-[; ;newmain.c: 178:     while (key >= 0x0A)
-[e $U 2274  ]
-[e :U 2275 ]
-"179
-[; ;newmain.c: 179:     {
-{
-"180
-[; ;newmain.c: 180:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"181
-[; ;newmain.c: 181:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"182
-[; ;newmain.c: 182:     }
-}
-[e :U 2274 ]
-"178
-[; ;newmain.c: 178:     while (key >= 0x0A)
-[e $ >= -> _key `i -> 10 `i 2275  ]
-[e :U 2276 ]
-"183
-[; ;newmain.c: 183:     input_Y += key;
-[e =+ _input_Y -> _key `c ]
-"185
-[; ;newmain.c: 185: }
-[e :UE 2270 ]
-}
-"186
-[; ;newmain.c: 186: void getInputOperation()
-[v _getInputOperation `(v ~T0 @X0 1 ef ]
-"187
-[; ;newmain.c: 187: {
-{
-[e :U _getInputOperation ]
-[f ]
-"188
-[; ;newmain.c: 188:     Operation = 0;
-[e = _Operation -> -> 0 `i `c ]
-"189
-[; ;newmain.c: 189:     key = 0xFF;
-[e = _key -> -> 255 `i `c ]
-"190
-[; ;newmain.c: 190:     while (key >= 0x0A)
-[e $U 2278  ]
-[e :U 2279 ]
-"191
-[; ;newmain.c: 191:     {
-{
-"192
-[; ;newmain.c: 192:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"193
-[; ;newmain.c: 193:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"194
-[; ;newmain.c: 194:     }
-}
-[e :U 2278 ]
-"190
-[; ;newmain.c: 190:     while (key >= 0x0A)
-[e $ >= -> _key `i -> 10 `i 2279  ]
-[e :U 2280 ]
-"195
-[; ;newmain.c: 195:     _delay((unsigned long)((500)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"196
-[; ;newmain.c: 196:     key = 0xFF;
-[e = _key -> -> 255 `i `c ]
-"197
-[; ;newmain.c: 197:     while (key >= 0x0A)
-[e $U 2281  ]
-[e :U 2282 ]
-"198
-[; ;newmain.c: 198:     {
-{
-"199
-[; ;newmain.c: 199:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"200
-[; ;newmain.c: 200:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"201
-[; ;newmain.c: 201:     }
-}
-[e :U 2281 ]
-"197
-[; ;newmain.c: 197:     while (key >= 0x0A)
-[e $ >= -> _key `i -> 10 `i 2282  ]
-[e :U 2283 ]
-"202
-[; ;newmain.c: 202:         Operation = key;
-[e = _Operation _key ]
-"205
-[; ;newmain.c: 205: }
-[e :UE 2277 ]
-}
-"207
-[; ;newmain.c: 207: signed char evaluate(input_X,input_Y,Operation)
-[v _evaluate `(c ~T0 @X0 1 ef3`i`i`i ]
-"208
-[; ;newmain.c: 208: {
-{
-[e :U _evaluate ]
-"207
-[; ;newmain.c: 207: signed char evaluate(input_X,input_Y,Operation)
-[v _input_X `i ~T0 @X0 1 r3 ]
-[v _input_Y `i ~T0 @X0 1 r2 ]
-[v _Operation `i ~T0 @X0 1 r1 ]
-"208
-[; ;newmain.c: 208: {
-[f ]
-"209
-[; ;newmain.c: 209:     signed char result = 0;
-[v _result `c ~T0 @X0 1 a ]
-[e = _result -> -> 0 `i `c ]
-"210
-[; ;newmain.c: 210:     switch (Operation)
-[e $U 2286  ]
-"211
-[; ;newmain.c: 211:     {
-{
-"212
-[; ;newmain.c: 212:             case 0x0A:
-[e :U 2287 ]
-"213
-[; ;newmain.c: 213:                 result = input_X + input_Y;
-[e = _result -> + _input_X _input_Y `c ]
-"214
-[; ;newmain.c: 214:                 return result;
-[e ) _result ]
-[e $UE 2284  ]
-"215
-[; ;newmain.c: 215:             case 0x0B:
-[e :U 2288 ]
-"216
-[; ;newmain.c: 216:                 result = input_X - input_Y;
-[e = _result -> - _input_X _input_Y `c ]
-"217
-[; ;newmain.c: 217:                 return result;
-[e ) _result ]
-[e $UE 2284  ]
-"218
-[; ;newmain.c: 218:             case 0x0C:
-[e :U 2289 ]
-"219
-[; ;newmain.c: 219:                 result = input_X * input_Y;
-[e = _result -> * _input_X _input_Y `c ]
-"220
-[; ;newmain.c: 220:                 return result;
-[e ) _result ]
-[e $UE 2284  ]
-"221
-[; ;newmain.c: 221:             case 0x0D:
-[e :U 2290 ]
-"222
-[; ;newmain.c: 222:                 result = input_X / input_Y;
-[e = _result -> / _input_X _input_Y `c ]
-"223
-[; ;newmain.c: 223:                 return result;
-[e ) _result ]
-[e $UE 2284  ]
-"224
-[; ;newmain.c: 224:             default:
-[e :U 2291 ]
-"225
-[; ;newmain.c: 225:                 result = 0;
-[e = _result -> -> 0 `i `c ]
-"226
-[; ;newmain.c: 226:     }
-}
-[e $U 2285  ]
-[e :U 2286 ]
-[e [\ _Operation , $ -> 10 `i 2287
- , $ -> 11 `i 2288
- , $ -> 12 `i 2289
- , $ -> 13 `i 2290
- 2291 ]
-[e :U 2285 ]
-"227
-[; ;newmain.c: 227:     return result;
-[e ) _result ]
-[e $UE 2284  ]
-"228
-[; ;newmain.c: 228: }
-[e :UE 2284 ]
-}
-"230
-[; ;newmain.c: 230: void display(signed char Result)
-[v _display `(v ~T0 @X0 1 ef1`c ]
-"231
-[; ;newmain.c: 231: {
-{
-[e :U _display ]
-"230
-[; ;newmain.c: 230: void display(signed char Result)
-[v _Result `c ~T0 @X0 1 r1 ]
-"231
-[; ;newmain.c: 231: {
-[f ]
-"232
-[; ;newmain.c: 232:     PORTD = Result;
-[e = _PORTD -> _Result `uc ]
-"233
-[; ;newmain.c: 233: }
-[e :UE 2292 ]
-}
+[; ;main.c: 78: char data[10];
+[v _data `uc ~T0 @X0 -> 10 `i e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"235
-[; ;newmain.c: 235: void main(void) {
+"87
+[; ;main.c: 87: void main() {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"238
-[; ;newmain.c: 238:     TRISB = 0xF0;
-[e = _TRISB -> -> 240 `i `uc ]
-"239
-[; ;newmain.c: 239:     LATB = 0;
-[e = _LATB -> -> 0 `i `uc ]
-"240
-[; ;newmain.c: 240:     PORTB = 0;
-[e = _PORTB -> -> 0 `i `uc ]
-"241
-[; ;newmain.c: 241:     ANSELB = 0;
-[e = _ANSELB -> -> 0 `i `uc ]
-"243
-[; ;newmain.c: 243:     TRISD = 0;
+"90
+[; ;main.c: 90:     TRISD = 0;
 [e = _TRISD -> -> 0 `i `uc ]
-"244
-[; ;newmain.c: 244:     LATD = 0;
-[e = _LATD -> -> 0 `i `uc ]
-"245
-[; ;newmain.c: 245:     PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
-"246
-[; ;newmain.c: 246:     ANSELD = 0;
+"91
+[; ;main.c: 91:     ANSELD = 0;
 [e = _ANSELD -> -> 0 `i `uc ]
-"249
-[; ;newmain.c: 249:     while (1)
-[e :U 2295 ]
-"250
-[; ;newmain.c: 250:     {
+"92
+[; ;main.c: 92:     LATD = 0;
+[e = _LATD -> -> 0 `i `uc ]
+"93
+[; ;main.c: 93:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
+"95
+[; ;main.c: 95:     TRISA = 0;
+[e = _TRISA -> -> 0 `i `uc ]
+"96
+[; ;main.c: 96:     ANSELA = 0;
+[e = _ANSELA -> -> 0 `i `uc ]
+"97
+[; ;main.c: 97:     LATA = 0;
+[e = _LATA -> -> 0 `i `uc ]
+"98
+[; ;main.c: 98:     PORTA = 0;
+[e = _PORTA -> -> 0 `i `uc ]
+"99
+[; ;main.c: 99:     ADC_Init();
+[e ( _ADC_Init ..  ]
+"100
+[; ;main.c: 100:     while (1) {
+[e :U 2249 ]
 {
-"251
-[; ;newmain.c: 251:         getInputX();
-[e ( _getInputX ..  ]
-"252
-[; ;newmain.c: 252:         PORTD = 0x01;
-[e = _PORTD -> -> 1 `i `uc ]
-"253
-[; ;newmain.c: 253:         _delay((unsigned long)((1000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"254
-[; ;newmain.c: 254:         getInputOperation();
-[e ( _getInputOperation ..  ]
-"255
-[; ;newmain.c: 255:         _delay((unsigned long)((1000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"256
-[; ;newmain.c: 256:         getInputY();
-[e ( _getInputY ..  ]
-"257
-[; ;newmain.c: 257:         PORTD = 0x02;
-[e = _PORTD -> -> 2 `i `uc ]
-"258
-[; ;newmain.c: 258:         _delay((unsigned long)((1000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"260
-[; ;newmain.c: 260:         while(getKeypress() != 0x0F)
-[e $U 2297  ]
-[e :U 2298 ]
-"261
-[; ;newmain.c: 261:         {_delay((unsigned long)((100)*(4000000/4000.0)));}
+"102
+[; ;main.c: 102:         ADCON0bits.GO = 1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"103
+[; ;main.c: 103:         while (ADCON0bits.GO);
+[e $U 2251  ]
+[e :U 2252 ]
+[e :U 2251 ]
+[e $ != -> . . _ADCON0bits 0 0 `i -> 0 `i 2252  ]
+[e :U 2253 ]
+"105
+[; ;main.c: 105:         digital = (ADRESH*256) | (ADRESL);
+[e = _digital | * -> _ADRESH `i -> 256 `i -> _ADRESL `i ]
+"107
+[; ;main.c: 107:         voltage = (float)digital * ((float)3.3/4096);
+[e = _voltage * -> _digital `f / -> .3.3 `f -> -> 4096 `i `f ]
+"110
+[; ;main.c: 110:         PORTD = ADRESL;
+[e = _PORTD _ADRESL ]
+"111
+[; ;main.c: 111:         PORTA = ADRESH << 2;
+[e = _PORTA -> << -> _ADRESH `i -> 2 `i `uc ]
+"115
+[; ;main.c: 115:     }
+}
+[e :U 2248 ]
+[e $U 2249  ]
+[e :U 2250 ]
+"116
+[; ;main.c: 116: }
+[e :UE 2247 ]
+}
+"118
+[; ;main.c: 118: void ADC_Init(void)
+[v _ADC_Init `(v ~T0 @X0 1 ef ]
+"119
+[; ;main.c: 119: {
 {
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-}
-[e :U 2297 ]
-"260
-[; ;newmain.c: 260:         while(getKeypress() != 0x0F)
-[e $ != -> ( _getKeypress ..  `i -> 15 `i 2298  ]
-[e :U 2299 ]
-"263
-[; ;newmain.c: 263:         Result = evaluate(input_X,input_Y,Operation);
-[e = _Result ( _evaluate (3 , , -> _input_X `i -> _input_Y `i -> _Operation `i ]
-"264
-[; ;newmain.c: 264:         display(Result);
-[e ( _display (1 _Result ]
-"265
-[; ;newmain.c: 265:         _delay((unsigned long)((100)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"266
-[; ;newmain.c: 266:         while(getKeypress() != 0x0E)
-[e $U 2300  ]
-[e :U 2301 ]
-"267
-[; ;newmain.c: 267:         {_delay((unsigned long)((100)*(4000000/4000.0)));}
-{
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-}
-[e :U 2300 ]
-"266
-[; ;newmain.c: 266:         while(getKeypress() != 0x0E)
-[e $ != -> ( _getKeypress ..  `i -> 14 `i 2301  ]
-[e :U 2302 ]
-"268
-[; ;newmain.c: 268:     }
-}
-[e :U 2294 ]
-[e $U 2295  ]
-[e :U 2296 ]
-"269
-[; ;newmain.c: 269:     return;
-[e $UE 2293  ]
-"270
-[; ;newmain.c: 270: }
-[e :UE 2293 ]
+[e :U _ADC_Init ]
+[f ]
+"122
+[; ;main.c: 122:     ADCON0bits.FM = 1;
+[e = . . _ADCON0bits 0 2 -> -> 1 `i `uc ]
+"124
+[; ;main.c: 124:     ADCON0bits.CS = 0;
+[e = . . _ADCON0bits 0 3 -> -> 0 `i `uc ]
+"126
+[; ;main.c: 126:     TRISAbits.TRISA0 = 1;
+[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
+"128
+[; ;main.c: 128:     ANSELAbits.ANSELA0 = 1;
+[e = . . _ANSELAbits 0 0 -> -> 1 `i `uc ]
+"130
+[; ;main.c: 130:     ADPCH = 0;
+[e = _ADPCH -> -> 0 `i `uc ]
+"132
+[; ;main.c: 132:     ADCLK = 0;
+[e = _ADCLK -> -> 0 `i `uc ]
+"134
+[; ;main.c: 134:     ADRESL = 0;
+[e = _ADRESL -> -> 0 `i `uc ]
+"135
+[; ;main.c: 135:     ADRESH = 0;
+[e = _ADRESH -> -> 0 `i `uc ]
+"137
+[; ;main.c: 137:     ADPREL = 0;
+[e = _ADPREL -> -> 0 `i `uc ]
+"138
+[; ;main.c: 138:     ADPREH = 0;
+[e = _ADPREH -> -> 0 `i `uc ]
+"140
+[; ;main.c: 140:     ADACQL = 0;
+[e = _ADACQL -> -> 0 `i `uc ]
+"141
+[; ;main.c: 141:     ADACQH = 0;
+[e = _ADACQH -> -> 0 `i `uc ]
+"143
+[; ;main.c: 143:     ADCON0bits.ON = 1;
+[e = . . _ADCON0bits 0 6 -> -> 1 `i `uc ]
+"144
+[; ;main.c: 144: }
+[e :UE 2254 ]
 }

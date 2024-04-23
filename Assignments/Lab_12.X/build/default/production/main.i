@@ -1,4 +1,4 @@
-# 1 "newmain.c"
+# 1 "main.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,58 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "newmain.c" 2
-# 25 "newmain.c"
+# 1 "main.c" 2
+# 15 "main.c"
+#pragma config FEXTOSC = LP
+#pragma config RSTOSC = EXTOSC
+
+
+#pragma config CLKOUTEN = OFF
+#pragma config PR1WAY = ON
+#pragma config CSWEN = ON
+#pragma config FCMEN = ON
+
+
+#pragma config MCLRE = EXTMCLR
+#pragma config PWRTS = PWRT_OFF
+#pragma config MVECEN = ON
+#pragma config IVT1WAY = ON
+#pragma config LPBOREN = OFF
+#pragma config BOREN = SBORDIS
+
+
+#pragma config BORV = VBOR_2P45
+#pragma config ZCD = OFF
+#pragma config PPS1WAY = ON
+#pragma config STVREN = ON
+#pragma config DEBUG = OFF
+#pragma config XINST = OFF
+
+
+#pragma config WDTCPS = WDTCPS_31
+#pragma config WDTE = OFF
+
+
+#pragma config WDTCWS = WDTCWS_7
+#pragma config WDTCCS = SC
+
+
+#pragma config BBSIZE = BBSIZE_512
+#pragma config BBEN = OFF
+#pragma config SAFEN = OFF
+#pragma config WRTAPP = OFF
+
+
+#pragma config WRTB = OFF
+#pragma config WRTC = OFF
+#pragma config WRTD = OFF
+#pragma config WRTSAF = OFF
+#pragma config LVP = ON
+
+
+#pragma config CP = OFF
+
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -26866,60 +26916,11 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 25 "newmain.c" 2
-
-# 1 "././xc8header.h" 1
-# 14 "././xc8header.h"
-#pragma config FEXTOSC = LP
-#pragma config RSTOSC = EXTOSC
+# 64 "main.c" 2
 
 
-#pragma config CLKOUTEN = OFF
-#pragma config PR1WAY = ON
-#pragma config CSWEN = ON
-#pragma config FCMEN = ON
-
-
-#pragma config MCLRE = EXTMCLR
-#pragma config PWRTS = PWRT_OFF
-#pragma config MVECEN = ON
-#pragma config IVT1WAY = ON
-#pragma config LPBOREN = OFF
-#pragma config BOREN = SBORDIS
-
-
-#pragma config BORV = VBOR_2P45
-#pragma config ZCD = OFF
-#pragma config PPS1WAY = ON
-#pragma config STVREN = ON
-#pragma config DEBUG = OFF
-#pragma config XINST = OFF
-
-
-#pragma config WDTCPS = WDTCPS_31
-#pragma config WDTE = OFF
-
-
-#pragma config WDTCWS = WDTCWS_7
-#pragma config WDTCCS = SC
-
-
-#pragma config BBSIZE = BBSIZE_512
-#pragma config BBEN = OFF
-#pragma config SAFEN = OFF
-#pragma config WRTAPP = OFF
-
-
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-#pragma config WRTD = OFF
-#pragma config WRTSAF = OFF
-#pragma config LVP = ON
-
-
-#pragma config CP = OFF
-# 26 "newmain.c" 2
-
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\proc\\pic18f47k42.h" 1
+# 66 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
@@ -27073,236 +27074,140 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 28 "newmain.c" 2
+# 67 "main.c" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 1 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 421 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 26 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 2 3
+
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
+
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
+
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
+
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
+
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
+
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
+
+size_t strlen (const char *);
+
+char *strerror (int);
 
 
 
 
-unsigned char input_X,input_Y,Operation,Result,key;
-
-unsigned char getKeypress(void)
-{
-
-
-    key = 0xFF;
-    PORTB = 0x01;
-
-
-
-            if (PORTB == 0x11)
-            {
-                key = 0x0D;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x21){
-                key = 0x0C;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x41){
-                key = 0x0B;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x81){
-                key = 0x0A;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 
 
 
-    PORTB = 0x02;
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 68 "main.c" 2
 
 
-            if (PORTB == 0x12){
-                key = 0x0F;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x22){
-                key = 9;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x42){
-                key = 6;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x82){
-                key = 3;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
 
 
-    PORTB = 0x04;
-    _delay((unsigned long)((10)*(4000000/4000.0)));
 
 
-            if (PORTB == 0x14){
-                key = 0;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x24){
-                key = 8;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x44){
-                key = 5;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x84){
-                key = 2;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
 
 
-    PORTB = 0x08;
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+int digital;
+float voltage;
+char data[10];
+
+void ADC_Init();
 
 
-            if (PORTB == 0x18){
-                key = 0x0E;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x28){
-                key = 7;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x48){
-                key = 4;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
-
-            if (PORTB == 0x88){
-                key = 1;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
-            }
 
 
-    return key;
-    _delay((unsigned long)((50)*(4000000/4000.0)));
-}
-
-void getInputX()
-{
-    input_X = 0;
-    key = 0xFF;
-    while (key >= 0x0A){
-        key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
-    }
-    _delay((unsigned long)((300)*(4000000/4000.0)));
-    input_X += 10*key;
-    key = 0xFF;
-    while (key >= 0x0A){
-        key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
-    }
-    input_X += key;
-
-}
-
-void getInputY()
-{
-    input_Y = 0;
-    key = 0xFF;
-    while (key >= 0x0A){
-        key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
-    }
-    _delay((unsigned long)((300)*(4000000/4000.0)));
-    input_Y += 10*key;
-    key = 0xFF;
-    while (key >= 0x0A){
-        key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
-    }
-    input_Y += key;
-
-}
-void getInputOperation()
-{
-    Operation = 0;
-    key = 0xFF;
-    while (key >= 0x0F || key <= 0x0A)
-    {
-        key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
-    }
-        Operation = key;
 
 
-}
+void main() {
 
-unsigned char evaluate(input_X,input_Y,Operation)
-{
-    unsigned char result = 0;
-    switch (Operation)
-    {
-            case 0x0A:
-                result = input_X + input_Y;
-                return result;
-            case 0x0B:
-                result = input_X - input_Y;
-                return result;
-            case 0x0C:
-                result = input_X * input_Y;
-                return result;
-            case 0x0D:
-                result = input_X / input_Y;
-                return result;
-            default:
-                result = 0;
-    }
-    return result;
-}
-
-void display(unsigned char Result)
-{
-    PORTD = Result;
-}
-
-void main(void) {
-
-
-    TRISB = 0xF0;
-    LATB = 0;
-    PORTB = 0;
-    ANSELB = 0;
 
     TRISD = 0;
+    ANSELD = 0;
     LATD = 0;
     PORTD = 0;
-    ANSELD = 0;
+
+    TRISA = 0;
+    ANSELA = 0;
+    LATA = 0;
+    PORTA = 0;
+    ADC_Init();
+    while (1) {
+
+        ADCON0bits.GO = 1;
+        while (ADCON0bits.GO);
+
+        digital = (ADRESH*256) | (ADRESL);
+
+        voltage = (float)digital * ((float)3.3/4096);
 
 
-    while (1)
-    {
-        getInputX();
-        PORTD = 0x01;
-        _delay((unsigned long)((500)*(4000000/4000.0)));
-        getInputOperation();
-        _delay((unsigned long)((500)*(4000000/4000.0)));
-        getInputY();
-        PORTD = 0x02;
-        _delay((unsigned long)((500)*(4000000/4000.0)));
+        PORTD = ADRESL;
+        PORTA = ADRESH << 2;
 
-        while(getKeypress() != 0x0F)
-        {_delay((unsigned long)((10)*(4000000/4000.0)));}
 
-        Result = evaluate(input_X,input_Y,Operation);
-        display(Result);
-        _delay((unsigned long)((10)*(4000000/4000.0)));
-        while(getKeypress() != 0x0E)
-        {_delay((unsigned long)((10)*(4000000/4000.0)));}
+
     }
-    return;
+}
+
+void ADC_Init(void)
+{
+
+
+    ADCON0bits.FM = 1;
+
+    ADCON0bits.CS = 0;
+
+    TRISAbits.TRISA0 = 1;
+
+    ANSELAbits.ANSELA0 = 1;
+
+    ADPCH = 0;
+
+    ADCLK = 0;
+
+    ADRESL = 0;
+    ADRESH = 0;
+
+    ADPREL = 0;
+    ADPREH = 0;
+
+    ADACQL = 0;
+    ADACQH = 0;
+
+    ADCON0bits.ON = 1;
 }

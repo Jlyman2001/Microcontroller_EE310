@@ -1,27 +1,27 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\Josh\AppData\Local\Temp\xcAsags.\driver_tmp_3.o
- -Odist/Board/debug\C_Calculator.X.debug.hex
- -logfile=dist/Board/debug\C_Calculator.X.debug.hxl
+ C:\Users\Josh\AppData\Local\Temp\xcAse6s.\driver_tmp_3.o
+ -Odist/default/production\Lab_12.X.production.hex
+ -logfile=dist/default/production\Lab_12.X.production.hxl
  -addressing=1
  -break=300000
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\Josh\AppData\Local\Temp\xcAsags.\driver_tmp_3.o)
-  2000h - 265Fh		(C:\Users\Josh\AppData\Local\Temp\xcAsags.\driver_tmp_3.o)
-  1FFFCh - 1FFFFh		(C:\Users\Josh\AppData\Local\Temp\xcAsags.\driver_tmp_3.o)
-  300000h - 300009h		(C:\Users\Josh\AppData\Local\Temp\xcAsags.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\Josh\AppData\Local\Temp\xcAse6s.\driver_tmp_3.o)
+  2000h - 2701h		(C:\Users\Josh\AppData\Local\Temp\xcAse6s.\driver_tmp_3.o)
+  1FFFCh - 1FFFFh		(C:\Users\Josh\AppData\Local\Temp\xcAse6s.\driver_tmp_3.o)
+  300000h - 300009h		(C:\Users\Josh\AppData\Local\Temp\xcAse6s.\driver_tmp_3.o)
  Unused ranges:
   4h - 1FFFh
-  2660h - 1FFFBh
+  2702h - 1FFFBh
   20000h - 2FFFFFh
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\Josh\AppData\Local\Temp\xcAsags.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\Josh\AppData\Local\Temp\xcAse6s.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -129,6 +129,17 @@
 00002630 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002640 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002650 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002660 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002670 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002680 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002690 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000026A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000026B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000026C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000026D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000026E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000026F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002700 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 0001FFF0 | -- -- -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1
 ----------------------------------------------------------

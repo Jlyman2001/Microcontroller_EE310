@@ -27087,108 +27087,109 @@ unsigned char getKeypress(void)
     key = 0xFF;
     PORTB = 0x01;
 
-
-
-            if (PORTB == 0x11)
+    switch (PORTB)
+    {
+        case 0x11:
             {
-                key = 0x0D;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+                return 0x0D;
+
             }
 
-            if (PORTB == 0x21){
-                key = 0x0C;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x21:{
+                return 0x0C;
+
             }
 
-            if (PORTB == 0x41){
-                key = 0x0B;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x41:{
+                return 0x0B;
+
             }
 
-            if (PORTB == 0x81){
-                key = 0x0A;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x81:{
+                return 0x0A;
+
             }
 
-
+    }
 
     PORTB = 0x02;
-    _delay((unsigned long)((10)*(4000000/4000.0)));
 
+    switch (PORTB)
+    {
+            case 0x12:{
+                return 0x0F;
 
-            if (PORTB == 0x12){
-                key = 0x0F;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
             }
 
-            if (PORTB == 0x22){
-                key = 9;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x22:{
+                return 9;
+
             }
 
-            if (PORTB == 0x42){
-                key = 6;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x42:{
+                return 6;
+
             }
 
-            if (PORTB == 0x82){
-                key = 3;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x82:{
+                return 3;
+
             }
 
-
+    }
     PORTB = 0x04;
-    _delay((unsigned long)((10)*(4000000/4000.0)));
 
+    switch (PORTB)
+    {
+            case 0x14:{
+                return 0;
 
-            if (PORTB == 0x14){
-                key = 0;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
             }
 
-            if (PORTB == 0x24){
-                key = 8;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x24:{
+                return 8;
+
             }
 
-            if (PORTB == 0x44){
-                key = 5;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x44:{
+                return 5;
+
             }
 
-            if (PORTB == 0x84){
-                key = 2;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x84:{
+                return 2;
+
             }
 
-
+    }
     PORTB = 0x08;
-    _delay((unsigned long)((10)*(4000000/4000.0)));
 
+    switch (PORTB)
+    {
+            case 0x18:{
+                return 0x0E;
 
-            if (PORTB == 0x18){
-                key = 0x0E;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
             }
 
-            if (PORTB == 0x28){
-                key = 7;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x28:{
+                return 7;
+
             }
 
-            if (PORTB == 0x48){
-                key = 4;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x48:{
+                return 4;
+
             }
 
-            if (PORTB == 0x88){
-                key = 1;
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+            case 0x88:{
+                return 1;
+
             }
 
-
+    }
+    key = 0xFF;
     return key;
-    _delay((unsigned long)((50)*(4000000/4000.0)));
+
 }
 
 void getInputX()
@@ -27197,14 +27198,14 @@ void getInputX()
     key = 0xFF;
     while (key >= 0x0A){
         key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+
     }
-    _delay((unsigned long)((300)*(4000000/4000.0)));
+
     input_X += 10*key;
     key = 0xFF;
     while (key >= 0x0A){
         key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+
     }
     input_X += key;
 
@@ -27216,14 +27217,14 @@ void getInputY()
     key = 0xFF;
     while (key >= 0x0A){
         key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+
     }
-    _delay((unsigned long)((300)*(4000000/4000.0)));
+
     input_Y += 10*key;
     key = 0xFF;
     while (key >= 0x0A){
         key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+
     }
     input_Y += key;
 
@@ -27232,10 +27233,10 @@ void getInputOperation()
 {
     Operation = 0;
     key = 0xFF;
-    while (key >= 0x0F || key <= 0x0A)
+    while (key > 0x0F || key < 0x0A)
     {
         key = getKeypress();
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+
     }
         Operation = key;
 
@@ -27257,7 +27258,8 @@ unsigned char evaluate(input_X,input_Y,Operation)
                 result = input_X * input_Y;
                 return result;
             case 0x0D:
-                result = input_X / input_Y;
+                if (input_Y != 0)
+                    result = input_X / input_Y;
                 return result;
             default:
                 result = 0;
@@ -27288,21 +27290,18 @@ void main(void) {
     {
         getInputX();
         PORTD = 0x01;
-        _delay((unsigned long)((1000)*(4000000/4000.0)));
+
         getInputOperation();
-        _delay((unsigned long)((1000)*(4000000/4000.0)));
+        PORTD = 0x03;
+
         getInputY();
         PORTD = 0x02;
-        _delay((unsigned long)((1000)*(4000000/4000.0)));
-
-        while(getKeypress() != 0x0F)
-        {_delay((unsigned long)((100)*(4000000/4000.0)));}
-
+# 261 "newmain.c"
         Result = evaluate(input_X,input_Y,Operation);
         display(Result);
-        _delay((unsigned long)((100)*(4000000/4000.0)));
-        while(getKeypress() != 0x0E)
-        {_delay((unsigned long)((100)*(4000000/4000.0)));}
+# 273 "newmain.c"
+        if (0)
+            break;
     }
     return;
 }

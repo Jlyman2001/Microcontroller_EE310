@@ -24,14 +24,14 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=C_Calculator.X
+PROJECTNAME=Lab_12.X
 
 # Active Configuration
-DEFAULTCONF=Board
+DEFAULTCONF=default
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=default Simulator Board 
+ALLCONFS=default 
 
 
 # build
@@ -46,16 +46,12 @@ ALLCONFS=default Simulator Board
 # clobber
 .clobber-impl: .clobber-pre .depcheck-impl
 	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=default clean
-	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=Simulator clean
-	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=Board clean
 
 
 
 # all
 .all-impl: .all-pre .depcheck-impl
 	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=default build
-	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=Simulator build
-	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=Board build
 
 
 

@@ -2339,683 +2339,741 @@ Version 4.0 HI-TECH Software Intermediate Code
 "39
 [; ;newmain.c: 39:     PORTB = 0x01;
 [e = _PORTB -> -> 1 `i `uc ]
+"41
+[; ;newmain.c: 41:     switch (PORTB)
+[e $U 2248  ]
+"42
+[; ;newmain.c: 42:     {
+{
 "43
-[; ;newmain.c: 43:             if (PORTB == 0x11)
-[e $ ! == -> _PORTB `i -> 17 `i 2247  ]
+[; ;newmain.c: 43:         case 0x11:
+[e :U 2249 ]
 "44
 [; ;newmain.c: 44:             {
 {
 "45
-[; ;newmain.c: 45:                 key = 0x0D;
-[e = _key -> -> 13 `i `uc ]
+[; ;newmain.c: 45:                 return 0x0D;
+[e ) -> -> 13 `i `uc ]
+[e $UE 2246  ]
 "46
 [; ;newmain.c: 46:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "47
 [; ;newmain.c: 47:             }
 }
-[e :U 2247 ]
 "49
-[; ;newmain.c: 49:             if (PORTB == 0x21){
-[e $ ! == -> _PORTB `i -> 33 `i 2248  ]
+[; ;newmain.c: 49:             case 0x21:{
+[e :U 2250 ]
 {
 "50
-[; ;newmain.c: 50:                 key = 0x0C;
-[e = _key -> -> 12 `i `uc ]
+[; ;newmain.c: 50:                 return 0x0C;
+[e ) -> -> 12 `i `uc ]
+[e $UE 2246  ]
 "51
 [; ;newmain.c: 51:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "52
 [; ;newmain.c: 52:             }
 }
-[e :U 2248 ]
 "54
-[; ;newmain.c: 54:             if (PORTB == 0x41){
-[e $ ! == -> _PORTB `i -> 65 `i 2249  ]
+[; ;newmain.c: 54:             case 0x41:{
+[e :U 2251 ]
 {
 "55
-[; ;newmain.c: 55:                 key = 0x0B;
-[e = _key -> -> 11 `i `uc ]
+[; ;newmain.c: 55:                 return 0x0B;
+[e ) -> -> 11 `i `uc ]
+[e $UE 2246  ]
 "56
 [; ;newmain.c: 56:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "57
 [; ;newmain.c: 57:             }
 }
-[e :U 2249 ]
 "59
-[; ;newmain.c: 59:             if (PORTB == 0x81){
-[e $ ! == -> _PORTB `i -> 129 `i 2250  ]
+[; ;newmain.c: 59:             case 0x81:{
+[e :U 2252 ]
 {
 "60
-[; ;newmain.c: 60:                 key = 0x0A;
-[e = _key -> -> 10 `i `uc ]
+[; ;newmain.c: 60:                 return 0x0A;
+[e ) -> -> 10 `i `uc ]
+[e $UE 2246  ]
 "61
 [; ;newmain.c: 61:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "62
 [; ;newmain.c: 62:             }
 }
-[e :U 2250 ]
+"64
+[; ;newmain.c: 64:     }
+}
+[e $U 2247  ]
+[e :U 2248 ]
+[e [\ _PORTB , $ -> 17 `i 2249
+ , $ -> 33 `i 2250
+ , $ -> 65 `i 2251
+ , $ -> 129 `i 2252
+ 2247 ]
+[e :U 2247 ]
 "66
 [; ;newmain.c: 66:     PORTB = 0x02;
 [e = _PORTB -> -> 2 `i `uc ]
 "67
 [; ;newmain.c: 67:     _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"68
+[; ;newmain.c: 68:     switch (PORTB)
+[e $U 2254  ]
+"69
+[; ;newmain.c: 69:     {
+{
 "70
-[; ;newmain.c: 70:             if (PORTB == 0x12){
-[e $ ! == -> _PORTB `i -> 18 `i 2251  ]
+[; ;newmain.c: 70:             case 0x12:{
+[e :U 2255 ]
 {
 "71
-[; ;newmain.c: 71:                 key = 0x0F;
-[e = _key -> -> 15 `i `uc ]
+[; ;newmain.c: 71:                 return 0x0F;
+[e ) -> -> 15 `i `uc ]
+[e $UE 2246  ]
 "72
 [; ;newmain.c: 72:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "73
 [; ;newmain.c: 73:             }
 }
-[e :U 2251 ]
 "75
-[; ;newmain.c: 75:             if (PORTB == 0x22){
-[e $ ! == -> _PORTB `i -> 34 `i 2252  ]
+[; ;newmain.c: 75:             case 0x22:{
+[e :U 2256 ]
 {
 "76
-[; ;newmain.c: 76:                 key = 9;
-[e = _key -> -> 9 `i `uc ]
+[; ;newmain.c: 76:                 return 9;
+[e ) -> -> 9 `i `uc ]
+[e $UE 2246  ]
 "77
 [; ;newmain.c: 77:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "78
 [; ;newmain.c: 78:             }
 }
-[e :U 2252 ]
 "80
-[; ;newmain.c: 80:             if (PORTB == 0x42){
-[e $ ! == -> _PORTB `i -> 66 `i 2253  ]
+[; ;newmain.c: 80:             case 0x42:{
+[e :U 2257 ]
 {
 "81
-[; ;newmain.c: 81:                 key = 6;
-[e = _key -> -> 6 `i `uc ]
+[; ;newmain.c: 81:                 return 6;
+[e ) -> -> 6 `i `uc ]
+[e $UE 2246  ]
 "82
 [; ;newmain.c: 82:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "83
 [; ;newmain.c: 83:             }
 }
-[e :U 2253 ]
 "85
-[; ;newmain.c: 85:             if (PORTB == 0x82){
-[e $ ! == -> _PORTB `i -> 130 `i 2254  ]
+[; ;newmain.c: 85:             case 0x82:{
+[e :U 2258 ]
 {
 "86
-[; ;newmain.c: 86:                 key = 3;
-[e = _key -> -> 3 `i `uc ]
+[; ;newmain.c: 86:                 return 3;
+[e ) -> -> 3 `i `uc ]
+[e $UE 2246  ]
 "87
 [; ;newmain.c: 87:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "88
 [; ;newmain.c: 88:             }
 }
+"90
+[; ;newmain.c: 90:     }
+}
+[e $U 2253  ]
 [e :U 2254 ]
+[e [\ _PORTB , $ -> 18 `i 2255
+ , $ -> 34 `i 2256
+ , $ -> 66 `i 2257
+ , $ -> 130 `i 2258
+ 2253 ]
+[e :U 2253 ]
 "91
 [; ;newmain.c: 91:     PORTB = 0x04;
 [e = _PORTB -> -> 4 `i `uc ]
 "92
 [; ;newmain.c: 92:     _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"93
+[; ;newmain.c: 93:     switch (PORTB)
+[e $U 2260  ]
+"94
+[; ;newmain.c: 94:     {
+{
 "95
-[; ;newmain.c: 95:             if (PORTB == 0x14){
-[e $ ! == -> _PORTB `i -> 20 `i 2255  ]
+[; ;newmain.c: 95:             case 0x14:{
+[e :U 2261 ]
 {
 "96
-[; ;newmain.c: 96:                 key = 0;
-[e = _key -> -> 0 `i `uc ]
+[; ;newmain.c: 96:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 2246  ]
 "97
 [; ;newmain.c: 97:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "98
 [; ;newmain.c: 98:             }
 }
-[e :U 2255 ]
 "100
-[; ;newmain.c: 100:             if (PORTB == 0x24){
-[e $ ! == -> _PORTB `i -> 36 `i 2256  ]
+[; ;newmain.c: 100:             case 0x24:{
+[e :U 2262 ]
 {
 "101
-[; ;newmain.c: 101:                 key = 8;
-[e = _key -> -> 8 `i `uc ]
+[; ;newmain.c: 101:                 return 8;
+[e ) -> -> 8 `i `uc ]
+[e $UE 2246  ]
 "102
 [; ;newmain.c: 102:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "103
 [; ;newmain.c: 103:             }
 }
-[e :U 2256 ]
 "105
-[; ;newmain.c: 105:             if (PORTB == 0x44){
-[e $ ! == -> _PORTB `i -> 68 `i 2257  ]
+[; ;newmain.c: 105:             case 0x44:{
+[e :U 2263 ]
 {
 "106
-[; ;newmain.c: 106:                 key = 5;
-[e = _key -> -> 5 `i `uc ]
+[; ;newmain.c: 106:                 return 5;
+[e ) -> -> 5 `i `uc ]
+[e $UE 2246  ]
 "107
 [; ;newmain.c: 107:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "108
 [; ;newmain.c: 108:             }
 }
-[e :U 2257 ]
 "110
-[; ;newmain.c: 110:             if (PORTB == 0x84){
-[e $ ! == -> _PORTB `i -> 132 `i 2258  ]
+[; ;newmain.c: 110:             case 0x84:{
+[e :U 2264 ]
 {
 "111
-[; ;newmain.c: 111:                 key = 2;
-[e = _key -> -> 2 `i `uc ]
+[; ;newmain.c: 111:                 return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 2246  ]
 "112
 [; ;newmain.c: 112:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "113
 [; ;newmain.c: 113:             }
 }
-[e :U 2258 ]
+"115
+[; ;newmain.c: 115:     }
+}
+[e $U 2259  ]
+[e :U 2260 ]
+[e [\ _PORTB , $ -> 20 `i 2261
+ , $ -> 36 `i 2262
+ , $ -> 68 `i 2263
+ , $ -> 132 `i 2264
+ 2259 ]
+[e :U 2259 ]
 "116
 [; ;newmain.c: 116:     PORTB = 0x08;
 [e = _PORTB -> -> 8 `i `uc ]
 "117
 [; ;newmain.c: 117:     _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"118
+[; ;newmain.c: 118:     switch (PORTB)
+[e $U 2266  ]
+"119
+[; ;newmain.c: 119:     {
+{
 "120
-[; ;newmain.c: 120:             if (PORTB == 0x18){
-[e $ ! == -> _PORTB `i -> 24 `i 2259  ]
+[; ;newmain.c: 120:             case 0x18:{
+[e :U 2267 ]
 {
 "121
-[; ;newmain.c: 121:                 key = 0x0E;
-[e = _key -> -> 14 `i `uc ]
+[; ;newmain.c: 121:                 return 0x0E;
+[e ) -> -> 14 `i `uc ]
+[e $UE 2246  ]
 "122
 [; ;newmain.c: 122:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "123
 [; ;newmain.c: 123:             }
 }
-[e :U 2259 ]
 "125
-[; ;newmain.c: 125:             if (PORTB == 0x28){
-[e $ ! == -> _PORTB `i -> 40 `i 2260  ]
+[; ;newmain.c: 125:             case 0x28:{
+[e :U 2268 ]
 {
 "126
-[; ;newmain.c: 126:                 key = 7;
-[e = _key -> -> 7 `i `uc ]
+[; ;newmain.c: 126:                 return 7;
+[e ) -> -> 7 `i `uc ]
+[e $UE 2246  ]
 "127
 [; ;newmain.c: 127:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "128
 [; ;newmain.c: 128:             }
 }
-[e :U 2260 ]
 "130
-[; ;newmain.c: 130:             if (PORTB == 0x48){
-[e $ ! == -> _PORTB `i -> 72 `i 2261  ]
+[; ;newmain.c: 130:             case 0x48:{
+[e :U 2269 ]
 {
 "131
-[; ;newmain.c: 131:                 key = 4;
-[e = _key -> -> 4 `i `uc ]
+[; ;newmain.c: 131:                 return 4;
+[e ) -> -> 4 `i `uc ]
+[e $UE 2246  ]
 "132
 [; ;newmain.c: 132:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "133
 [; ;newmain.c: 133:             }
 }
-[e :U 2261 ]
 "135
-[; ;newmain.c: 135:             if (PORTB == 0x88){
-[e $ ! == -> _PORTB `i -> 136 `i 2262  ]
+[; ;newmain.c: 135:             case 0x88:{
+[e :U 2270 ]
 {
 "136
-[; ;newmain.c: 136:                 key = 1;
-[e = _key -> -> 1 `i `uc ]
+[; ;newmain.c: 136:                 return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 2246  ]
 "137
 [; ;newmain.c: 137:                 _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "138
 [; ;newmain.c: 138:             }
 }
-[e :U 2262 ]
+"140
+[; ;newmain.c: 140:     }
+}
+[e $U 2265  ]
+[e :U 2266 ]
+[e [\ _PORTB , $ -> 24 `i 2267
+ , $ -> 40 `i 2268
+ , $ -> 72 `i 2269
+ , $ -> 136 `i 2270
+ 2265 ]
+[e :U 2265 ]
 "141
-[; ;newmain.c: 141:     return key;
+[; ;newmain.c: 141:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"142
+[; ;newmain.c: 142:     return key;
 [e ) _key ]
 [e $UE 2246  ]
-"142
-[; ;newmain.c: 142:     _delay((unsigned long)((50)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "143
-[; ;newmain.c: 143: }
+[; ;newmain.c: 143:     _delay((unsigned long)((50)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"144
+[; ;newmain.c: 144: }
 [e :UE 2246 ]
 }
-"145
-[; ;newmain.c: 145: void getInputX()
-[v _getInputX `(v ~T0 @X0 1 ef ]
 "146
-[; ;newmain.c: 146: {
+[; ;newmain.c: 146: void getInputX()
+[v _getInputX `(v ~T0 @X0 1 ef ]
+"147
+[; ;newmain.c: 147: {
 {
 [e :U _getInputX ]
 [f ]
-"147
-[; ;newmain.c: 147:     input_X = 0;
-[e = _input_X -> -> 0 `i `uc ]
 "148
-[; ;newmain.c: 148:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
+[; ;newmain.c: 148:     input_X = 0;
+[e = _input_X -> -> 0 `i `uc ]
 "149
-[; ;newmain.c: 149:     while (key >= 0x0A){
-[e $U 2264  ]
-[e :U 2265 ]
-{
+[; ;newmain.c: 149:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
 "150
-[; ;newmain.c: 150:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"151
-[; ;newmain.c: 151:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"152
-[; ;newmain.c: 152:     }
-}
-[e :U 2264 ]
-"149
-[; ;newmain.c: 149:     while (key >= 0x0A){
-[e $ >= -> _key `i -> 10 `i 2265  ]
-[e :U 2266 ]
-"153
-[; ;newmain.c: 153:     _delay((unsigned long)((300)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"154
-[; ;newmain.c: 154:     input_X += 10*key;
-[e =+ _input_X -> * -> 10 `i -> _key `i `uc ]
-"155
-[; ;newmain.c: 155:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
-"156
-[; ;newmain.c: 156:     while (key >= 0x0A){
-[e $U 2267  ]
-[e :U 2268 ]
+[; ;newmain.c: 150:     while (key >= 0x0A){
+[e $U 2272  ]
+[e :U 2273 ]
 {
-"157
-[; ;newmain.c: 157:         key = getKeypress();
+"151
+[; ;newmain.c: 151:         key = getKeypress();
 [e = _key ( _getKeypress ..  ]
-"158
-[; ;newmain.c: 158:         _delay((unsigned long)((10)*(4000000/4000.0)));
+"152
+[; ;newmain.c: 152:         _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"159
-[; ;newmain.c: 159:     }
+"153
+[; ;newmain.c: 153:     }
 }
-[e :U 2267 ]
+[e :U 2272 ]
+"150
+[; ;newmain.c: 150:     while (key >= 0x0A){
+[e $ >= -> _key `i -> 10 `i 2273  ]
+[e :U 2274 ]
+"154
+[; ;newmain.c: 154:     _delay((unsigned long)((300)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"155
+[; ;newmain.c: 155:     input_X += 10*key;
+[e =+ _input_X -> * -> 10 `i -> _key `i `uc ]
 "156
-[; ;newmain.c: 156:     while (key >= 0x0A){
-[e $ >= -> _key `i -> 10 `i 2268  ]
-[e :U 2269 ]
+[; ;newmain.c: 156:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"157
+[; ;newmain.c: 157:     while (key >= 0x0A){
+[e $U 2275  ]
+[e :U 2276 ]
+{
+"158
+[; ;newmain.c: 158:         key = getKeypress();
+[e = _key ( _getKeypress ..  ]
+"159
+[; ;newmain.c: 159:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "160
-[; ;newmain.c: 160:     input_X += key;
-[e =+ _input_X -> _key `uc ]
-"162
-[; ;newmain.c: 162: }
-[e :UE 2263 ]
+[; ;newmain.c: 160:     }
 }
-"164
-[; ;newmain.c: 164: void getInputY()
-[v _getInputY `(v ~T0 @X0 1 ef ]
+[e :U 2275 ]
+"157
+[; ;newmain.c: 157:     while (key >= 0x0A){
+[e $ >= -> _key `i -> 10 `i 2276  ]
+[e :U 2277 ]
+"161
+[; ;newmain.c: 161:     input_X += key;
+[e =+ _input_X -> _key `uc ]
+"163
+[; ;newmain.c: 163: }
+[e :UE 2271 ]
+}
 "165
-[; ;newmain.c: 165: {
+[; ;newmain.c: 165: void getInputY()
+[v _getInputY `(v ~T0 @X0 1 ef ]
+"166
+[; ;newmain.c: 166: {
 {
 [e :U _getInputY ]
 [f ]
-"166
-[; ;newmain.c: 166:     input_Y = 0;
-[e = _input_Y -> -> 0 `i `uc ]
 "167
-[; ;newmain.c: 167:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
+[; ;newmain.c: 167:     input_Y = 0;
+[e = _input_Y -> -> 0 `i `uc ]
 "168
-[; ;newmain.c: 168:     while (key >= 0x0A){
-[e $U 2271  ]
-[e :U 2272 ]
-{
+[; ;newmain.c: 168:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
 "169
-[; ;newmain.c: 169:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"170
-[; ;newmain.c: 170:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"171
-[; ;newmain.c: 171:     }
-}
-[e :U 2271 ]
-"168
-[; ;newmain.c: 168:     while (key >= 0x0A){
-[e $ >= -> _key `i -> 10 `i 2272  ]
-[e :U 2273 ]
-"172
-[; ;newmain.c: 172:     _delay((unsigned long)((300)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"173
-[; ;newmain.c: 173:     input_Y += 10*key;
-[e =+ _input_Y -> * -> 10 `i -> _key `i `uc ]
-"174
-[; ;newmain.c: 174:     key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
-"175
-[; ;newmain.c: 175:     while (key >= 0x0A){
-[e $U 2274  ]
-[e :U 2275 ]
+[; ;newmain.c: 169:     while (key >= 0x0A){
+[e $U 2279  ]
+[e :U 2280 ]
 {
-"176
-[; ;newmain.c: 176:         key = getKeypress();
+"170
+[; ;newmain.c: 170:         key = getKeypress();
 [e = _key ( _getKeypress ..  ]
-"177
-[; ;newmain.c: 177:         _delay((unsigned long)((10)*(4000000/4000.0)));
+"171
+[; ;newmain.c: 171:         _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"178
-[; ;newmain.c: 178:     }
+"172
+[; ;newmain.c: 172:     }
 }
-[e :U 2274 ]
+[e :U 2279 ]
+"169
+[; ;newmain.c: 169:     while (key >= 0x0A){
+[e $ >= -> _key `i -> 10 `i 2280  ]
+[e :U 2281 ]
+"173
+[; ;newmain.c: 173:     _delay((unsigned long)((300)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"174
+[; ;newmain.c: 174:     input_Y += 10*key;
+[e =+ _input_Y -> * -> 10 `i -> _key `i `uc ]
 "175
-[; ;newmain.c: 175:     while (key >= 0x0A){
-[e $ >= -> _key `i -> 10 `i 2275  ]
-[e :U 2276 ]
+[; ;newmain.c: 175:     key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
+"176
+[; ;newmain.c: 176:     while (key >= 0x0A){
+[e $U 2282  ]
+[e :U 2283 ]
+{
+"177
+[; ;newmain.c: 177:         key = getKeypress();
+[e = _key ( _getKeypress ..  ]
+"178
+[; ;newmain.c: 178:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "179
-[; ;newmain.c: 179:     input_Y += key;
-[e =+ _input_Y -> _key `uc ]
-"181
-[; ;newmain.c: 181: }
-[e :UE 2270 ]
+[; ;newmain.c: 179:     }
 }
+[e :U 2282 ]
+"176
+[; ;newmain.c: 176:     while (key >= 0x0A){
+[e $ >= -> _key `i -> 10 `i 2283  ]
+[e :U 2284 ]
+"180
+[; ;newmain.c: 180:     input_Y += key;
+[e =+ _input_Y -> _key `uc ]
 "182
-[; ;newmain.c: 182: void getInputOperation()
-[v _getInputOperation `(v ~T0 @X0 1 ef ]
+[; ;newmain.c: 182: }
+[e :UE 2278 ]
+}
 "183
-[; ;newmain.c: 183: {
+[; ;newmain.c: 183: void getInputOperation()
+[v _getInputOperation `(v ~T0 @X0 1 ef ]
+"184
+[; ;newmain.c: 184: {
 {
 [e :U _getInputOperation ]
 [f ]
-"184
-[; ;newmain.c: 184:     Operation = 0;
-[e = _Operation -> -> 0 `i `uc ]
 "185
-[; ;newmain.c: 185:     key = 0xFF;
+[; ;newmain.c: 185:     Operation = 0;
+[e = _Operation -> -> 0 `i `uc ]
+"186
+[; ;newmain.c: 186:     key = 0xFF;
 [e = _key -> -> 255 `i `uc ]
-"186
-[; ;newmain.c: 186:     while (key > 0x0F || key < 0x0A)
-[e $U 2278  ]
-[e :U 2279 ]
 "187
-[; ;newmain.c: 187:     {
-{
+[; ;newmain.c: 187:     while (key > 0x0F || key < 0x0A)
+[e $U 2286  ]
+[e :U 2287 ]
 "188
-[; ;newmain.c: 188:         key = getKeypress();
-[e = _key ( _getKeypress ..  ]
+[; ;newmain.c: 188:     {
+{
 "189
-[; ;newmain.c: 189:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 189:         key = getKeypress();
+[e = _key ( _getKeypress ..  ]
 "190
-[; ;newmain.c: 190:     }
-}
-[e :U 2278 ]
-"186
-[; ;newmain.c: 186:     while (key > 0x0F || key < 0x0A)
-[e $ || > -> _key `i -> 15 `i < -> _key `i -> 10 `i 2279  ]
-[e :U 2280 ]
+[; ;newmain.c: 190:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "191
-[; ;newmain.c: 191:         Operation = key;
-[e = _Operation _key ]
-"194
-[; ;newmain.c: 194: }
-[e :UE 2277 ]
+[; ;newmain.c: 191:     }
 }
-"196
-[; ;newmain.c: 196: unsigned char evaluate(input_X,input_Y,Operation)
-[v _evaluate `(uc ~T0 @X0 1 ef3`i`i`i ]
+[e :U 2286 ]
+"187
+[; ;newmain.c: 187:     while (key > 0x0F || key < 0x0A)
+[e $ || > -> _key `i -> 15 `i < -> _key `i -> 10 `i 2287  ]
+[e :U 2288 ]
+"192
+[; ;newmain.c: 192:         Operation = key;
+[e = _Operation _key ]
+"195
+[; ;newmain.c: 195: }
+[e :UE 2285 ]
+}
 "197
-[; ;newmain.c: 197: {
+[; ;newmain.c: 197: unsigned char evaluate(input_X,input_Y,Operation)
+[v _evaluate `(uc ~T0 @X0 1 ef3`i`i`i ]
+"198
+[; ;newmain.c: 198: {
 {
 [e :U _evaluate ]
-"196
-[; ;newmain.c: 196: unsigned char evaluate(input_X,input_Y,Operation)
+"197
+[; ;newmain.c: 197: unsigned char evaluate(input_X,input_Y,Operation)
 [v _input_X `i ~T0 @X0 1 r3 ]
 [v _input_Y `i ~T0 @X0 1 r2 ]
 [v _Operation `i ~T0 @X0 1 r1 ]
-"197
-[; ;newmain.c: 197: {
-[f ]
 "198
-[; ;newmain.c: 198:     unsigned char result = 0;
+[; ;newmain.c: 198: {
+[f ]
+"199
+[; ;newmain.c: 199:     unsigned char result = 0;
 [v _result `uc ~T0 @X0 1 a ]
 [e = _result -> -> 0 `i `uc ]
-"199
-[; ;newmain.c: 199:     switch (Operation)
-[e $U 2283  ]
 "200
-[; ;newmain.c: 200:     {
-{
+[; ;newmain.c: 200:     switch (Operation)
+[e $U 2291  ]
 "201
-[; ;newmain.c: 201:             case 0x0A:
-[e :U 2284 ]
-"202
-[; ;newmain.c: 202:                 result = input_X + input_Y;
-[e = _result -> + _input_X _input_Y `uc ]
-"203
-[; ;newmain.c: 203:                 return result;
-[e ) _result ]
-[e $UE 2281  ]
-"204
-[; ;newmain.c: 204:             case 0x0B:
-[e :U 2285 ]
-"205
-[; ;newmain.c: 205:                 result = input_X - input_Y;
-[e = _result -> - _input_X _input_Y `uc ]
-"206
-[; ;newmain.c: 206:                 return result;
-[e ) _result ]
-[e $UE 2281  ]
-"207
-[; ;newmain.c: 207:             case 0x0C:
-[e :U 2286 ]
-"208
-[; ;newmain.c: 208:                 result = input_X * input_Y;
-[e = _result -> * _input_X _input_Y `uc ]
-"209
-[; ;newmain.c: 209:                 return result;
-[e ) _result ]
-[e $UE 2281  ]
-"210
-[; ;newmain.c: 210:             case 0x0D:
-[e :U 2287 ]
-"211
-[; ;newmain.c: 211:                 result = input_X / input_Y;
-[e = _result -> / _input_X _input_Y `uc ]
-"212
-[; ;newmain.c: 212:                 return result;
-[e ) _result ]
-[e $UE 2281  ]
-"213
-[; ;newmain.c: 213:             default:
-[e :U 2288 ]
-"214
-[; ;newmain.c: 214:                 result = 0;
-[e = _result -> -> 0 `i `uc ]
-"215
-[; ;newmain.c: 215:     }
-}
-[e $U 2282  ]
-[e :U 2283 ]
-[e [\ _Operation , $ -> 10 `i 2284
- , $ -> 11 `i 2285
- , $ -> 12 `i 2286
- , $ -> 13 `i 2287
- 2288 ]
-[e :U 2282 ]
-"216
-[; ;newmain.c: 216:     return result;
-[e ) _result ]
-[e $UE 2281  ]
-"217
-[; ;newmain.c: 217: }
-[e :UE 2281 ]
-}
-"219
-[; ;newmain.c: 219: void display(unsigned char Result)
-[v _display `(v ~T0 @X0 1 ef1`uc ]
-"220
-[; ;newmain.c: 220: {
+[; ;newmain.c: 201:     {
 {
-[e :U _display ]
+"202
+[; ;newmain.c: 202:             case 0x0A:
+[e :U 2292 ]
+"203
+[; ;newmain.c: 203:                 result = input_X + input_Y;
+[e = _result -> + _input_X _input_Y `uc ]
+"204
+[; ;newmain.c: 204:                 return result;
+[e ) _result ]
+[e $UE 2289  ]
+"205
+[; ;newmain.c: 205:             case 0x0B:
+[e :U 2293 ]
+"206
+[; ;newmain.c: 206:                 result = input_X - input_Y;
+[e = _result -> - _input_X _input_Y `uc ]
+"207
+[; ;newmain.c: 207:                 return result;
+[e ) _result ]
+[e $UE 2289  ]
+"208
+[; ;newmain.c: 208:             case 0x0C:
+[e :U 2294 ]
+"209
+[; ;newmain.c: 209:                 result = input_X * input_Y;
+[e = _result -> * _input_X _input_Y `uc ]
+"210
+[; ;newmain.c: 210:                 return result;
+[e ) _result ]
+[e $UE 2289  ]
+"211
+[; ;newmain.c: 211:             case 0x0D:
+[e :U 2295 ]
+"212
+[; ;newmain.c: 212:                 if (input_Y != 0)
+[e $ ! != _input_Y -> 0 `i 2296  ]
+"213
+[; ;newmain.c: 213:                     result = input_X / input_Y;
+[e = _result -> / _input_X _input_Y `uc ]
+[e :U 2296 ]
+"214
+[; ;newmain.c: 214:                 return result;
+[e ) _result ]
+[e $UE 2289  ]
+"215
+[; ;newmain.c: 215:             default:
+[e :U 2297 ]
+"216
+[; ;newmain.c: 216:                 result = 0;
+[e = _result -> -> 0 `i `uc ]
+"217
+[; ;newmain.c: 217:     }
+}
+[e $U 2290  ]
+[e :U 2291 ]
+[e [\ _Operation , $ -> 10 `i 2292
+ , $ -> 11 `i 2293
+ , $ -> 12 `i 2294
+ , $ -> 13 `i 2295
+ 2297 ]
+[e :U 2290 ]
+"218
+[; ;newmain.c: 218:     return result;
+[e ) _result ]
+[e $UE 2289  ]
 "219
-[; ;newmain.c: 219: void display(unsigned char Result)
-[v _Result `uc ~T0 @X0 1 r1 ]
-"220
-[; ;newmain.c: 220: {
-[f ]
-"221
-[; ;newmain.c: 221:     PORTD = Result;
-[e = _PORTD _Result ]
-"222
-[; ;newmain.c: 222: }
+[; ;newmain.c: 219: }
 [e :UE 2289 ]
 }
-[v $root$_main `(v ~T0 @X0 0 e ]
+"221
+[; ;newmain.c: 221: void display(unsigned char Result)
+[v _display `(v ~T0 @X0 1 ef1`uc ]
+"222
+[; ;newmain.c: 222: {
+{
+[e :U _display ]
+"221
+[; ;newmain.c: 221: void display(unsigned char Result)
+[v _Result `uc ~T0 @X0 1 r1 ]
+"222
+[; ;newmain.c: 222: {
+[f ]
+"223
+[; ;newmain.c: 223:     PORTD = Result;
+[e = _PORTD _Result ]
 "224
-[; ;newmain.c: 224: void main(void) {
+[; ;newmain.c: 224: }
+[e :UE 2298 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"226
+[; ;newmain.c: 226: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"227
-[; ;newmain.c: 227:     TRISB = 0xF0;
-[e = _TRISB -> -> 240 `i `uc ]
-"228
-[; ;newmain.c: 228:     LATB = 0;
-[e = _LATB -> -> 0 `i `uc ]
 "229
-[; ;newmain.c: 229:     PORTB = 0;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;newmain.c: 229:     TRISB = 0xF0;
+[e = _TRISB -> -> 240 `i `uc ]
 "230
-[; ;newmain.c: 230:     ANSELB = 0;
-[e = _ANSELB -> -> 0 `i `uc ]
+[; ;newmain.c: 230:     LATB = 0;
+[e = _LATB -> -> 0 `i `uc ]
+"231
+[; ;newmain.c: 231:     PORTB = 0;
+[e = _PORTB -> -> 0 `i `uc ]
 "232
-[; ;newmain.c: 232:     TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
-"233
-[; ;newmain.c: 233:     LATD = 0;
-[e = _LATD -> -> 0 `i `uc ]
+[; ;newmain.c: 232:     ANSELB = 0;
+[e = _ANSELB -> -> 0 `i `uc ]
 "234
-[; ;newmain.c: 234:     PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
+[; ;newmain.c: 234:     TRISD = 0;
+[e = _TRISD -> -> 0 `i `uc ]
 "235
-[; ;newmain.c: 235:     ANSELD = 0;
+[; ;newmain.c: 235:     LATD = 0;
+[e = _LATD -> -> 0 `i `uc ]
+"236
+[; ;newmain.c: 236:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
+"237
+[; ;newmain.c: 237:     ANSELD = 0;
 [e = _ANSELD -> -> 0 `i `uc ]
-"238
-[; ;newmain.c: 238:     while (1)
-[e :U 2292 ]
-"239
-[; ;newmain.c: 239:     {
-{
 "240
-[; ;newmain.c: 240:         getInputX();
-[e ( _getInputX ..  ]
+[; ;newmain.c: 240:     while (1)
+[e :U 2301 ]
 "241
-[; ;newmain.c: 241:         PORTD = 0x01;
-[e = _PORTD -> -> 1 `i `uc ]
+[; ;newmain.c: 241:     {
+{
 "242
-[; ;newmain.c: 242:         _delay((unsigned long)((500)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 242:         getInputX();
+[e ( _getInputX ..  ]
 "243
-[; ;newmain.c: 243:         getInputOperation();
-[e ( _getInputOperation ..  ]
+[; ;newmain.c: 243:         PORTD = 0x01;
+[e = _PORTD -> -> 1 `i `uc ]
 "244
-[; ;newmain.c: 244:         PORTD = 0x03;
-[e = _PORTD -> -> 3 `i `uc ]
+[; ;newmain.c: 244:         _delay((unsigned long)((500)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "245
-[; ;newmain.c: 245:         _delay((unsigned long)((500)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 245:         getInputOperation();
+[e ( _getInputOperation ..  ]
 "246
-[; ;newmain.c: 246:         getInputY();
-[e ( _getInputY ..  ]
+[; ;newmain.c: 246:         PORTD = 0x03;
+[e = _PORTD -> -> 3 `i `uc ]
 "247
-[; ;newmain.c: 247:         PORTD = 0x02;
-[e = _PORTD -> -> 2 `i `uc ]
-"248
-[; ;newmain.c: 248:         _delay((unsigned long)((500)*(4000000/4000.0)));
+[; ;newmain.c: 247:         _delay((unsigned long)((500)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"248
+[; ;newmain.c: 248:         getInputY();
+[e ( _getInputY ..  ]
+"249
+[; ;newmain.c: 249:         PORTD = 0x02;
+[e = _PORTD -> -> 2 `i `uc ]
 "250
-[; ;newmain.c: 250:         key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
-"251
-[; ;newmain.c: 251:         while(key != 0x0F)
-[e $U 2294  ]
-[e :U 2295 ]
-"252
-[; ;newmain.c: 252:         {
-{
-"253
-[; ;newmain.c: 253:             _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"254
-[; ;newmain.c: 254:             key = getKeypress();
-[e = _key ( _getKeypress ..  ]
-"255
-[; ;newmain.c: 255:         }
-}
-[e :U 2294 ]
-"251
-[; ;newmain.c: 251:         while(key != 0x0F)
-[e $ != -> _key `i -> 15 `i 2295  ]
-[e :U 2296 ]
-"257
-[; ;newmain.c: 257:         Result = evaluate(input_X,input_Y,Operation);
+[; ;newmain.c: 250:         _delay((unsigned long)((500)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"261
+[; ;newmain.c: 261:         Result = evaluate(input_X,input_Y,Operation);
 [e = _Result ( _evaluate (3 , , -> _input_X `i -> _input_Y `i -> _Operation `i ]
-"258
-[; ;newmain.c: 258:         display(Result);
-[e ( _display (1 _Result ]
-"259
-[; ;newmain.c: 259:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"260
-[; ;newmain.c: 260:         key = 0xFF;
-[e = _key -> -> 255 `i `uc ]
-"261
-[; ;newmain.c: 261:         while(getKeypress() != 0x0E)
-[e $U 2297  ]
-[e :U 2298 ]
 "262
-[; ;newmain.c: 262:         {
-{
+[; ;newmain.c: 262:         display(Result);
+[e ( _display (1 _Result ]
 "263
-[; ;newmain.c: 263:             _delay((unsigned long)((10)*(4000000/4000.0)));
+[; ;newmain.c: 263:         _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"264
-[; ;newmain.c: 264:             key = getKeypress();
-[e = _key ( _getKeypress ..  ]
 "265
-[; ;newmain.c: 265:         }
-}
-[e :U 2297 ]
-"261
-[; ;newmain.c: 261:         while(getKeypress() != 0x0E)
-[e $ != -> ( _getKeypress ..  `i -> 14 `i 2298  ]
-[e :U 2299 ]
+[; ;newmain.c: 265:         key = 0xFF;
+[e = _key -> -> 255 `i `uc ]
 "266
-[; ;newmain.c: 266:         PORTD = 0x80;
-[e = _PORTD -> -> 128 `i `uc ]
+[; ;newmain.c: 266:         while(getKeypress() != 0x0E)
+[e $U 2303  ]
+[e :U 2304 ]
 "267
-[; ;newmain.c: 267:     }
-}
-[e :U 2291 ]
-[e $U 2292  ]
-[e :U 2293 ]
+[; ;newmain.c: 267:         {
+{
 "268
-[; ;newmain.c: 268:     return;
-[e $UE 2290  ]
+[; ;newmain.c: 268:             _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "269
-[; ;newmain.c: 269: }
-[e :UE 2290 ]
+[; ;newmain.c: 269:             key = getKeypress();
+[e = _key ( _getKeypress ..  ]
+"270
+[; ;newmain.c: 270:         }
+}
+[e :U 2303 ]
+"266
+[; ;newmain.c: 266:         while(getKeypress() != 0x0E)
+[e $ != -> ( _getKeypress ..  `i -> 14 `i 2304  ]
+[e :U 2305 ]
+"271
+[; ;newmain.c: 271:         PORTD = 0x80;
+[e = _PORTD -> -> 128 `i `uc ]
+"273
+[; ;newmain.c: 273:         if (0)
+[e $ ! != -> 0 `i -> 0 `i 2306  ]
+"274
+[; ;newmain.c: 274:             break;
+[e $U 2302  ]
+[e :U 2306 ]
+"275
+[; ;newmain.c: 275:     }
+}
+[e :U 2300 ]
+[e $U 2301  ]
+[e :U 2302 ]
+"276
+[; ;newmain.c: 276:     return;
+[e $UE 2299  ]
+"277
+[; ;newmain.c: 277: }
+[e :UE 2299 ]
 }

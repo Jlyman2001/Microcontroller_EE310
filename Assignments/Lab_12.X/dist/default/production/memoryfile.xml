@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/Board/debug\C_Calculator.X.debug.hex">
+  <executable name="dist/default/production\Lab_12.X.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>131072</length>
-      <used>1640</used>
-      <free>129432</free>
+      <used>1802</used>
+      <free>129270</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>8192</length>
-      <used>24</used>
-      <free>8168</free>
+      <used>57</used>
+      <free>8135</free>
     </memory>
   </executable>
 </project>

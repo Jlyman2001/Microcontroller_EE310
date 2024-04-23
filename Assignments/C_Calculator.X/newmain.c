@@ -27,7 +27,7 @@
 #include <stdlib.h>     //unneeded?
 #include <stdio.h>      //unneeded?
 
-#define _XTAL_FREQ 4000000  //4 MHz clock, for //__delay() function
+#define _XTAL_FREQ 4000000  //4 MHz clock, for __delay() function
 #define FCY _XTAL_FREQ/4
 unsigned char input_X,input_Y,Operation,Result,key;
 
@@ -43,104 +43,104 @@ unsigned char getKeypress(void)
         case 0x11:
             {
                 return 0x0D;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x21:{
                 return 0x0C;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x41:{  
                 return 0x0B;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x81:{  
                 return 0x0A;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
     }
     
     PORTB = 0x02;
-    //__delay_ms(10);
+    __delay_ms(10);
     switch (PORTB)
     {
             case 0x12:{
                 return 0x0F;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x22:{
                 return 9;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x42:{  
                 return 6;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x82:{  
                 return 3;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
     }
     PORTB = 0x04;
-    //__delay_ms(10);
+    __delay_ms(10);
     switch (PORTB)
     {
             case 0x14:{
                 return 0;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x24:{
                 return 8;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x44:{  
                 return 5;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x84:{  
                 return 2;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
     }
     PORTB = 0x08;
-    //__delay_ms(10);
+    __delay_ms(10);
     switch (PORTB)
     {
             case 0x18:{
                 return 0x0E;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x28:{
                 return 7;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x48:{  
                 return 4;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
             case 0x88:{  
                 return 1;
-                //__delay_ms(10);
+                __delay_ms(10);
             }
                 
     }
     key = 0xFF;
     return key;
-    //__delay_ms(50);
+    __delay_ms(50);
 }
 
 void getInputX()
@@ -149,14 +149,14 @@ void getInputX()
     key = 0xFF;
     while (key >= 0x0A){
         key = getKeypress();
-        //__delay_ms(10);
+        __delay_ms(10);
     }
-    //__delay_ms(300);
+    __delay_ms(300);
     input_X += 10*key;
     key = 0xFF;
     while (key >= 0x0A){
         key = getKeypress();
-        //__delay_ms(10);
+        __delay_ms(10);
     }
     input_X += key;
     
@@ -168,14 +168,14 @@ void getInputY()
     key = 0xFF;
     while (key >= 0x0A){
         key = getKeypress();
-        //__delay_ms(10);
+        __delay_ms(10);
     }
-    //__delay_ms(300);
+    __delay_ms(300);
     input_Y += 10*key;
     key = 0xFF;
     while (key >= 0x0A){
         key = getKeypress();
-        //__delay_ms(10);
+        __delay_ms(10);
     }
     input_Y += key;
     
@@ -187,7 +187,7 @@ void getInputOperation()
     while (key > 0x0F || key < 0x0A)         //0x0A is the first value too large fir it to  be a digit 
     {
         key = getKeypress();    //Loop checking input until the value is a digit
-        //__delay_ms(10);
+        __delay_ms(10);
     }
         Operation = key;
 
@@ -241,35 +241,35 @@ void main(void) {
     {
         getInputX();
         PORTD = 0x01;
-        //__delay_ms(500);
+        __delay_ms(500);
         getInputOperation();
         PORTD = 0x03;
-        //__delay_ms(500);
+        __delay_ms(500);
         getInputY();
         PORTD = 0x02;
-        //__delay_ms(500);
+        __delay_ms(500);
         
         /*
         key = 0xFF;
         while(key != 0x0F)
         {
-            //__delay_ms(10);
+            __delay_ms(10);
             key = getKeypress();
         }//wait for pound sign
         */
         
         Result = evaluate(input_X,input_Y,Operation);
         display(Result);
-        //__delay_ms(10);
-        /*
+        __delay_ms(10);
+        
         key = 0xFF;
         while(getKeypress() != 0x0E)
         {
-            //__delay_ms(10);
+            __delay_ms(10);
             key = getKeypress();
         }//wait for asterisk
         PORTD = 0x80;
-         */ 
+          
         if (0)
             break;
     }
