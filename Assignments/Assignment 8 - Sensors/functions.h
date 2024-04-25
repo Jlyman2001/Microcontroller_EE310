@@ -7,38 +7,11 @@
 
 #ifndef FUNCTIONS_H
 #define	FUNCTIONS_H
-
+#include "./Variables.h"
 #ifdef	__cplusplus
 extern "C" {
 #endif
 
-//void ADC_Init(void)
-//{
-//    //------Setup the ADC
-//    //DO: using ADCON0 set right justify
-//    ADCON0bits.FM = 1;      //right justify is 1  
-//    //DO: Using ADCON0 set ADCRC Clock
-//    ADCON0bits.CS = 0;      //using Fosc clock
-//    //DO: Set RA0 to input
-//    TRISAbits.TRISA0 = 1;
-//    //DO: Set RA0 to analog
-//    ANSELAbits.ANSELA0 = 1;     //1 is analog mode
-//    //DO: Set RA0 as Analog channel in ADC ADPCH
-//    ADPCH = 0;                  //0 is use ANA0
-//    //DO: set ADC CLOCK Selection register to zero
-//    ADCLK = 0;
-//    //DO: Clear ADC Result registers
-//    ADRESL = 0;
-//    ADRESH = 0;
-//    //DO: set precharge select to 0 in register ADPERL & ADPERH
-//    ADPREL = 0;
-//    ADPREH = 0;
-//    //DO: Set qcquisition LOW and HIGH bytes to zero
-//    ADACQL = 0;
-//    ADACQH = 0;
-//    //DO: Turn ADC On on register ADCON0   
-//    ADCON0bits.ON = 1;
-//}
 
 void init(void)
 {
@@ -85,13 +58,13 @@ void __interrupt(irq(IRQ_INT0),base(0x4008)) INT0_ISR(void)
             // if so, do something
         for (unsigned char beeps = 0; beeps < 2; beeps++)
         {
-            PORTDbits.RD7 = !PORTDbits.RD7;
+            buzzer = !buzzer;
             //asm("NOP");
             __delay_ms(250);
             // e.g,blink an LED connected to  PORTDbits.RD0 for 10 times with a delay of __delay_ms(250)
         }
     PIR1bits.INT0IF = 0;  
-    PORTDbits.RD7 = 0;
+    buzzer = 0;
     }
         // always clear the interrupt flag for INT0 when done
         // turn off the led on PORTDbits.RD0 
@@ -104,10 +77,10 @@ unsigned char getPR1Input()
     while (1)  //allow input until button pressed
     {
         //wait for RB1 (first PR) to be low (active low)
-        while (PORTBbits.RB1)
+        while (Photoresist1)
         {
             //__delay_ms(100);
-            if (PORTBbits.RB3)
+            if (continueButton)
                 return count;
         }
         count++;
@@ -122,10 +95,10 @@ unsigned char getPR2Input()
     while (1)  //allow input until button pressed
     {
         //wait for RB2 (second PR) to be low (active low)
-        while (PORTBbits.RB2)
+        while (Photoresist1)
         {
             //__delay_ms(100);
-            if (PORTBbits.RB3)
+            if (continueButton)
                 return count;
         }
         count++;

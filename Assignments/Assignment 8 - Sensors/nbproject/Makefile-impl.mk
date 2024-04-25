@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=lymanj-assignment8.X
+PROJECTNAME=Assignment 8 - Sensors
 
 # Active Configuration
 DEFAULTCONF=default

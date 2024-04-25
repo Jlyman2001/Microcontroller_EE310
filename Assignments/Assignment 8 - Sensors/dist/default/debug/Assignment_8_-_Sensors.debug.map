@@ -1,16 +1,16 @@
-Microchip MPLAB XC8 Compiler V2.45
+Microchip MPLAB XC8 Compiler V2.46
 
 Linker command line:
 
 -W-3 \
-  --edf=C:\Program Files\Microchip\xc8\v2.45\pic\dat\20230818022343_en.msgs \
+  --edf=C:\Program Files\Microchip\xc8\v2.46\pic\dat\20240104201356_en.msgs \
   -pivt0x4008=04008h -cn \
-  -h+dist/default/production\lymanj-assignment8.X.production.sym \
-  --cmf=dist/default/production\lymanj-assignment8.X.production.cmf -z \
-  -Q18F47K42 -oC:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_3.o \
+  -h+dist/default/debug\Assignment_8_-_Sensors.debug.sym \
+  --cmf=dist/default/debug\Assignment_8_-_Sensors.debug.cmf -z -Q18F47K42 \
+  -oC:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
-  -Mdist/default/production/lymanj-assignment8.X.production.map \
-  --md=C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_0.dat -E1 \
+  -Mdist/default/debug/Assignment_8_-_Sensors.debug.map \
+  --md=C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh \
   -ASMALLCONST=02000h-020FFhx480 \
   -AMEDIUMCONST=02000h-0FFFFh,012000h-01FFFFh -ACOMRAM=01h-05Fh \
@@ -35,8 +35,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_9.o \
-  dist/default/production\lymanj-assignment8.X.production.o 
+  C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_9.o \
+  dist/default/debug\Assignment_8_-_Sensors.debug.o 
 
 Object code version is 3.11
 
@@ -45,11 +45,11 @@ Machine type is 18F47K42
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_9.o
+C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_9.o
                 config                           300000   300000        A        0       4
                 init                               40AE     40AE        4     2004       0
                 reset_vec                             0        0        4        0       0
-dist/default/production\lymanj-assignment8.X.production.o
+dist/default/debug\Assignment_8_-_Sensors.debug.o
                 config                           300000   300000        A        0       4
                 smallconst                         2000     2000        2     1000       0
                 ivt0x4008                          4008     4008       A6     2004       0
@@ -510,7 +510,7 @@ _init                     text1        0041CC
 _main                     text0        0040B2
 _readCode                 bssCOMRAM    00001F
 _secondInput              bssCOMRAM    000020
-displayNumber@F16523      dataCOMRAM   000014
+displayNumber@F16527      dataCOMRAM   000014
 displayNumber@lookupTable cstackCOMRAM 000004
 displayNumber@number      cstackCOMRAM 00000E
 end_of_initialization     cinit        0042FE

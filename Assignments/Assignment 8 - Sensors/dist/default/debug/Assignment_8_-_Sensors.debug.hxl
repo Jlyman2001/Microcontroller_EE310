@@ -1,19 +1,19 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_3.o
- -Odist/default/production\lymanj-assignment8.X.production.hex
- -logfile=dist/default/production\lymanj-assignment8.X.production.hxl
+ C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_3.o
+ -Odist/default/debug\Assignment_8_-_Sensors.debug.hex
+ -logfile=dist/default/debug\Assignment_8_-_Sensors.debug.hxl
  -addressing=1
  -break=300000
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_3.o)
-  2000h - 2001h		(C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_3.o)
-  4008h - 4155h		(C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_3.o)
-  4158h - 4346h		(C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_3.o)
-  300000h - 300009h		(C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_3.o)
+  2000h - 2001h		(C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_3.o)
+  4008h - 4155h		(C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_3.o)
+  4158h - 4346h		(C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_3.o)
+  300000h - 300009h		(C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_3.o)
  Unused ranges:
   4h - 1FFFh
   2002h - 4007h
@@ -23,7 +23,7 @@
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\student\AppData\Local\Temp\xcAscos.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\Josh\AppData\Local\Temp\xcBselk.1\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------

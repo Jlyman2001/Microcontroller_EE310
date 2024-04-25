@@ -3,42 +3,46 @@
 [d edition pro ]
 [d chip 18F47K42 ]
 [d frameptr 16353 ]
-"43 C:\Users\student\MPLABXProjects\lymanj-assignment8.X/functions.h
+"16 C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\Assignment 8 - Sensors/functions.h
 [v _init init `(v  1 e 1 0 ]
-"79
+"52
 [v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
-"100
+"73
 [v _getPR1Input getPR1Input `(uc  1 e 1 0 ]
-"118
+"91
 [v _getPR2Input getPR2Input `(uc  1 e 1 0 ]
-"136
+"109
 [v _displayNumber displayNumber `(v  1 e 1 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fleq.c
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\float.c
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftadd.c
+"86 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftdiv.c
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftmul.c
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftsub.c
+"19 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul64.c
+"91 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"22 C:\Users\student\MPLABXProjects\lymanj-assignment8.X\main.c
+"45 C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\Assignment 8 - Sensors\main.c
 [v _main main `(v  1 e 1 0 ]
+"15 C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\Assignment 8 - Sensors/Variables.h
+[v _firstInput firstInput `uc  1 e 1 0 ]
+[v _secondInput secondInput `uc  1 e 1 0 ]
+[v _readCode readCode `uc  1 e 1 0 ]
 [s S62 . 1 `uc 1 INT0IP 1 0 :1:0 
 `uc 1 ZCDIP 1 0 :1:1 
 `uc 1 ADIP 1 0 :1:2 
@@ -48,7 +52,7 @@
 `uc 1 SMT1PRAIP 1 0 :1:6 
 `uc 1 SMT1PWAIP 1 0 :1:7 
 ]
-"2844 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f47k42.h
+"2844 C:\Program Files\Microchip\xc8\v2.46\pic\include\proc\pic18f47k42.h
 [u S71 . 1 `S62 1 . 1 0 ]
 [v _IPR1bits IPR1bits `VES71  1 e 1 @14721 ]
 [s S83 . 1 `uc 1 INT0IE 1 0 :1:0 
@@ -164,52 +168,48 @@
 [v _IVTBASEH IVTBASEH `VEuc  1 e 1 @16342 ]
 "47291
 [v _IVTBASEU IVTBASEU `VEuc  1 e 1 @16343 ]
-"21 C:\Users\student\MPLABXProjects\lymanj-assignment8.X\main.c
-[v _firstInput firstInput `uc  1 e 1 0 ]
-[v _secondInput secondInput `uc  1 e 1 0 ]
-[v _readCode readCode `uc  1 e 1 0 ]
-"22
+"45 C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\Assignment 8 - Sensors\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"52
+"75
 } 0
-"43 C:\Users\student\MPLABXProjects\lymanj-assignment8.X/functions.h
+"16 C:\Users\Josh\Documents\GitHub\Microcontroller_EE310\Assignments\Assignment 8 - Sensors/functions.h
 [v _init init `(v  1 e 1 0 ]
 {
-"76
+"49
 } 0
-"118
+"91
 [v _getPR2Input getPR2Input `(uc  1 e 1 0 ]
 {
-"120
+"93
 [v getPR2Input@count count `uc  1 a 1 16 ]
-"135
+"108
 } 0
-"100
+"73
 [v _getPR1Input getPR1Input `(uc  1 e 1 0 ]
 {
-"102
+"75
 [v getPR1Input@count count `uc  1 a 1 16 ]
-"117
+"90
 } 0
-"136
+"109
 [v _displayNumber displayNumber `(v  1 e 1 0 ]
 {
 [v displayNumber@number number `uc  1 a 1 wreg ]
-"142
+"115
 [v displayNumber@lookupTable lookupTable `[10]uc  1 a 10 3 ]
-"136
+"109
 [v displayNumber@number number `uc  1 a 1 wreg ]
-"141
-[v displayNumber@F16523 F16523 `[10]uc  1 s 10 F16523 ]
-"138
+"114
+[v displayNumber@F16527 F16527 `[10]uc  1 s 10 F16527 ]
+"111
 [v displayNumber@number number `uc  1 a 1 13 ]
-"157
+"130
 } 0
-"79
+"52
 [v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
 {
-"86
+"59
 [v INT0_ISR@beeps beeps `uc  1 a 1 2 ]
-"98
+"71
 } 0
