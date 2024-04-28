@@ -1,0 +1,258 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47K42 ]
+[d frameptr 16353 ]
+"18 E:\github\Microcontroller_EE310\Projects\Final_Project.X/Functions.h
+[v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
+"30
+[v _init init `(v  1 e 1 0 ]
+"92
+[v _ADC_Random ADC_Random `(uc  1 e 1 0 ]
+"103
+[v _ADC_Test ADC_Test `(v  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"18 E:\github\Microcontroller_EE310\Projects\Final_Project.X\main.c
+[v _main main `(v  1 e 1 0 ]
+[s S191 . 1 `uc 1 INT0IP 1 0 :1:0 
+`uc 1 ZCDIP 1 0 :1:1 
+`uc 1 ADIP 1 0 :1:2 
+`uc 1 ADTIP 1 0 :1:3 
+`uc 1 C1IP 1 0 :1:4 
+`uc 1 SMT1IP 1 0 :1:5 
+`uc 1 SMT1PRAIP 1 0 :1:6 
+`uc 1 SMT1PWAIP 1 0 :1:7 
+]
+"2844 D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
+[u S200 . 1 `S191 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES200  1 e 1 @14721 ]
+[s S212 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 ZCDIE 1 0 :1:1 
+`uc 1 ADIE 1 0 :1:2 
+`uc 1 ADTIE 1 0 :1:3 
+`uc 1 C1IE 1 0 :1:4 
+`uc 1 SMT1IE 1 0 :1:5 
+`uc 1 SMT1PRAIE 1 0 :1:6 
+`uc 1 SMT1PWAIE 1 0 :1:7 
+]
+"3409
+[u S221 . 1 `S212 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES221  1 e 1 @14737 ]
+[s S24 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 ZCDIF 1 0 :1:1 
+`uc 1 ADIF 1 0 :1:2 
+`uc 1 ADTIF 1 0 :1:3 
+`uc 1 C1IF 1 0 :1:4 
+`uc 1 SMT1IF 1 0 :1:5 
+`uc 1 SMT1PRAIF 1 0 :1:6 
+`uc 1 SMT1PWAIF 1 0 :1:7 
+]
+"3974
+[u S33 . 1 `S24 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES33  1 e 1 @14753 ]
+"8017
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+[s S136 . 1 `uc 1 ANSELA0 1 0 :1:0 
+`uc 1 ANSELA1 1 0 :1:1 
+`uc 1 ANSELA2 1 0 :1:2 
+`uc 1 ANSELA3 1 0 :1:3 
+`uc 1 ANSELA4 1 0 :1:4 
+`uc 1 ANSELA5 1 0 :1:5 
+`uc 1 ANSELA6 1 0 :1:6 
+`uc 1 ANSELA7 1 0 :1:7 
+]
+"8034
+[u S145 . 1 `S136 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES145  1 e 1 @14912 ]
+"8513
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"9937
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+"30242
+[v _ADRESL ADRESL `VEuc  1 e 1 @16111 ]
+"30370
+[v _ADRESH ADRESH `VEuc  1 e 1 @16112 ]
+"30490
+[v _ADPCH ADPCH `VEuc  1 e 1 @16113 ]
+"30601
+[v _ADACQL ADACQL `VEuc  1 e 1 @16115 ]
+"30729
+[v _ADACQH ADACQH `VEuc  1 e 1 @16116 ]
+"30920
+[v _ADPREL ADPREL `VEuc  1 e 1 @16118 ]
+"31048
+[v _ADPREH ADPREH `VEuc  1 e 1 @16119 ]
+[s S56 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"31178
+[s S64 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S72 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+]
+[s S76 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+[s S78 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+[u S82 . 1 `S56 1 . 1 0 `S64 1 . 1 0 `S72 1 . 1 0 `S76 1 . 1 0 `S78 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES82  1 e 1 @16120 ]
+"31931
+[v _ADCLK ADCLK `VEuc  1 e 1 @16127 ]
+"45976
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+"46088
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"46312
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+"46476
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+[s S115 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"46493
+[u S124 . 1 `S115 1 . 1 0 ]
+"46493
+"46493
+[v _TRISAbits TRISAbits `VES124  1 e 1 @16322 ]
+"46538
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"46662
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+"46756
+[v _PORTA PORTA `VEuc  1 e 1 @16330 ]
+[s S242 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"46835
+[u S251 . 1 `S242 1 . 1 0 ]
+"46835
+"46835
+[v _PORTBbits PORTBbits `VES251  1 e 1 @16331 ]
+"46942
+[v _PORTD PORTD `VEuc  1 e 1 @16333 ]
+[s S263 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"46959
+[u S272 . 1 `S263 1 . 1 0 ]
+"46959
+"46959
+[v _PORTDbits PORTDbits `VES272  1 e 1 @16333 ]
+[s S165 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"47062
+[s S173 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"47062
+[u S176 . 1 `S165 1 . 1 0 `S173 1 . 1 0 ]
+"47062
+"47062
+[v _INTCON0bits INTCON0bits `VES176  1 e 1 @16338 ]
+"47167
+[v _IVTBASEL IVTBASEL `VEuc  1 e 1 @16341 ]
+"47229
+[v _IVTBASEH IVTBASEH `VEuc  1 e 1 @16342 ]
+"47291
+[v _IVTBASEU IVTBASEU `VEuc  1 e 1 @16343 ]
+"18 E:\github\Microcontroller_EE310\Projects\Final_Project.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"23
+} 0
+"30 E:\github\Microcontroller_EE310\Projects\Final_Project.X/Functions.h
+[v _init init `(v  1 e 1 0 ]
+{
+"89
+} 0
+"103
+[v _ADC_Test ADC_Test `(v  1 e 1 0 ]
+{
+"110
+[v ADC_Test@tests tests `i  1 a 2 8 ]
+"109
+[v ADC_Test@Errors Errors `uc  1 a 1 7 ]
+"108
+[v ADC_Test@Threes Threes `uc  1 a 1 6 ]
+"107
+[v ADC_Test@Twos Twos `uc  1 a 1 5 ]
+"106
+[v ADC_Test@Ones Ones `uc  1 a 1 4 ]
+"105
+[v ADC_Test@Zeros Zeros `uc  1 a 1 3 ]
+"104
+[v ADC_Test@sample sample `uc  1 a 1 2 ]
+"155
+} 0
+"92
+[v _ADC_Random ADC_Random `(uc  1 e 1 0 ]
+{
+"100
+} 0
+"18
+[v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
+{
+"27
+} 0
