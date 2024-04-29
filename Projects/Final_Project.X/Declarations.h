@@ -75,10 +75,10 @@ void init(void);
 
 unsigned char ADC_Random(void);
 void ADC_Test(void);
-
-
-
-
+void wait_for_input(void);
+void gameOver(void);
+void playTone(unsigned char);
+void displayValue(unsigned char, unsigned char);
 
 #ifdef	__cplusplus
 }

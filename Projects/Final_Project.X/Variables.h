@@ -32,7 +32,12 @@ extern "C" {
 //Maximum length of game before player wins
 #define SEQUENCE_LENGTH 4  
 //Preallocated space for sequence of buttons, limited to SEQUENCE_LENGTH long
-unsigned char Sequence [SEQUENCE_LENGTH];        
+unsigned char Sequence [SEQUENCE_LENGTH];
+//variable to track which button in the sequence the player is on
+unsigned char highestValue;
+unsigned char keyPressed;
+unsigned char index;
+
 
 // Fosc  frequency for _delay()  library
 #define _XTAL_FREQ 4000000                 

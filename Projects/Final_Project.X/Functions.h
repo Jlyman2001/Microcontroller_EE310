@@ -17,11 +17,41 @@ extern "C" {
 // Defining Interrupt ISR 
 void __interrupt(irq(IRQ_INT0),base(0x4008)) INT0_ISR(void)
 {
-    // Check if interrupt flag for INT0 is set to 1 - (note INT0 is your input)
-    if (PIR1bits.INT0IF == 1)
+    // Check if this was a button press interupt
+    if (PIR0bits.IOCIF == 1)
     {
-        asm("RESET");           //interrupt causes pic reset
-        PIR1bits.INT0IF = 0;    //never executes? pic should reset before it can
+        IOCAF = 0;              //ignore any interrupt from port A
+        IOCCF = 0;              //ignore any interrupt from port C
+        IOCEF = 0;              //ignore any interrupt from port F
+        IOCBF = (IOCBF & 0x1F); //ignore the top 3 bits of port B; unused
+        
+        //If RB0 pressed, reset
+        if(IOCBFbits.IOCBF0)
+        {
+            asm("RESET");       
+        }
+        //If RB1 pressed, log keypress
+        if(IOCBFbits.IOCBF1)
+        {
+            keyPressed = 0x01;     
+        }
+        //If RB2 pressed, log keypress
+        if(IOCBFbits.IOCBF1)
+        {
+            keyPressed = 0x02;     
+        }
+        //If RB1 pressed, log keypress
+        if(IOCBFbits.IOCBF3)
+        {
+            keyPressed = 0x03;     
+        }
+        //If RB2 pressed, log keypress
+        if(IOCBFbits.IOCBF4)
+        {
+            keyPressed = 0x04;     
+        }
+        
+        
     }
 
 }
@@ -75,10 +105,12 @@ void init(void){
     INTCON0bits.IPEN = 1;
     INTCON0bits.GIEH = 1;
     INTCON0bits.GIEL = 1;
-    INTCON0bits.INT0EDG = 1;    //rising edge interrupt on int0
-    IPR1bits.INT0IP = 0;
-    PIE1bits.INT0IE = 1;
-    PIR1bits.INT0IF = 0;
+    PIE0bits.IOCIE   = 1;   //enable interrupt on change for inputs
+    
+    
+    
+    
+    
     IVTBASEU = 0;
     IVTBASEH = 0x40;
     IVTBASEL = 0x08;
@@ -96,7 +128,7 @@ unsigned char ADC_Random(void){
     while (ADCON0bits.GO);      
     //Return 2 least significant bits of ADC read value. 
     //These will be essentially random and will return a value from 0 to 3
-    return ADRESL;    
+    return (ADRESL & 0x03);    
 }
 
 //Test function to measure the randomness of ADC RNG function
@@ -155,10 +187,60 @@ void ADC_Test(void){
     
 }
 
+//waits for input caused by interrupt handle function.
+//if button is pressed, lights up LED for button and plays tone
+void wait_for_input()
+{
+    keyPressed = 0;
+    //wait for keyPressed to update from interrupt function
+    while (!keyPressed);  
+    displayValue(keyPressed);
+    
+    return;
+}
 
+//game over subroutine; flashes LEDs and plays song 
+void gameOver(void)
+{
+    
+}
 
+//plays given frequency note for specified duration using timers
+void playTone(unsigned char frequency, unsigned char duration)
+{
+    //TODO: learn this 
+    return;
+}
 
-
+//takes an input from 1-4 and lights up LED for that input and plays a tone
+void displayValue(unsigned char value)
+{
+    switch (value)
+    {
+        case 0x01:
+            Button1LED = 1;
+            playTone(0x01, 0x00);//placeholder; replace with correct value input
+            Button1LED = 0;
+            break;
+        case 0x02:
+            Button2LED = 1;
+            playTone(0x02, 0x00);//placeholder; replace with correct value input
+            Button2LED = 0;            
+            break;    
+        case 0x03:
+            Button3LED = 1;
+            playTone(0x03, 0x00);//placeholder; replace with correct value input
+            Button3LED = 0;
+            break;
+        case 0x04:
+            Button4LED = 1;
+            playTone(0x04, 0x00);//placeholder; replace with correct value input
+            Button4LED = 0;
+            break;   
+        default:
+            break;
+    }
+}
 
 #ifdef	__cplusplus
 }
