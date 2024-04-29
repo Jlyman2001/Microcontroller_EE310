@@ -1,17 +1,40 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [t ~ __interrupt . k ]
 [t T1 __interrupt irq ( 8 ) base ( 16392 ) ]
-"3963 D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3963:     struct {
-[s S174 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S174 . INT0IF ZCDIF ADIF ADTIF C1IF SMT1IF SMT1PRAIF SMT1PWAIF ]
-"3962
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3962: typedef union {
-[u S173 `S174 1 ]
-[n S173 . . ]
-"3974
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3974: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x39A1)));
-[v _PIR1bits `VS173 ~T0 @X0 0 e@14753 ]
+"3901 D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3901:     struct {
+[s S172 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S172 . SWIF HLVDIF OSFIF CSWIF NVMIF SCANIF CRCIF IOCIF ]
+"3900
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3900: typedef union {
+[u S171 `S172 1 ]
+[n S171 . . ]
+"3912
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3912: extern volatile PIR0bits_t PIR0bits __attribute__((address(0x39A0)));
+[v _PIR0bits `VS171 ~T0 @X0 0 e@14752 ]
+"8451
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8451: extern volatile unsigned char IOCAF __attribute__((address(0x3A47)));
+[v _IOCAF `Vuc ~T0 @X0 0 e@14919 ]
+"9659
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 9659: extern volatile unsigned char IOCCF __attribute__((address(0x3A67)));
+[v _IOCCF `Vuc ~T0 @X0 0 e@14951 ]
+"10677
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 10677: extern volatile unsigned char IOCEF __attribute__((address(0x3A87)));
+[v _IOCEF `Vuc ~T0 @X0 0 e@14983 ]
+"8947
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8947: extern volatile unsigned char IOCBF __attribute__((address(0x3A57)));
+[v _IOCBF `Vuc ~T0 @X0 0 e@14935 ]
+"8953
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8953:     struct {
+[s S390 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S390 . IOCBF0 IOCBF1 IOCBF2 IOCBF3 IOCBF4 IOCBF5 IOCBF6 IOCBF7 ]
+"8952
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8952: typedef union {
+[u S389 `S390 1 ]
+[n S389 . . ]
+"8964
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 8964: extern volatile IOCBFbits_t IOCBFbits __attribute__((address(0x3A57)));
+[v _IOCBFbits `VS389 ~T0 @X0 0 e@14935 ]
 "46538
 [; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 46538: extern volatile unsigned char TRISB __attribute__((address(0x3FC3)));
 [v _TRISB `Vuc ~T0 @X0 0 e@16323 ]
@@ -133,28 +156,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "47062
 [; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 47062: extern volatile INTCON0bits_t INTCON0bits __attribute__((address(0x3FD2)));
 [v _INTCON0bits `VS2137 ~T0 @X0 0 e@16338 ]
-"2833
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 2833:     struct {
-[s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S130 . INT0IP ZCDIP ADIP ADTIP C1IP SMT1IP SMT1PRAIP SMT1PWAIP ]
-"2832
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 2832: typedef union {
-[u S129 `S130 1 ]
-[n S129 . . ]
-"2844
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 2844: extern volatile IPR1bits_t IPR1bits __attribute__((address(0x3981)));
-[v _IPR1bits `VS129 ~T0 @X0 0 e@14721 ]
-"3398
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3398:     struct {
-[s S152 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S152 . INT0IE ZCDIE ADIE ADTIE C1IE SMT1IE SMT1PRAIE SMT1PWAIE ]
-"3397
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3397: typedef union {
-[u S151 `S152 1 ]
-[n S151 . . ]
-"3409
-[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3409: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x3991)));
-[v _PIE1bits `VS151 ~T0 @X0 0 e@14737 ]
+"3336
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3336:     struct {
+[s S150 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S150 . SWIE HLVDIE OSFIE CSWIE NVMIE SCANIE CRCIE IOCIE ]
+"3335
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3335: typedef union {
+[u S149 `S150 1 ]
+[n S149 . . ]
+"3347
+[; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 3347: extern volatile PIE0bits_t PIE0bits __attribute__((address(0x3990)));
+[v _PIE0bits `VS149 ~T0 @X0 0 e@14736 ]
 "47291
 [; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 47291: extern volatile unsigned char IVTBASEU __attribute__((address(0x3FD7)));
 [v _IVTBASEU `Vuc ~T0 @X0 0 e@16343 ]
@@ -193,8 +205,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
 "74 ./Declarations.h
 [v _init `(v ~T0 @X0 0 ef ]
-"77
-[v _ADC_Test `(v ~T0 @X0 0 ef ]
+"76
+[v _ADC_Random `(uc ~T0 @X0 0 ef ]
+"81
+[v _displayValue `(v ~T0 @X0 0 ef1`uc ]
+"78
+[v _wait_for_input `(v ~T0 @X0 0 ef ]
+"79
+[v _gameOver `(v ~T0 @X0 0 ef ]
+"82
+[v _gameWin `(v ~T0 @X0 0 ef ]
 "250 D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
 [; ;D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h: 250: __asm("STATUS_CSHAD equ 03880h");
 [; <" STATUS_CSHAD equ 03880h ;# ">
@@ -2424,6 +2444,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35 ./Variables.h
 [; ;./Variables.h: 35: unsigned char Sequence [4];
 [v _Sequence `uc ~T0 @X0 -> 4 `i e ]
+"37
+[; ;./Variables.h: 37: unsigned char highestValue;
+[v _highestValue `uc ~T0 @X0 1 e ]
+"38
+[; ;./Variables.h: 38: unsigned char keyPressed;
+[v _keyPressed `uc ~T0 @X0 1 e ]
+"39
+[; ;./Variables.h: 39: unsigned char index;
+[v _index `uc ~T0 @X0 1 e ]
 [v $root$_INT0_ISR `(v ~T0 @X0 0 e ]
 "18 ./Functions.h
 [; ;./Functions.h: 18: void __attribute__((picinterrupt(("irq(8),base(0x4008)")))) INT0_ISR(void)
@@ -2434,357 +2463,592 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _INT0_ISR ]
 [f ]
 "21
-[; ;./Functions.h: 21:     if (PIR1bits.INT0IF == 1)
-[e $ ! == -> . . _PIR1bits 0 0 `i -> 1 `i 2247  ]
+[; ;./Functions.h: 21:     if (PIR0bits.IOCIF == 1)
+[e $ ! == -> . . _PIR0bits 0 7 `i -> 1 `i 2247  ]
 "22
 [; ;./Functions.h: 22:     {
 {
 "23
-[; ;./Functions.h: 23:         __asm("RESET");
-[; <" RESET ;# ">
+[; ;./Functions.h: 23:         IOCAF = 0;
+[e = _IOCAF -> -> 0 `i `uc ]
 "24
-[; ;./Functions.h: 24:         PIR1bits.INT0IF = 0;
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+[; ;./Functions.h: 24:         IOCCF = 0;
+[e = _IOCCF -> -> 0 `i `uc ]
 "25
-[; ;./Functions.h: 25:     }
+[; ;./Functions.h: 25:         IOCEF = 0;
+[e = _IOCEF -> -> 0 `i `uc ]
+"26
+[; ;./Functions.h: 26:         IOCBF = (IOCBF & 0x1F);
+[e = _IOCBF -> & -> _IOCBF `i -> 31 `i `uc ]
+"29
+[; ;./Functions.h: 29:         if(IOCBFbits.IOCBF0)
+[e $ ! != -> . . _IOCBFbits 0 0 `i -> 0 `i 2248  ]
+"30
+[; ;./Functions.h: 30:         {
+{
+"31
+[; ;./Functions.h: 31:             __asm("RESET");
+[; <" RESET ;# ">
+"32
+[; ;./Functions.h: 32:         }
+}
+[e :U 2248 ]
+"34
+[; ;./Functions.h: 34:         if(IOCBFbits.IOCBF1)
+[e $ ! != -> . . _IOCBFbits 0 1 `i -> 0 `i 2249  ]
+"35
+[; ;./Functions.h: 35:         {
+{
+"36
+[; ;./Functions.h: 36:             keyPressed = 0x01;
+[e = _keyPressed -> -> 1 `i `uc ]
+"37
+[; ;./Functions.h: 37:         }
+}
+[e :U 2249 ]
+"39
+[; ;./Functions.h: 39:         if(IOCBFbits.IOCBF1)
+[e $ ! != -> . . _IOCBFbits 0 1 `i -> 0 `i 2250  ]
+"40
+[; ;./Functions.h: 40:         {
+{
+"41
+[; ;./Functions.h: 41:             keyPressed = 0x02;
+[e = _keyPressed -> -> 2 `i `uc ]
+"42
+[; ;./Functions.h: 42:         }
+}
+[e :U 2250 ]
+"44
+[; ;./Functions.h: 44:         if(IOCBFbits.IOCBF3)
+[e $ ! != -> . . _IOCBFbits 0 3 `i -> 0 `i 2251  ]
+"45
+[; ;./Functions.h: 45:         {
+{
+"46
+[; ;./Functions.h: 46:             keyPressed = 0x03;
+[e = _keyPressed -> -> 3 `i `uc ]
+"47
+[; ;./Functions.h: 47:         }
+}
+[e :U 2251 ]
+"49
+[; ;./Functions.h: 49:         if(IOCBFbits.IOCBF4)
+[e $ ! != -> . . _IOCBFbits 0 4 `i -> 0 `i 2252  ]
+"50
+[; ;./Functions.h: 50:         {
+{
+"51
+[; ;./Functions.h: 51:             keyPressed = 0x04;
+[e = _keyPressed -> -> 4 `i `uc ]
+"52
+[; ;./Functions.h: 52:         }
+}
+[e :U 2252 ]
+"55
+[; ;./Functions.h: 55:     }
 }
 [e :U 2247 ]
-"27
-[; ;./Functions.h: 27: }
+"57
+[; ;./Functions.h: 57: }
 [e :UE 2246 ]
 }
-"30
-[; ;./Functions.h: 30: void init(void){
+"60
+[; ;./Functions.h: 60: void init(void){
 [v _init `(v ~T0 @X0 1 ef ]
 {
 [e :U _init ]
 [f ]
-"32
-[; ;./Functions.h: 32:     TRISB = 0xFF;
+"62
+[; ;./Functions.h: 62:     TRISB = 0xFF;
 [e = _TRISB -> -> 255 `i `uc ]
-"33
-[; ;./Functions.h: 33:     ANSELB = 0;
-[e = _ANSELB -> -> 0 `i `uc ]
-"34
-[; ;./Functions.h: 34:     LATB = 0;
-[e = _LATB -> -> 0 `i `uc ]
-"36
-[; ;./Functions.h: 36:     TRISA = 0x01;
-[e = _TRISA -> -> 1 `i `uc ]
-"37
-[; ;./Functions.h: 37:     ANSELA = 0x01;
-[e = _ANSELA -> -> 1 `i `uc ]
-"38
-[; ;./Functions.h: 38:     LATA = 0;
-[e = _LATA -> -> 0 `i `uc ]
-"39
-[; ;./Functions.h: 39:     PORTA = 0;
-[e = _PORTA -> -> 0 `i `uc ]
-"41
-[; ;./Functions.h: 41:     TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
-"42
-[; ;./Functions.h: 42:     ANSELD = 0;
-[e = _ANSELD -> -> 0 `i `uc ]
-"43
-[; ;./Functions.h: 43:     LATD = 0;
-[e = _LATD -> -> 0 `i `uc ]
-"44
-[; ;./Functions.h: 44:     PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
-"51
-[; ;./Functions.h: 51:     ADCON0bits.FM = 1;
-[e = . . _ADCON0bits 0 2 -> -> 1 `i `uc ]
-"53
-[; ;./Functions.h: 53:     ADCON0bits.CS = 0;
-[e = . . _ADCON0bits 0 3 -> -> 0 `i `uc ]
-"55
-[; ;./Functions.h: 55:     TRISAbits.TRISA0 = 1;
-[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
-"57
-[; ;./Functions.h: 57:     ANSELAbits.ANSELA0 = 1;
-[e = . . _ANSELAbits 0 0 -> -> 1 `i `uc ]
-"59
-[; ;./Functions.h: 59:     ADPCH = 0;
-[e = _ADPCH -> -> 0 `i `uc ]
-"61
-[; ;./Functions.h: 61:     ADCLK = 0;
-[e = _ADCLK -> -> 0 `i `uc ]
 "63
-[; ;./Functions.h: 63:     ADRESL = 0;
-[e = _ADRESL -> -> 0 `i `uc ]
+[; ;./Functions.h: 63:     ANSELB = 0;
+[e = _ANSELB -> -> 0 `i `uc ]
 "64
-[; ;./Functions.h: 64:     ADRESH = 0;
-[e = _ADRESH -> -> 0 `i `uc ]
+[; ;./Functions.h: 64:     LATB = 0;
+[e = _LATB -> -> 0 `i `uc ]
 "66
-[; ;./Functions.h: 66:     ADPREL = 0;
-[e = _ADPREL -> -> 0 `i `uc ]
+[; ;./Functions.h: 66:     TRISA = 0x01;
+[e = _TRISA -> -> 1 `i `uc ]
 "67
-[; ;./Functions.h: 67:     ADPREH = 0;
-[e = _ADPREH -> -> 0 `i `uc ]
+[; ;./Functions.h: 67:     ANSELA = 0x01;
+[e = _ANSELA -> -> 1 `i `uc ]
+"68
+[; ;./Functions.h: 68:     LATA = 0;
+[e = _LATA -> -> 0 `i `uc ]
 "69
-[; ;./Functions.h: 69:     ADACQL = 0;
-[e = _ADACQL -> -> 0 `i `uc ]
-"70
-[; ;./Functions.h: 70:     ADACQH = 0;
-[e = _ADACQH -> -> 0 `i `uc ]
+[; ;./Functions.h: 69:     PORTA = 0;
+[e = _PORTA -> -> 0 `i `uc ]
+"71
+[; ;./Functions.h: 71:     TRISD = 0;
+[e = _TRISD -> -> 0 `i `uc ]
 "72
-[; ;./Functions.h: 72:     ADCON0bits.ON = 1;
-[e = . . _ADCON0bits 0 6 -> -> 1 `i `uc ]
-"75
-[; ;./Functions.h: 75:     INTCON0bits.IPEN = 1;
-[e = . . _INTCON0bits 0 4 -> -> 1 `i `uc ]
-"76
-[; ;./Functions.h: 76:     INTCON0bits.GIEH = 1;
-[e = . . _INTCON0bits 1 1 -> -> 1 `i `uc ]
-"77
-[; ;./Functions.h: 77:     INTCON0bits.GIEL = 1;
-[e = . . _INTCON0bits 0 5 -> -> 1 `i `uc ]
-"78
-[; ;./Functions.h: 78:     INTCON0bits.INT0EDG = 1;
-[e = . . _INTCON0bits 0 0 -> -> 1 `i `uc ]
-"79
-[; ;./Functions.h: 79:     IPR1bits.INT0IP = 0;
-[e = . . _IPR1bits 0 0 -> -> 0 `i `uc ]
-"80
-[; ;./Functions.h: 80:     PIE1bits.INT0IE = 1;
-[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+[; ;./Functions.h: 72:     ANSELD = 0;
+[e = _ANSELD -> -> 0 `i `uc ]
+"73
+[; ;./Functions.h: 73:     LATD = 0;
+[e = _LATD -> -> 0 `i `uc ]
+"74
+[; ;./Functions.h: 74:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
 "81
-[; ;./Functions.h: 81:     PIR1bits.INT0IF = 0;
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"82
-[; ;./Functions.h: 82:     IVTBASEU = 0;
-[e = _IVTBASEU -> -> 0 `i `uc ]
+[; ;./Functions.h: 81:     ADCON0bits.FM = 1;
+[e = . . _ADCON0bits 0 2 -> -> 1 `i `uc ]
 "83
-[; ;./Functions.h: 83:     IVTBASEH = 0x40;
-[e = _IVTBASEH -> -> 64 `i `uc ]
-"84
-[; ;./Functions.h: 84:     IVTBASEL = 0x08;
-[e = _IVTBASEL -> -> 8 `i `uc ]
+[; ;./Functions.h: 83:     ADCON0bits.CS = 0;
+[e = . . _ADCON0bits 0 3 -> -> 0 `i `uc ]
+"85
+[; ;./Functions.h: 85:     TRISAbits.TRISA0 = 1;
+[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
+"87
+[; ;./Functions.h: 87:     ANSELAbits.ANSELA0 = 1;
+[e = . . _ANSELAbits 0 0 -> -> 1 `i `uc ]
 "89
-[; ;./Functions.h: 89: }
-[e :UE 2248 ]
+[; ;./Functions.h: 89:     ADPCH = 0;
+[e = _ADPCH -> -> 0 `i `uc ]
+"91
+[; ;./Functions.h: 91:     ADCLK = 0;
+[e = _ADCLK -> -> 0 `i `uc ]
+"93
+[; ;./Functions.h: 93:     ADRESL = 0;
+[e = _ADRESL -> -> 0 `i `uc ]
+"94
+[; ;./Functions.h: 94:     ADRESH = 0;
+[e = _ADRESH -> -> 0 `i `uc ]
+"96
+[; ;./Functions.h: 96:     ADPREL = 0;
+[e = _ADPREL -> -> 0 `i `uc ]
+"97
+[; ;./Functions.h: 97:     ADPREH = 0;
+[e = _ADPREH -> -> 0 `i `uc ]
+"99
+[; ;./Functions.h: 99:     ADACQL = 0;
+[e = _ADACQL -> -> 0 `i `uc ]
+"100
+[; ;./Functions.h: 100:     ADACQH = 0;
+[e = _ADACQH -> -> 0 `i `uc ]
+"102
+[; ;./Functions.h: 102:     ADCON0bits.ON = 1;
+[e = . . _ADCON0bits 0 6 -> -> 1 `i `uc ]
+"105
+[; ;./Functions.h: 105:     INTCON0bits.IPEN = 1;
+[e = . . _INTCON0bits 0 4 -> -> 1 `i `uc ]
+"106
+[; ;./Functions.h: 106:     INTCON0bits.GIEH = 1;
+[e = . . _INTCON0bits 1 1 -> -> 1 `i `uc ]
+"107
+[; ;./Functions.h: 107:     INTCON0bits.GIEL = 1;
+[e = . . _INTCON0bits 0 5 -> -> 1 `i `uc ]
+"108
+[; ;./Functions.h: 108:     PIE0bits.IOCIE = 1;
+[e = . . _PIE0bits 0 7 -> -> 1 `i `uc ]
+"114
+[; ;./Functions.h: 114:     IVTBASEU = 0;
+[e = _IVTBASEU -> -> 0 `i `uc ]
+"115
+[; ;./Functions.h: 115:     IVTBASEH = 0x40;
+[e = _IVTBASEH -> -> 64 `i `uc ]
+"116
+[; ;./Functions.h: 116:     IVTBASEL = 0x08;
+[e = _IVTBASEL -> -> 8 `i `uc ]
+"121
+[; ;./Functions.h: 121: }
+[e :UE 2253 ]
 }
-"92
-[; ;./Functions.h: 92: unsigned char ADC_Random(void){
+"124
+[; ;./Functions.h: 124: unsigned char ADC_Random(void){
 [v _ADC_Random `(uc ~T0 @X0 1 ef ]
 {
 [e :U _ADC_Random ]
 [f ]
-"94
-[; ;./Functions.h: 94:     ADCON0bits.GO = 1;
+"126
+[; ;./Functions.h: 126:     ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-"96
-[; ;./Functions.h: 96:     while (ADCON0bits.GO);
-[e $U 2250  ]
-[e :U 2251 ]
-[e :U 2250 ]
-[e $ != -> . . _ADCON0bits 0 0 `i -> 0 `i 2251  ]
-[e :U 2252 ]
-"99
-[; ;./Functions.h: 99:     return (ADRESL & 0x03);
+"128
+[; ;./Functions.h: 128:     while (ADCON0bits.GO);
+[e $U 2255  ]
+[e :U 2256 ]
+[e :U 2255 ]
+[e $ != -> . . _ADCON0bits 0 0 `i -> 0 `i 2256  ]
+[e :U 2257 ]
+"131
+[; ;./Functions.h: 131:     return (ADRESL & 0x03);
 [e ) -> & -> _ADRESL `i -> 3 `i `uc ]
-[e $UE 2249  ]
-"100
-[; ;./Functions.h: 100: }
-[e :UE 2249 ]
+[e $UE 2254  ]
+"132
+[; ;./Functions.h: 132: }
+[e :UE 2254 ]
 }
-"103
-[; ;./Functions.h: 103: void ADC_Test(void){
+"136
+[; ;./Functions.h: 136: void ADC_Test(void){
 [v _ADC_Test `(v ~T0 @X0 1 ef ]
 {
 [e :U _ADC_Test ]
 [f ]
-"104
-[; ;./Functions.h: 104:     char sample = 0;
+"137
+[; ;./Functions.h: 137:     char sample = 0;
 [v _sample `uc ~T0 @X0 1 a ]
 [e = _sample -> -> 0 `i `uc ]
-"105
-[; ;./Functions.h: 105:     char Zeros = 0;
+"138
+[; ;./Functions.h: 138:     char Zeros = 0;
 [v _Zeros `uc ~T0 @X0 1 a ]
 [e = _Zeros -> -> 0 `i `uc ]
-"106
-[; ;./Functions.h: 106:     char Ones = 0;
+"139
+[; ;./Functions.h: 139:     char Ones = 0;
 [v _Ones `uc ~T0 @X0 1 a ]
 [e = _Ones -> -> 0 `i `uc ]
-"107
-[; ;./Functions.h: 107:     char Twos = 0;
+"140
+[; ;./Functions.h: 140:     char Twos = 0;
 [v _Twos `uc ~T0 @X0 1 a ]
 [e = _Twos -> -> 0 `i `uc ]
-"108
-[; ;./Functions.h: 108:     char Threes = 0;
+"141
+[; ;./Functions.h: 141:     char Threes = 0;
 [v _Threes `uc ~T0 @X0 1 a ]
 [e = _Threes -> -> 0 `i `uc ]
-"109
-[; ;./Functions.h: 109:     char Errors = 0;
+"142
+[; ;./Functions.h: 142:     char Errors = 0;
 [v _Errors `uc ~T0 @X0 1 a ]
 [e = _Errors -> -> 0 `i `uc ]
-"110
-[; ;./Functions.h: 110:     for (int tests = 0; tests < 32; tests++)
+"143
+[; ;./Functions.h: 143:     for (int tests = 0; tests < 32; tests++)
 {
 [v _tests `i ~T0 @X0 1 a ]
 [e = _tests -> 0 `i ]
-[e $ < _tests -> 32 `i 2254  ]
-[e $U 2255  ]
-[e :U 2254 ]
-"111
-[; ;./Functions.h: 111:     {
-{
-"112
-[; ;./Functions.h: 112:         sample = ADC_Random();
-[e = _sample -> ( _ADC_Random ..  `uc ]
-"113
-[; ;./Functions.h: 113:         _delay((unsigned long)((100)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"114
-[; ;./Functions.h: 114:         switch (sample)
-[e $U 2258  ]
-"115
-[; ;./Functions.h: 115:         {
-{
-"116
-[; ;./Functions.h: 116:                 case 0:
+[e $ < _tests -> 32 `i 2259  ]
+[e $U 2260  ]
 [e :U 2259 ]
-"117
-[; ;./Functions.h: 117:                     Zeros++;
+"144
+[; ;./Functions.h: 144:     {
+{
+"145
+[; ;./Functions.h: 145:         sample = ADC_Random();
+[e = _sample -> ( _ADC_Random ..  `uc ]
+"146
+[; ;./Functions.h: 146:         _delay((unsigned long)((100)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"147
+[; ;./Functions.h: 147:         switch (sample)
+[e $U 2263  ]
+"148
+[; ;./Functions.h: 148:         {
+{
+"149
+[; ;./Functions.h: 149:                 case 0:
+[e :U 2264 ]
+"150
+[; ;./Functions.h: 150:                     Zeros++;
 [e ++ _Zeros -> -> 1 `i `uc ]
-"118
-[; ;./Functions.h: 118:                     break;
-[e $U 2257  ]
-"119
-[; ;./Functions.h: 119:                 case 1:
-[e :U 2260 ]
-"120
-[; ;./Functions.h: 120:                     Ones++;
+"151
+[; ;./Functions.h: 151:                     break;
+[e $U 2262  ]
+"152
+[; ;./Functions.h: 152:                 case 1:
+[e :U 2265 ]
+"153
+[; ;./Functions.h: 153:                     Ones++;
 [e ++ _Ones -> -> 1 `i `uc ]
-"121
-[; ;./Functions.h: 121:                     break;
-[e $U 2257  ]
-"122
-[; ;./Functions.h: 122:                 case 2:
-[e :U 2261 ]
-"123
-[; ;./Functions.h: 123:                     Twos++;
+"154
+[; ;./Functions.h: 154:                     break;
+[e $U 2262  ]
+"155
+[; ;./Functions.h: 155:                 case 2:
+[e :U 2266 ]
+"156
+[; ;./Functions.h: 156:                     Twos++;
 [e ++ _Twos -> -> 1 `i `uc ]
-"124
-[; ;./Functions.h: 124:                     break;
-[e $U 2257  ]
-"125
-[; ;./Functions.h: 125:                 case 3:
-[e :U 2262 ]
-"126
-[; ;./Functions.h: 126:                     Threes++;
+"157
+[; ;./Functions.h: 157:                     break;
+[e $U 2262  ]
+"158
+[; ;./Functions.h: 158:                 case 3:
+[e :U 2267 ]
+"159
+[; ;./Functions.h: 159:                     Threes++;
 [e ++ _Threes -> -> 1 `i `uc ]
-"127
-[; ;./Functions.h: 127:                     break;
-[e $U 2257  ]
-"128
-[; ;./Functions.h: 128:                 default:
-[e :U 2263 ]
-"129
-[; ;./Functions.h: 129:                     Errors++;
+"160
+[; ;./Functions.h: 160:                     break;
+[e $U 2262  ]
+"161
+[; ;./Functions.h: 161:                 default:
+[e :U 2268 ]
+"162
+[; ;./Functions.h: 162:                     Errors++;
 [e ++ _Errors -> -> 1 `i `uc ]
-"130
-[; ;./Functions.h: 130:                     break;
-[e $U 2257  ]
-"131
-[; ;./Functions.h: 131:         }
+"163
+[; ;./Functions.h: 163:                     break;
+[e $U 2262  ]
+"164
+[; ;./Functions.h: 164:         }
 }
-[e $U 2257  ]
-[e :U 2258 ]
-[e [\ _sample , $ -> 0 `i 2259
- , $ -> 1 `i 2260
- , $ -> 2 `i 2261
- , $ -> 3 `i 2262
- 2263 ]
-[e :U 2257 ]
-"132
-[; ;./Functions.h: 132:     }
+[e $U 2262  ]
+[e :U 2263 ]
+[e [\ _sample , $ -> 0 `i 2264
+ , $ -> 1 `i 2265
+ , $ -> 2 `i 2266
+ , $ -> 3 `i 2267
+ 2268 ]
+[e :U 2262 ]
+"165
+[; ;./Functions.h: 165:     }
 }
 [e ++ _tests -> 1 `i ]
-[e $ < _tests -> 32 `i 2254  ]
-[e :U 2255 ]
+[e $ < _tests -> 32 `i 2259  ]
+[e :U 2260 ]
 }
-"134
-[; ;./Functions.h: 134:     PORTD = (Zeros << 1);
+"167
+[; ;./Functions.h: 167:     PORTD = (Zeros << 1);
 [e = _PORTD -> << -> _Zeros `i -> 1 `i `uc ]
-"135
-[; ;./Functions.h: 135:     while (!PORTBbits.RB1);
-[e $U 2264  ]
-[e :U 2265 ]
-[e :U 2264 ]
-[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2265  ]
-[e :U 2266 ]
-"136
-[; ;./Functions.h: 136:     _delay((unsigned long)((200)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"137
-[; ;./Functions.h: 137:     PORTD = (Ones << 1);
-[e = _PORTD -> << -> _Ones `i -> 1 `i `uc ]
-"138
-[; ;./Functions.h: 138:     while (!PORTBbits.RB1);
-[e $U 2267  ]
-[e :U 2268 ]
-[e :U 2267 ]
-[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2268  ]
-[e :U 2269 ]
-"139
-[; ;./Functions.h: 139:     _delay((unsigned long)((200)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"140
-[; ;./Functions.h: 140:     PORTD = (Twos << 1);
-[e = _PORTD -> << -> _Twos `i -> 1 `i `uc ]
-"141
-[; ;./Functions.h: 141:     while (!PORTBbits.RB1);
-[e $U 2270  ]
-[e :U 2271 ]
+"168
+[; ;./Functions.h: 168:     while (!PORTBbits.RB1);
+[e $U 2269  ]
 [e :U 2270 ]
-[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2271  ]
-[e :U 2272 ]
-"142
-[; ;./Functions.h: 142:     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e :U 2269 ]
+[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2270  ]
+[e :U 2271 ]
+"169
+[; ;./Functions.h: 169:     _delay((unsigned long)((200)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"143
-[; ;./Functions.h: 143:     PORTD = (Threes << 1);
-[e = _PORTD -> << -> _Threes `i -> 1 `i `uc ]
-"144
-[; ;./Functions.h: 144:     while (!PORTBbits.RB1);
-[e $U 2273  ]
-[e :U 2274 ]
+"170
+[; ;./Functions.h: 170:     PORTD = (Ones << 1);
+[e = _PORTD -> << -> _Ones `i -> 1 `i `uc ]
+"171
+[; ;./Functions.h: 171:     while (!PORTBbits.RB1);
+[e $U 2272  ]
 [e :U 2273 ]
-[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2274  ]
-[e :U 2275 ]
-"145
-[; ;./Functions.h: 145:     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e :U 2272 ]
+[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2273  ]
+[e :U 2274 ]
+"172
+[; ;./Functions.h: 172:     _delay((unsigned long)((200)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"146
-[; ;./Functions.h: 146:     PORTD = (Errors << 1);
-[e = _PORTD -> << -> _Errors `i -> 1 `i `uc ]
-"147
-[; ;./Functions.h: 147:     while (!PORTBbits.RB1);
-[e $U 2276  ]
-[e :U 2277 ]
+"173
+[; ;./Functions.h: 173:     PORTD = (Twos << 1);
+[e = _PORTD -> << -> _Twos `i -> 1 `i `uc ]
+"174
+[; ;./Functions.h: 174:     while (!PORTBbits.RB1);
+[e $U 2275  ]
 [e :U 2276 ]
-[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2277  ]
-[e :U 2278 ]
-"148
-[; ;./Functions.h: 148:     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e :U 2275 ]
+[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2276  ]
+[e :U 2277 ]
+"175
+[; ;./Functions.h: 175:     _delay((unsigned long)((200)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"150
-[; ;./Functions.h: 150:     PORTDbits.RD0 = 1;
+"176
+[; ;./Functions.h: 176:     PORTD = (Threes << 1);
+[e = _PORTD -> << -> _Threes `i -> 1 `i `uc ]
+"177
+[; ;./Functions.h: 177:     while (!PORTBbits.RB1);
+[e $U 2278  ]
+[e :U 2279 ]
+[e :U 2278 ]
+[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2279  ]
+[e :U 2280 ]
+"178
+[; ;./Functions.h: 178:     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"179
+[; ;./Functions.h: 179:     PORTD = (Errors << 1);
+[e = _PORTD -> << -> _Errors `i -> 1 `i `uc ]
+"180
+[; ;./Functions.h: 180:     while (!PORTBbits.RB1);
+[e $U 2281  ]
+[e :U 2282 ]
+[e :U 2281 ]
+[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 2282  ]
+[e :U 2283 ]
+"181
+[; ;./Functions.h: 181:     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"183
+[; ;./Functions.h: 183:     PORTDbits.RD0 = 1;
 [e = . . _PORTDbits 0 0 -> -> 1 `i `uc ]
-"151
-[; ;./Functions.h: 151:     _delay((unsigned long)((100)*(4000000/4000.0)));
+"184
+[; ;./Functions.h: 184:     _delay((unsigned long)((100)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"152
-[; ;./Functions.h: 152:     PORTDbits.RD0 = 0;
+"185
+[; ;./Functions.h: 185:     PORTDbits.RD0 = 0;
 [e = . . _PORTDbits 0 0 -> -> 0 `i `uc ]
-"153
-[; ;./Functions.h: 153:     return;
-[e $UE 2253  ]
-"155
-[; ;./Functions.h: 155: }
-[e :UE 2253 ]
+"186
+[; ;./Functions.h: 186:     return;
+[e $UE 2258  ]
+"188
+[; ;./Functions.h: 188: }
+[e :UE 2258 ]
+}
+"191
+[; ;./Functions.h: 191: void playTone(unsigned char frequency, unsigned char duration)
+[v _playTone `(v ~T0 @X0 1 ef2`uc`uc ]
+"192
+[; ;./Functions.h: 192: {
+{
+[e :U _playTone ]
+"191
+[; ;./Functions.h: 191: void playTone(unsigned char frequency, unsigned char duration)
+[v _frequency `uc ~T0 @X0 1 r1 ]
+[v _duration `uc ~T0 @X0 1 r2 ]
+"192
+[; ;./Functions.h: 192: {
+[f ]
+"194
+[; ;./Functions.h: 194:     return;
+[e $UE 2284  ]
+"195
+[; ;./Functions.h: 195: }
+[e :UE 2284 ]
+}
+"198
+[; ;./Functions.h: 198: void displayValue(unsigned char value)
+[v _displayValue `(v ~T0 @X0 1 ef1`uc ]
+"199
+[; ;./Functions.h: 199: {
+{
+[e :U _displayValue ]
+"198
+[; ;./Functions.h: 198: void displayValue(unsigned char value)
+[v _value `uc ~T0 @X0 1 r1 ]
+"199
+[; ;./Functions.h: 199: {
+[f ]
+"200
+[; ;./Functions.h: 200:     switch (value)
+[e $U 2287  ]
+"201
+[; ;./Functions.h: 201:     {
+{
+"202
+[; ;./Functions.h: 202:         case 0x01:
+[e :U 2288 ]
+"203
+[; ;./Functions.h: 203:             PORTDbits.RD1 = 1;
+[e = . . _PORTDbits 0 1 -> -> 1 `i `uc ]
+"204
+[; ;./Functions.h: 204:             playTone(0x01, 0x00);
+[e ( _playTone (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"205
+[; ;./Functions.h: 205:             PORTDbits.RD1 = 0;
+[e = . . _PORTDbits 0 1 -> -> 0 `i `uc ]
+"206
+[; ;./Functions.h: 206:             break;
+[e $U 2286  ]
+"207
+[; ;./Functions.h: 207:         case 0x02:
+[e :U 2289 ]
+"208
+[; ;./Functions.h: 208:             PORTDbits.RD2 = 1;
+[e = . . _PORTDbits 0 2 -> -> 1 `i `uc ]
+"209
+[; ;./Functions.h: 209:             playTone(0x02, 0x00);
+[e ( _playTone (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+"210
+[; ;./Functions.h: 210:             PORTDbits.RD2 = 0;
+[e = . . _PORTDbits 0 2 -> -> 0 `i `uc ]
+"211
+[; ;./Functions.h: 211:             break;
+[e $U 2286  ]
+"212
+[; ;./Functions.h: 212:         case 0x03:
+[e :U 2290 ]
+"213
+[; ;./Functions.h: 213:             PORTDbits.RD3 = 1;
+[e = . . _PORTDbits 0 3 -> -> 1 `i `uc ]
+"214
+[; ;./Functions.h: 214:             playTone(0x03, 0x00);
+[e ( _playTone (2 , -> -> 3 `i `uc -> -> 0 `i `uc ]
+"215
+[; ;./Functions.h: 215:             PORTDbits.RD3 = 0;
+[e = . . _PORTDbits 0 3 -> -> 0 `i `uc ]
+"216
+[; ;./Functions.h: 216:             break;
+[e $U 2286  ]
+"217
+[; ;./Functions.h: 217:         case 0x04:
+[e :U 2291 ]
+"218
+[; ;./Functions.h: 218:             PORTDbits.RD4 = 1;
+[e = . . _PORTDbits 0 4 -> -> 1 `i `uc ]
+"219
+[; ;./Functions.h: 219:             playTone(0x04, 0x00);
+[e ( _playTone (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
+"220
+[; ;./Functions.h: 220:             PORTDbits.RD4 = 0;
+[e = . . _PORTDbits 0 4 -> -> 0 `i `uc ]
+"221
+[; ;./Functions.h: 221:             break;
+[e $U 2286  ]
+"222
+[; ;./Functions.h: 222:         default:
+[e :U 2292 ]
+"223
+[; ;./Functions.h: 223:             break;
+[e $U 2286  ]
+"224
+[; ;./Functions.h: 224:     }
+}
+[e $U 2286  ]
+[e :U 2287 ]
+[e [\ _value , $ -> 1 `i 2288
+ , $ -> 2 `i 2289
+ , $ -> 3 `i 2290
+ , $ -> 4 `i 2291
+ 2292 ]
+[e :U 2286 ]
+"225
+[; ;./Functions.h: 225: }
+[e :UE 2285 ]
+}
+"231
+[; ;./Functions.h: 231: void wait_for_input()
+[v _wait_for_input `(v ~T0 @X0 1 ef ]
+"232
+[; ;./Functions.h: 232: {
+{
+[e :U _wait_for_input ]
+[f ]
+"233
+[; ;./Functions.h: 233:     keyPressed = 0;
+[e = _keyPressed -> -> 0 `i `uc ]
+"235
+[; ;./Functions.h: 235:     while (!keyPressed);
+[e $U 2294  ]
+[e :U 2295 ]
+[e :U 2294 ]
+[e $ ! != -> _keyPressed `i -> 0 `i 2295  ]
+[e :U 2296 ]
+"236
+[; ;./Functions.h: 236:     displayValue((unsigned char)keyPressed);
+[e ( _displayValue (1 _keyPressed ]
+"238
+[; ;./Functions.h: 238:     return;
+[e $UE 2293  ]
+"239
+[; ;./Functions.h: 239: }
+[e :UE 2293 ]
+}
+"242
+[; ;./Functions.h: 242: void gameOver(void)
+[v _gameOver `(v ~T0 @X0 1 ef ]
+"243
+[; ;./Functions.h: 243: {
+{
+[e :U _gameOver ]
+[f ]
+"245
+[; ;./Functions.h: 245: }
+[e :UE 2297 ]
+}
+"248
+[; ;./Functions.h: 248: void gameWin(void)
+[v _gameWin `(v ~T0 @X0 1 ef ]
+"249
+[; ;./Functions.h: 249: {
+{
+[e :U _gameWin ]
+[f ]
+"251
+[; ;./Functions.h: 251: }
+[e :UE 2298 ]
 }
 "21 ./Declarations.h
 [p x FEXTOSC  =  LP      ]
@@ -2862,10 +3126,88 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20
 [; ;main.c: 20:     init();
 [e ( _init ..  ]
-"21
-[; ;main.c: 21:     ADC_Test();
-[e ( _ADC_Test ..  ]
-"23
-[; ;main.c: 23: }
-[e :UE 2279 ]
+"38
+[; ;main.c: 38:     for (highestValue = 0; highestValue < 4; highestValue++)
+{
+[e = _highestValue -> -> 0 `i `uc ]
+[e $ < -> _highestValue `i -> 4 `i 2300  ]
+[e $U 2301  ]
+[e :U 2300 ]
+"39
+[; ;main.c: 39:     {
+{
+"42
+[; ;main.c: 42:         Sequence[highestValue] = ADC_Random();
+[e = *U + &U _Sequence * -> _highestValue `ux -> -> # *U &U _Sequence `ui `ux ( _ADC_Random ..  ]
+"46
+[; ;main.c: 46:         for (char index = 0; index <= highestValue; index++)
+{
+[v _index `uc ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `uc ]
+[e $U 2306  ]
+[e :U 2303 ]
+"47
+[; ;main.c: 47:         {
+{
+"49
+[; ;main.c: 49:             displayValue(Sequence[index]);
+[e ( _displayValue (1 *U + &U _Sequence * -> _index `ux -> -> # *U &U _Sequence `ui `ux ]
+"51
+[; ;main.c: 51:             _delay((unsigned long)((500)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"52
+[; ;main.c: 52:         }
+}
+[e ++ _index -> -> 1 `i `uc ]
+[e :U 2306 ]
+[e $ <= -> _index `i -> _highestValue `i 2303  ]
+[e :U 2304 ]
+}
+"56
+[; ;main.c: 56:         for (char index = 0; index <= highestValue; index++)
+{
+[v _index `uc ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `uc ]
+[e $U 2310  ]
+[e :U 2307 ]
+"57
+[; ;main.c: 57:         {
+{
+"59
+[; ;main.c: 59:             wait_for_input();
+[e ( _wait_for_input ..  ]
+"61
+[; ;main.c: 61:             if (keyPressed != Sequence[index])
+[e $ ! != -> _keyPressed `i -> *U + &U _Sequence * -> _index `ux -> -> # *U &U _Sequence `ui `ux `i 2311  ]
+"62
+[; ;main.c: 62:             {
+{
+"63
+[; ;main.c: 63:                 gameOver();
+[e ( _gameOver ..  ]
+"64
+[; ;main.c: 64:             }
+}
+[e :U 2311 ]
+"65
+[; ;main.c: 65:         }
+}
+[e ++ _index -> -> 1 `i `uc ]
+[e :U 2310 ]
+[e $ <= -> _index `i -> _highestValue `i 2307  ]
+[e :U 2308 ]
+}
+"70
+[; ;main.c: 70:     }
+}
+[e ++ _highestValue -> -> 1 `i `uc ]
+[e $ < -> _highestValue `i -> 4 `i 2300  ]
+[e :U 2301 ]
+}
+"71
+[; ;main.c: 71:     gameWin();
+[e ( _gameWin ..  ]
+"72
+[; ;main.c: 72: }
+[e :UE 2299 ]
 }

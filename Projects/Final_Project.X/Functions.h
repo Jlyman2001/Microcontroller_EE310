@@ -187,24 +187,6 @@ void ADC_Test(void){
     
 }
 
-//waits for input caused by interrupt handle function.
-//if button is pressed, lights up LED for button and plays tone
-void wait_for_input()
-{
-    keyPressed = 0;
-    //wait for keyPressed to update from interrupt function
-    while (!keyPressed);  
-    displayValue(keyPressed);
-    
-    return;
-}
-
-//game over subroutine; flashes LEDs and plays song 
-void gameOver(void)
-{
-    
-}
-
 //plays given frequency note for specified duration using timers
 void playTone(unsigned char frequency, unsigned char duration)
 {
@@ -241,6 +223,36 @@ void displayValue(unsigned char value)
             break;
     }
 }
+
+
+
+//waits for input caused by interrupt handle function.
+//if button is pressed, lights up LED for button and plays tone
+void wait_for_input()
+{
+    keyPressed = 0;
+    //wait for keyPressed to update from interrupt function
+    while (!keyPressed);  
+    displayValue((unsigned char)keyPressed);
+    
+    return;
+}
+
+//game over subroutine; flashes LEDs and plays song 
+void gameOver(void)
+{
+    
+}
+
+//game win function; flashes LEDs and plays different song
+void gameWin(void)
+{
+    
+}
+
+
+
+
 
 #ifdef	__cplusplus
 }

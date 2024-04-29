@@ -1,0 +1,106 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47K42 ]
+[d frameptr 16353 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"87 E:\github\Microcontroller_EE310\Projects\ADC_LCD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"101
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"117
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+"127
+[v _LCD_Char LCD_Char `(v  1 e 1 0 ]
+"138
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+"164
+[v _MSdelay MSdelay `(v  1 e 1 0 ]
+"46538 D:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k42.h
+"46538
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"46662
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+"46818
+[v _PORTB PORTB `VEuc  1 e 1 @16331 ]
+[s S46 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"46959
+[u S55 . 1 `S46 1 . 1 0 ]
+"46959
+"46959
+[v _PORTDbits PORTDbits `VES55  1 e 1 @16333 ]
+"87 E:\github\Microcontroller_EE310\Projects\ADC_LCD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"98
+} 0
+"138
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+{
+[v LCD_String@msg msg `*.33Cuc  1 p 3 7 ]
+"145
+} 0
+"127
+[v _LCD_Char LCD_Char `(v  1 e 1 0 ]
+{
+[v LCD_Char@dat dat `uc  1 a 1 wreg ]
+[v LCD_Char@dat dat `uc  1 a 1 wreg ]
+"129
+[v LCD_Char@dat dat `uc  1 a 1 6 ]
+"135
+} 0
+"101
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"110
+} 0
+"117
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+{
+[v LCD_Command@cmd cmd `uc  1 a 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 a 1 wreg ]
+"119
+[v LCD_Command@cmd cmd `uc  1 a 1 6 ]
+"125
+} 0
+"164
+[v _MSdelay MSdelay `(v  1 e 1 0 ]
+{
+"166
+[v MSdelay@j j `ui  1 a 2 4 ]
+[v MSdelay@i i `ui  1 a 2 2 ]
+"164
+[v MSdelay@val val `ui  1 p 2 0 ]
+"169
+} 0

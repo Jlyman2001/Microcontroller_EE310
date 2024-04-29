@@ -27033,6 +27033,10 @@ char *tempnam(const char *, const char *);
 # 1 "./Variables.h" 1
 # 35 "./Variables.h"
 unsigned char Sequence [4];
+
+unsigned char highestValue;
+unsigned char keyPressed;
+unsigned char index;
 # 14 "./Functions.h" 2
 
 
@@ -27041,10 +27045,40 @@ unsigned char Sequence [4];
 void __attribute__((picinterrupt(("irq(8),base(0x4008)")))) INT0_ISR(void)
 {
 
-    if (PIR1bits.INT0IF == 1)
+    if (PIR0bits.IOCIF == 1)
     {
-        __asm("RESET");
-        PIR1bits.INT0IF = 0;
+        IOCAF = 0;
+        IOCCF = 0;
+        IOCEF = 0;
+        IOCBF = (IOCBF & 0x1F);
+
+
+        if(IOCBFbits.IOCBF0)
+        {
+            __asm("RESET");
+        }
+
+        if(IOCBFbits.IOCBF1)
+        {
+            keyPressed = 0x01;
+        }
+
+        if(IOCBFbits.IOCBF1)
+        {
+            keyPressed = 0x02;
+        }
+
+        if(IOCBFbits.IOCBF3)
+        {
+            keyPressed = 0x03;
+        }
+
+        if(IOCBFbits.IOCBF4)
+        {
+            keyPressed = 0x04;
+        }
+
+
     }
 
 }
@@ -27098,10 +27132,12 @@ void init(void){
     INTCON0bits.IPEN = 1;
     INTCON0bits.GIEH = 1;
     INTCON0bits.GIEL = 1;
-    INTCON0bits.INT0EDG = 1;
-    IPR1bits.INT0IP = 0;
-    PIE1bits.INT0IE = 1;
-    PIR1bits.INT0IF = 0;
+    PIE0bits.IOCIE = 1;
+
+
+
+
+
     IVTBASEU = 0;
     IVTBASEH = 0x40;
     IVTBASEL = 0x08;
@@ -27121,6 +27157,7 @@ unsigned char ADC_Random(void){
 
     return (ADRESL & 0x03);
 }
+
 
 
 void ADC_Test(void){
@@ -27174,6 +27211,69 @@ void ADC_Test(void){
     _delay((unsigned long)((100)*(4000000/4000.0)));
     PORTDbits.RD0 = 0;
     return;
+
+}
+
+
+void playTone(unsigned char frequency, unsigned char duration)
+{
+
+    return;
+}
+
+
+void displayValue(unsigned char value)
+{
+    switch (value)
+    {
+        case 0x01:
+            PORTDbits.RD1 = 1;
+            playTone(0x01, 0x00);
+            PORTDbits.RD1 = 0;
+            break;
+        case 0x02:
+            PORTDbits.RD2 = 1;
+            playTone(0x02, 0x00);
+            PORTDbits.RD2 = 0;
+            break;
+        case 0x03:
+            PORTDbits.RD3 = 1;
+            playTone(0x03, 0x00);
+            PORTDbits.RD3 = 0;
+            break;
+        case 0x04:
+            PORTDbits.RD4 = 1;
+            playTone(0x04, 0x00);
+            PORTDbits.RD4 = 0;
+            break;
+        default:
+            break;
+    }
+}
+
+
+
+
+
+void wait_for_input()
+{
+    keyPressed = 0;
+
+    while (!keyPressed);
+    displayValue((unsigned char)keyPressed);
+
+    return;
+}
+
+
+void gameOver(void)
+{
+
+}
+
+
+void gameWin(void)
+{
 
 }
 # 10 "main.c" 2
@@ -27240,6 +27340,11 @@ void init(void);
 
 unsigned char ADC_Random(void);
 void ADC_Test(void);
+void wait_for_input(void);
+void gameOver(void);
+void playTone(unsigned char, unsigned char);
+void displayValue(unsigned char);
+void gameWin(void);
 # 12 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\proc\\pic18f47k42.h" 1
@@ -27252,6 +27357,39 @@ void ADC_Test(void);
 void main()
 {
     init();
-    ADC_Test();
+# 38 "main.c"
+    for (highestValue = 0; highestValue < 4; highestValue++)
+    {
 
+
+        Sequence[highestValue] = ADC_Random();
+
+
+
+        for (char index = 0; index <= highestValue; index++)
+        {
+
+            displayValue(Sequence[index]);
+
+            _delay((unsigned long)((500)*(4000000/4000.0)));
+        }
+
+
+
+        for (char index = 0; index <= highestValue; index++)
+        {
+
+            wait_for_input();
+
+            if (keyPressed != Sequence[index])
+            {
+                gameOver();
+            }
+        }
+
+
+
+
+    }
+    gameWin();
 }

@@ -77,9 +77,9 @@ unsigned char ADC_Random(void);
 void ADC_Test(void);
 void wait_for_input(void);
 void gameOver(void);
-void playTone(unsigned char);
-void displayValue(unsigned char, unsigned char);
-
+void playTone(unsigned char, unsigned char);
+void displayValue(unsigned char);
+void gameWin(void);
 #ifdef	__cplusplus
 }
 #endif
