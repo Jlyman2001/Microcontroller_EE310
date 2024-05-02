@@ -61,20 +61,30 @@
 #pragma config CP = OFF         // PFM and Data EEPROM Code Protection bit (PFM and Data EEPROM code protection disabled)
 
 #include <xc.h> // must have this
-//#include "../../../../../Program Files/Microchip/xc8/v2.46/pic/include/proc/pic18f47k42.h"
-//#include "C:\Program Files\Microchip\xc8\v2.47\pic\include\proc\pic18f47k42"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+//#include "../../../../../Program Files/Microchip/xc8/v2.40/pic/include/proc/pic18f46k42.h"
+//#include "C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f46k42"
 
 #define _XTAL_FREQ 4000000                 // Fosc  frequency for _delay()  library
 #define FCY    _XTAL_FREQ/4
 
-#define RS PORTDbits.RD0                   /* PORTD 0 pin is used for Register Select */
-#define EN PORTDbits.RD1                   /* PORTD 1 pin is used for Enable */
-#define ldata PORTB                 /* PORTB is used for transmitting data to LCD */
+#define RS LATD0                   /* PORTD 0 pin is used for Register Select */
+#define EN LATD1                   /* PORTD 1 pin is used for Enable */
+#define ldata LATB                 /* PORTB is used for transmitting data to LCD */
 
 #define LCD_Port TRISB              
 #define LCD_Control TRISD
 
+#define Vref 5 // voltage reference (adjusted for low battery)
+int digital; // holds the digital value 
+float voltage; // hold the analog value (volt))
+char data[10];
+
 void LCD_Init();
+void ADC_Init();
+void LCD_Clear();
 void LCD_Command(char );
 void LCD_Char(char x);
 void LCD_String(const char *);
@@ -85,16 +95,32 @@ void MSdelay(unsigned int );
 /*****************************Main Program*******************************/
 
 void main(void)
-{       
+{   
+    
     //OSCCON=0x72;                   /* Use Internal Oscillator with Frequency 8MHZ */ 
     LCD_Init();                    /* Initialize 16x2 LCD */
-    LCD_String('abc');
-    //LCD_String_xy(1,0,"Embedded System!");    /* Display string at location(row,location). */
-                                   /* This function passes string to display */
-    //LCD_String_xy(2,0,"EE310@SSU");   /*Display string at location(row,location). */
-                                   /* This function passes string to display */    
-    
-    while(1);           
+    ADC_Init();
+    LCD_Clear();
+    float lux = 0;
+    while(1){
+        //sample ADC
+        ADCON0bits.GO = 1;
+        while (ADCON0bits.GO); //Wait for conversion done
+
+        int digital = (ADRESH*256) | (ADRESL);
+        float voltage = (float)digital * ((float)Vref/4096);
+        float lux_old = lux;
+        lux = (5-voltage)*250;
+        if ((lux_old > 999) && (lux < 1000)) 
+        {
+            LCD_Clear();
+        }
+        sprintf(data,"%.0f",lux);
+        strcat(data," Lux");	/*Concatenate result and unit to print*/
+        LCD_String_xy(2,4,data);/*Send string data for printing*/
+        LCD_String_xy(1,0,"Input Light:");
+        __delay_ms(100);
+    }      
 }
 
 /****************************Functions********************************/
@@ -104,9 +130,9 @@ void LCD_Init()
     LCD_Port = 0x00;       /* Set PORTB as output PORT for LCD data(D0-D7) pins */
     LCD_Control = 0x00;    /* Set PORTD as output PORT LCD Control(RS,EN) Pins */
     LCD_Command(0x01);     /* clear display screen */
-    LCD_Command(0b00111000);     /* uses 2 line and initialize 5*7 matrix of LCD */
-    LCD_Command(0b00001100);     /* display on cursor off */
-    LCD_Command(0b00000111);     /* increment cursor (shift cursor to right) */
+    LCD_Command(0x38);     /* uses 2 line and initialize 5*7 matrix of LCD */
+    LCD_Command(0x0c);     /* display on cursor off */
+    LCD_Command(0x06);     /* increment cursor (shift cursor to right) */
 }
 
 void LCD_Clear()
@@ -166,4 +192,34 @@ void MSdelay(unsigned int val)
      unsigned int i,j;
         for(i=0;i<val;i++)
             for(j=0;j<165;j++);      /*This count Provide delay of 1 ms for 8MHz Frequency */
+}
+
+
+
+void ADC_Init(void)
+{
+    //------Setup the ADC
+    //DO: using ADCON0 set right justify
+    ADCON0bits.FM = 1;      //right justify is 1  
+    //DO: Using ADCON0 set ADCRC Clock
+    ADCON0bits.CS = 0;      //using Fosc clock
+    //DO: Set RA0 to input
+    TRISAbits.TRISA0 = 1;
+    //DO: Set RA0 to analog
+    ANSELAbits.ANSELA0 = 1;     //1 is analog mode
+    //DO: Set RA0 as Analog channel in ADC ADPCH
+    ADPCH = 0;                  //0 is use ANA0
+    //DO: set ADC CLOCK Selection register to zero
+    ADCLK = 0;
+    //DO: Clear ADC Result registers
+    ADRESL = 0;
+    ADRESH = 0;
+    //DO: set precharge select to 0 in register ADPERL & ADPERH
+    ADPREL = 0;
+    ADPREH = 0;
+    //DO: Set qcquisition LOW and HIGH bytes to zero
+    ADACQL = 0;
+    ADACQH = 0;
+    //DO: Turn ADC On on register ADCON0   
+    ADCON0bits.ON = 1;
 }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\ADC_LCD.X.production.hex">
+  <executable name="dist/default/debug\ADC_LCD.X.debug.hex">
     <memory name="program">
       <units>bytes</units>
       <length>131072</length>
-      <used>310</used>
-      <free>130762</free>
+      <used>9968</used>
+      <free>121104</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>8192</length>
-      <used>10</used>
-      <free>8182</free>
+      <used>252</used>
+      <free>7940</free>
     </memory>
   </executable>
 </project>
