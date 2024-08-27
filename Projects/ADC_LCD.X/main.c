@@ -110,7 +110,7 @@ void main(void)
         int digital = (ADRESH*256) | (ADRESL);
         float voltage = (float)digital * ((float)Vref/4096);
         float lux_old = lux;
-        lux = (5-voltage)*250;
+        lux = (5-voltage)*200;
         if ((lux_old > 999) && (lux < 1000)) 
         {
             LCD_Clear();
